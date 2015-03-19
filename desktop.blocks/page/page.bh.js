@@ -1,6 +1,5 @@
 module.exports = function(bh) {
-    bh.match('page', function(ctx) {
-
+    bh.match('page', function(ctx, json) {
         ctx.content([
             {
                 elem : 'header',
@@ -16,7 +15,7 @@ module.exports = function(bh) {
                         mods : { theme : 'proto' },
                         content : 'Protein'
                     },
-                    ctx.view
+                    json.view
                 ]
             },
             {

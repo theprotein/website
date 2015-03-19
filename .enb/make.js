@@ -348,9 +348,7 @@ module.exports = function(config) {
     function configureServerSpecs(config) {
         config.configure({
             destPath : 'server.specs',
-            sourceLevels : ['common.blocks', 'server.blocks', 'spec.blocks',
-                { path : 'libs/bem-template-engines/common.blocks', check : false }
-            ],
+            sourceLevels : ['common.blocks', 'server.blocks', 'spec.blocks'],
             levels : ['common.blocks', 'server.blocks'],
             jsSuffixes : ['vanilla.js', 'js', 'node.js'],
             specSuffixes : ['node.spec.js'],
@@ -382,8 +380,6 @@ function getSourceLevels(platform) {
             );
         }
     });
-
-    levels.push({ path : path.join('libs', 'bem-template-engines', 'common.blocks'), check : false });
 
     // Service levels
     platformNames.forEach(function(name) {

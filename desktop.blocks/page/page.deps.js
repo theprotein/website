@@ -1,5 +1,6 @@
 [{
     shouldDeps : [
-        { block : 'heading' }
+        { block : 'heading' },
+        { block : 'protein' }
     ]
 }]

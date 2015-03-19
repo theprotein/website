@@ -1,6 +1,6 @@
 modules.define('page',
-    ['log', 'utils', 'config', 'template'],
-    function(provide, log, utils, config, template) {
+    ['log', 'utils', 'config'],
+    function(provide, log, utils, config) {
 
 provide(function(req, res, next) {
 
@@ -10,16 +10,12 @@ provide(function(req, res, next) {
 
     if(!req.view) return res.sendStatus(404);
 
-    var data   = req.viewData || {};
-    data.view  = req.view;
-    data.utils = utils;
-    data.req   = req;
+    ctx.view = req.view;
 
-    log.verbose('rendering view', data.view);
+    log.verbose('rendering view', ctx.view);
 
-    // Configure template engines
     res.send(require(utils.getTemplateEngine(config.get('bh'), '.bh.js')).apply(ctx));
-    
+
     next();
 });
 
