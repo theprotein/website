@@ -1,0 +1,42 @@
+{
+    "bemhtml" : {
+        "level" : "desktop",
+        "bundle" : "index"
+    },
+    "bh" : {
+        "level" : "desktop",
+        "bundle" : "index"
+    },
+    "bemtree" : {
+        "level" : "desktop",
+        "bundle" : "index"
+    },
+    "static" : {
+        "level" : "desktop",
+        "bundle" : "index"
+    },
+    "port"     : 9000,
+    "baseUrl"  : "/",
+    "log" : {
+        "server" : {
+            "transport" : "Console",
+            "view" : {
+                "level"       : "verbose",
+                "prettyPrint" : true,
+                "colorize"    : true,
+                "timestamp"   : true,
+                "label"       : "server"
+            }
+        },
+        "browser" : {
+            "transport" : "Console",
+            "view" : {
+                "level"       : "verbose",
+                "prettyPrint" : true,
+                "colorize"    : true,
+                "timestamp"   : true,
+                "label"       : "browser"
+            }
+        }
+    }
+}

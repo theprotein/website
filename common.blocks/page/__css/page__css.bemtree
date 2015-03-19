@@ -1,0 +1,10 @@
+block('page').elem('css')(
+    def()(function() {
+        var elem = this.elem,
+            styles = [];
+
+        styles.push({ elem : elem, url : 'index.min.css', ie : false });
+
+        return styles;
+    })
+);

@@ -1,0 +1,12 @@
+{
+  "name": "protein-landing",
+  "dependencies": {
+    "bem-components": "2.0.0",
+    "bem-grid": "1.2.1",
+    "bem-typography": "1.0.0",
+    "bem-template-engines": "git@github.com:verybigman/bem-template-engines.git"
+  },
+  "devDependencies": {
+    "bem-pr": "~0.10.0"
+  }
+}
