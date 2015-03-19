@@ -1,13 +1,13 @@
 {
   "private": true,
-  "name": "madison",
+  "name": "protein-landing",
   "version": "0.0.1",
-  "description": "Alfa-Bank p2p service",
-  "homepage": "https://money.alfabank.ru",
+  "description": "Protein.io landing page",
+  "homepage": "http://theprotein.io",
   "author": "Anton Winogradov <winogradovaa@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "ssh://git@git/man/madison.git"
+    "url": "git@github.com:theprotein/protein-landing.git"
   },
   "dependencies": {
     "body-parser": "^1.9.0",

@@ -10,13 +10,10 @@ var DEFAULT_LANGS = ['ru'],
     js = require('enb-diverse-js/techs/browser-js'),
     nodejs = require('enb-diverse-js/techs/node-js'),
     ym = require('enb-modules/techs/prepend-modules'),
-    bemhtml = require('enb-bemxjst/techs/bemhtml'),
-    bemtree = require('enb-bemxjst/techs/bemtree'),
     bh = require('enb-bh/techs/bh-server'),
     bhServerInclude = require('enb-bh/techs/bh-server-include'),
     bhYm = require('enb-bh/techs/bh-client-module'),
     bhHtml = require('enb-bh/techs/html-from-bemjson'),
-    html = require('enb-bemxjst/techs/html-from-bemjson'),
     copyFile = require('enb/techs/file-copy'),
     mergeFiles = require('enb/techs/file-merge'),
     borschik = require('enb-borschik/techs/borschik'),
@@ -149,8 +146,7 @@ module.exports = function(config) {
                     jsAttrName : 'data-bem',
                     jsAttrScheme : 'json',
                     mimic : 'BEMHTML'
-                }],
-                [bemtree, { devMode : process.env.NODE_ENV === 'development' }]
+                }]
             ]);
 
             nodeConfig.addTechs([
