@@ -3,7 +3,10 @@ module.exports = function(bh) {
         return [{
             block : 'page',
             mods : { theme : 'proto' },
+            title : 'Protein',
             styles : [
+                { elem : 'css', url : 'http://fonts.googleapis.com/css?family=Arvo:700' },
+                { elem : 'css', url : 'http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' },
                 { elem : 'css', url : 'index.min.css' }
             ],
             scripts : [

@@ -4,7 +4,10 @@ module.exports = function(bh) {
             {
                 elem : 'header',
                 content : [
-
+                    {
+                        block : 'logo',
+                        mods : { theme : 'proto', view : 'centered', size : 'xl' },
+                    }
                 ]
             },
             {

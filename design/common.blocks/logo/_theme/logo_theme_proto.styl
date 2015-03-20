@@ -1,0 +1,42 @@
+.logo_theme_proto
+{
+    display: inline-block;
+
+    .logo__letter
+    {
+        font-family: $logo_font_family;
+        color:       #262d4c;
+    }
+
+    .logo__title, .logo__description
+    {
+        font-family: $base_font_family;
+        font-weight: $logo_font_weight;
+        color:       $base_font_color;
+    }
+
+    &.logo_view_centered
+    {
+        text-align: center;
+    }
+
+    &.logo_size_xl
+    {
+        .logo__letter
+        {
+            font-size: remify(128px);
+        }
+
+        .logo__title
+        {
+            font-size: remify(56px);
+        }
+
+        .logo__description
+        {
+            padding-top: 10px;
+
+            font-size: remify(24px);
+        }
+    }
+}
