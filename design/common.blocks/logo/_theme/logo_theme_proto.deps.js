@@ -1,6 +1,6 @@
 [{
     mustDeps : [
-        { block : 'variables' },
+        { block : 'variables', mods : { theme : 'proto' } },
         { block : 'font', elem : 'rem' }
     ]
 }]
