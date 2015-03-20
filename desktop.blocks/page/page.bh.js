@@ -12,14 +12,7 @@ module.exports = function(bh) {
             },
             {
                 elem : 'content',
-                content : [
-                    {
-                        block : 'heading',
-                        mods : { theme : 'proto' },
-                        content : 'Protein'
-                    },
-                    json.view
-                ]
+                content : json.view
             },
             {
                 elem : 'footer',
