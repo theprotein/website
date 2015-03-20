@@ -1,0 +1,11 @@
+{
+    "verbose" : true,
+    "watch" : [
+        "common.blocks",
+        "desktop.blocks",
+        "server.blocks",
+        "design/common.blocks",
+        "design/desktop.blocks"
+    ],
+    "ext" : "js styl"
+}

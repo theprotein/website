@@ -21,7 +21,7 @@ module.exports = function(bh) {
                                 block : 'button',
                                 mods : { theme : 'proto', size : 'xl', type : 'link' },
                                 url : '#',
-                                text : 'Be founding member #1123'
+                                text : 'Be founding member #1124'
                             }
                         ]
                     }
