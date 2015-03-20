@@ -1,7 +1,7 @@
 [{
     shouldDeps : [
         { block : 'logo', mods : { theme : 'proto' } },
-        { block : 'heading' },
+        { block : 'typo' },
         { block : 'protein' }
     ]
 }]
