@@ -142,7 +142,7 @@ module.exports = function(bh) {
                             {
                                 block : 'heading',
                                 lvl : 2,
-                                content : 'Use your custom components'
+                                content : 'Create live components easily'
                             }
                         ]
                     },
