@@ -2,10 +2,27 @@
 {
     display: inline-block;
 
+    &.logo_mode_default
+    {
+        color: #262d4c;
+    }
+
+    &.logo_mode_desaturate
+    {
+        color: #a7a7a7;
+    }
+
+    &.logo_view_letter
+    {
+        .logo__title, .logo__description
+        {
+            display: none;
+        }
+    }
+
     .logo__letter
     {
         font-family: $logo_font_family;
-        color:       #262d4c;
     }
 
     .logo__title, .logo__description
@@ -15,7 +32,7 @@
         color:       $base_font_color;
     }
 
-    &.logo_view_centered
+    &.logo_view_full
     {
         text-align: center;
     }
@@ -37,6 +54,26 @@
             padding-top: 10px;
 
             font-size: remify(24px);
+        }
+    }
+
+    &.logo_size_m
+    {
+        .logo__letter
+        {
+            font-size: remify(64px);
+        }
+
+        .logo__title
+        {
+            font-size: remify(28px);
+        }
+
+        .logo__description
+        {
+            padding-top: 5px;
+
+            font-size: remify(16px);
         }
     }
 }

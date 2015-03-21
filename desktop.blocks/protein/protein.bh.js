@@ -111,16 +111,6 @@ module.exports = function(bh) {
                 block : 'promo',
                 content : [
                     {
-                        elem : 'heading',
-                        content : [
-                            {
-                                block : 'heading',
-                                lvl : 2,
-                                content : 'Live products for your customers and your soul'
-                            }
-                        ]
-                    },
-                    {
                         elem : 'actions',
                         content : [
                             {
@@ -258,13 +248,18 @@ module.exports = function(bh) {
                         ]
                     },
                     {
-                        block : 'paragraph',
+                        elem : 'description',
                         content : [
-                            'If you think that the editor is not enough to build ',
-                            'the functional interface. Although it is unlikely, ',
-                            'of course, we tried very hard. <br> ',
-                            'You can always edit the code in your favorite editor, by synchronizing ',
-                            'with the repository on GitHub.'
+                            {
+                                block : 'paragraph',
+                                content : [
+                                    'If you think that the editor is not enough to build ',
+                                    'the functional interface. Although it is unlikely, ',
+                                    'of course, we tried very hard. <br> ',
+                                    'You can always edit the code in your favorite editor, by synchronizing ',
+                                    'with the repository on GitHub.'
+                                ]
+                            }
                         ]
                     }
                 ]

@@ -9,7 +9,7 @@ module.exports = function(bh) {
                         content : [
                             {
                                 block : 'logo',
-                                mods : { theme : 'proto', view : 'centered', size : 'xl' },
+                                mods : { theme : 'proto', view : 'full', mode : 'default', size : 'xl' },
                             }
                         ]
                     }
@@ -25,6 +25,10 @@ module.exports = function(bh) {
                     {
                         block : 'footer',
                         content : [
+                            {
+                                block : 'logo',
+                                mods : { theme : 'proto', view : 'letter', mode : 'desaturate', size : 'm' },
+                            },
                             {
                                 block : 'copyright',
                                 content : 'Copyright © The Protein Corp., 2015'
