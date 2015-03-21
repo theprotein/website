@@ -1,0 +1,47 @@
+$features = ( 'components' 'prototype' 'guidelines' 'user-flow' 'integrations' )
+
+$icon_size_s  = 25px;
+$icon_size_m  = 35px;
+$icon_size_l  = 45px;
+$icon_size_xl = 125px;
+
+.icon_theme_proto
+{
+    vertical-align: middle;
+
+    background-repeat: no-repeat;
+    background-size:   contain;
+
+    &.icon_size_s
+    {
+        width:  $icon_size_s;
+        height: $icon_size_s;
+    }
+
+    &.icon_size_m
+    {
+        width:  $icon_size_m;
+        height: $icon_size_m;
+    }
+
+    &.icon_size_l
+    {
+        width:  $icon_size_l;
+        height: $icon_size_l;
+    }
+
+    &.icon_size_xl
+    {
+        width:  $icon_size_xl;
+        height: $icon_size_xl;
+    }
+
+    for $name in $features
+    {
+        &.icon_feature_{$name}
+        {
+            background-image: url('../_feature/icon_feature_' + $name + '.png');
+        }
+    }
+
+}
