@@ -1,0 +1,3 @@
+#!/bin/bash
+
+nodemon --exec npm run dev
