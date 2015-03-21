@@ -5,8 +5,13 @@ module.exports = function(bh) {
                 elem : 'header',
                 content : [
                     {
-                        block : 'logo',
-                        mods : { theme : 'proto', view : 'centered', size : 'xl' },
+                        block : 'header',
+                        content : [
+                            {
+                                block : 'logo',
+                                mods : { theme : 'proto', view : 'centered', size : 'xl' },
+                            }
+                        ]
                     }
                 ]
             },
@@ -17,7 +22,15 @@ module.exports = function(bh) {
             {
                 elem : 'footer',
                 content : [
-
+                    {
+                        block : 'footer',
+                        content : [
+                            {
+                                block : 'copyright',
+                                content : 'Copyright © The Protein Corp., 2015'
+                            }
+                        ]
+                    }
                 ]
             }
         ]);

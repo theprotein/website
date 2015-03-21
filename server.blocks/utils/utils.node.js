@@ -49,6 +49,15 @@ modules.define('utils',
     };
 
     /**
+     * Resolve path to assets files
+     * @param {Object} data - assets config
+     * @returns {String}
+     */
+    utils.getAssetsBlocks = function(data) {
+        return path.join(cwd, data.level + '.blocks');
+    };
+
+    /**
      * Build app full url
      * @param {Object} req - current request
      * @returns {string}

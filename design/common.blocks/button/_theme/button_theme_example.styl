@@ -1,0 +1,244 @@
+.button_theme_example
+{
+    font-family: $base_font_family;
+
+    position: relative;
+    display:  inline-block;
+
+    margin:  0;
+    padding: 0;
+
+    user-select: none;
+
+    border:        0;
+    border-radius: 6px;
+
+    outline: 0;
+
+    text-align:  center;
+    white-space: nowrap;
+
+    transition: all 200ms ease;
+
+    color: #000;
+
+    font-weight: 100;
+
+    background: #eee;
+
+    &:before
+    {
+        position: absolute;
+        top:      1px;
+        right:    1px;
+        bottom:   1px;
+        left:     1px;
+
+        content: '';
+
+        border-radius: 6px;
+
+        transition: all 200ms ease;
+
+        background: #eee;
+    }
+
+    &::-moz-focus-inner
+    {
+        padding: 0;
+
+        border: 0;
+    }
+
+    .button__text
+    {
+        overflow: hidden;
+
+        text-overflow:  ellipsis;
+        vertical-align: top;
+    }
+
+    .button__text
+    {
+        /*
+         * These rules fixes Opera 12+ && IE 9 bug with extra top margin when pressed
+         * Warning: bug still can be reproduced by clicking on button's border
+         * TODO: try to fix
+         */
+        position: relative;
+        display:  inline-block;
+    }
+
+    // .button__icon
+    // {
+    //     position: relative;
+    // }
+
+    &.button_type_link
+    {
+        text-decoration: none;
+    }
+
+    &.button_mode_icon
+    {
+        color: #262d4c;
+
+        background: transparent;
+
+        &:before
+        {
+            background: transparent;
+        }
+
+        &.button_hovered
+        {
+            color: #87bb4f;
+
+            &:before
+            {
+                background: transparent;
+            }
+        }
+    }
+
+    &.button_hovered
+    {
+        cursor: pointer;
+
+        &:before
+        {
+            background: lighten(#eee, 10%);
+        }
+    }
+
+    // &.button_focused-hard
+    // {
+    //     z-index: 1;
+    //
+    //     background: rgba(0, 212, 150, 0.4);
+    // }
+
+    // &.button_pressed:before
+    // {
+    //     background: #87bb4f;
+    // }
+
+    // &.button_view_action
+    // {
+    //     font-weight: 500;
+    //
+    //     background:  $green;
+    //     color:       #fff;
+    //
+    //     &:before
+    //     {
+    //         background: $green;
+    //     }
+    //
+    //     &.button_pressed:before
+    //     {
+    //         background: $green;
+    //     }
+    //
+    //     &.button_hovered
+    //     {
+    //         // background: lighten($green, 5%);
+    //
+    //         &:before
+    //         {
+    //             // background: lighten($green, 5%);
+    //         }
+    //     }
+    // }
+    //
+    // &.button_view_pseudo
+    // {
+    //     overflow: hidden;
+    //
+    //     background: #fff;
+    //
+    //     &:before
+    //     {
+    //         background: 0;
+    //
+    //         border: $gray dotted $btns_border_size;
+    //     }
+    //
+    //     &.button_hovered:before
+    //     {
+    //
+    //         border-color: $green_rgba;
+    //     }
+    // }
+    //
+    // &.button_disabled
+    // {
+    //     background: #fff;
+    //
+    //     &:before
+    //     {
+    //         display: none;
+    //     }
+    //
+    //     &.button_checked:before
+    //     {
+    //         display: block;
+    //
+    //         background: #ffeba0;
+    //     }
+    //
+    //     .button__text
+    //     {
+    //         color: #aaa;
+    //     }
+    //
+    //     .icon
+    //     {
+    //         opacity: 0.3;
+    //     }
+    // }
+
+    &.button_size_s
+    {
+        font-size:   remify(16px);
+        line-height: remify(16px);
+
+        .button__text
+        {
+            padding: 0 5px;
+        }
+    }
+
+    // &.button_size_m
+    // {
+    //     font-size:   $btns_font_size_m;
+    //     line-height: $control_size_m;
+    //
+    //     .button__text
+    //     {
+    //         margin: 0 $btns_padding_s;
+    //     }
+    // }
+    //
+    // &.button_size_l
+    // {
+    //     font-size:   $btns_font_size_l;
+    //     line-height: $control_size_l;
+    //
+    //     .button__text
+    //     {
+    //         margin: 0 $btns_padding_l;
+    //     }
+    // }
+
+    &.button_size_xl
+    {
+        font-size:   remify(24px);
+        line-height: remify(72px);
+
+        .button__text
+        {
+            padding: 0 40px;
+        }
+    }
+}

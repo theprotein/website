@@ -183,6 +183,108 @@ module.exports = function(bh) {
                     {
                         elem : 'actions',
                         content : [
+                            {
+                                block : 'yes-you-can',
+                                control : [
+                                    {
+                                        block : 'button',
+                                        mods : { theme : 'example', size : 'xl', type : 'link' },
+                                        url : '#',
+                                        text : 'Hey designer!'
+                                    }
+                                ],
+                                settings : [
+                                    {
+                                        block : 'button',
+                                        mods : { theme : 'example', size : 's', type : 'link', mode : 'icon' },
+                                        url : '#',
+                                        text : '+'
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                block : 'promo',
+                content : [
+                    {
+                        elem : 'heading',
+                        content : [
+                            {
+                                block : 'heading',
+                                lvl : 2,
+                                content : 'Use your components in UI builder'
+                            }
+                        ]
+                    },
+                    {
+                        elem : 'description',
+                        content : [
+                            {
+                                block : 'paragraph',
+                                mods : { type : 'lead' },
+                                content : [
+                                    'UI builder uses the methodology of the grid interface. ',
+                                    'Each component has a strict order, <br>',
+                                    'but are completely independent of each other.'
+                                ]
+                            },
+                            {
+                                block : 'paragraph',
+                                content : [
+                                    'Developement of interfaces using drag and drop has nothing to do with reality. ',
+                                    'In this way, the designers used to build mockups. <br> ',
+                                    'Protein is based on a different, more progressive concept that allows for the design of a markup language <br>',
+                                    'and edit components familiar to designers fashion. '
+                                ]
+                            },
+                            {
+                                block : 'paragraph',
+                                content : [
+                                    'Awesome interface can be constructed differently.'
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        elem : 'actions',
+                        content : [
+                            {
+                                block : 'image',
+                                url : 'image/_feature/image_feature_prototype.png'
+                            }
+                        ]
+                    },
+                    {
+                        block : 'paragraph',
+                        content : [
+                            'If you think that the editor is not enough to build ',
+                            'the functional interface. Although it is unlikely, ',
+                            'of course, we tried very hard. <br> ',
+                            'You can always edit the code in your favorite editor, by synchronizing ',
+                            'with the repository on GitHub.'
+                        ]
+                    }
+                ]
+            },
+            {
+                block : 'promo',
+                content : [
+                    {
+                        elem : 'heading',
+                        content : [
+                            {
+                                block : 'heading',
+                                lvl : 2,
+                                content : 'Integrate projects with external services'
+                            }
+                        ]
+                    },
+                    {
+                        elem : 'actions',
+                        content : [
 
                         ]
                     }

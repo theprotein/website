@@ -15,6 +15,10 @@
         "level" : "desktop",
         "bundle" : "index"
     },
+    "assets" : {
+        "level" : "assets",
+        "bundle" : "index"
+    },
     "port"     : 9000,
     "baseUrl"  : "/",
     "log" : {

@@ -7,6 +7,9 @@
         { block : 'feature', mods : { theme : 'proto' } },
         { block : 'icon', mods : { theme : 'proto' } },
         { block : 'row' },
-        { block : 'button', mods : { theme : 'proto', type : 'link' } }
+        { block : 'image' },
+        { block : 'yes-you-can' },
+        { block : 'button', mods : { theme : 'proto', type : 'link' } },
+        { block : 'button', mods : { theme : 'example', type : 'link' } }
     ]
 }]

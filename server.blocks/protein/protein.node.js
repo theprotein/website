@@ -20,8 +20,8 @@ modules.define('protein',
     app.use(body.urlencoded({ extended : true }));
     app.use(body.json());
 
-    // Use local static resources in dev and stage env
-    (utils.isDev() || utils.isStage()) && app.use(express.static(utils.getStaticLevel(config.get('static'))));
+    app.use(express.static(utils.getStaticLevel(config.get('static'))));
+    app.use(express.static(utils.getAssetsBlocks(config.get('assets'))));
 
     // Setup log middleware
     app.post('/system/log', log.middle);
