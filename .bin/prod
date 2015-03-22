@@ -1,0 +1,3 @@
+#!/bin/bash
+
+node server.bundles/index/index.node.js

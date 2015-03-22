@@ -1,1 +1,1 @@
-web: .bin/dev
+web: .bin/prod
