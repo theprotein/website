@@ -16,6 +16,7 @@ test/libs
 *.bundles/*/*
 !*.bundles/*/index.bemdecl.js
 !*.bundles/*/index.min.js
+!*.bundles/*/index.bh.js
 !*.bundles/*/index.min.css
 !*.bundles/*/index.node.js
 
