@@ -10,7 +10,7 @@ modules.require(
      */
     global.use(protein);
 
-    global.listen(config.get('port'), function(err) {
+    global.listen(process.env.PORT || config.get('port'), function(err) {
         log.info('start worker: ' + process.env.WORKER_ID);
         log.info('start PID: ' + process.pid);
 
