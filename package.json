@@ -89,7 +89,8 @@
     "specs": "npm run test-specs",
     "tmpls": "npm run test-tmpls",
     "unit": "npm run test-specs",
-    "coverage": "ISTANBUL_COVERAGE=yes npm run specs && istanbul report --include coverage.json html text && istanbul check-coverage --include coverage.json"
+    "coverage": "ISTANBUL_COVERAGE=yes npm run specs && istanbul report --include coverage.json html text && istanbul check-coverage --include coverage.json",
+    "postinstall": "npm run deps"
   },
   "engines": {
     "node": ">=0.10"
