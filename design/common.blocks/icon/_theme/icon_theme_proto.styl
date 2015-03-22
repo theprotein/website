@@ -1,5 +1,6 @@
 $features = ( 'components' 'prototype' 'guidelines' 'user-flow' 'integrations' )
 $services = ( 'sketch' 'atom' 'github' 'bitbacket' 'travis' 'illustrator' 'code-climate' )
+$socials = ('facebook' 'twitter' 'vimeo' 'github' 'linkedin')
 
 $icon_size_s  = 25px;
 $icon_size_m  = 35px;
@@ -50,6 +51,14 @@ $icon_size_xl = 100px;
         &.icon_service_{$name}
         {
             background-image: url('../_service/icon_service_' + $name + '.png');
+        }
+    }
+
+    for $name in $socials
+    {
+        &.icon_social_{$name}
+        {
+            background-image: url('../_social/icon_social_' + $name + '.png');
         }
     }
 

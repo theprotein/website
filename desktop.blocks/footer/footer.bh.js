@@ -52,6 +52,36 @@ module.exports = function(bh) {
                 ]
             },
             {
+                block : 'social-links',
+                content : [
+                    {
+                        block : 'icon',
+                        mix : { block : 'social-links', elem : 'link' },
+                        mods : { theme : 'proto', social : 'facebook', size : 's' }
+                    },
+                    {
+                        block : 'icon',
+                        mix : { block : 'social-links', elem : 'link' },
+                        mods : { theme : 'proto', social : 'twitter', size : 's' }
+                    },
+                    {
+                        block : 'icon',
+                        mix : { block : 'social-links', elem : 'link' },
+                        mods : { theme : 'proto', social : 'github', size : 's' }
+                    },
+                    {
+                        block : 'icon',
+                        mix : { block : 'social-links', elem : 'link' },
+                        mods : { theme : 'proto', social : 'linkedin', size : 's' }
+                    },
+                    {
+                        block : 'icon',
+                        mix : { block : 'social-links', elem : 'link' },
+                        mods : { theme : 'proto', social : 'vimeo', size : 's' }
+                    }
+                ]
+            },
+            {
                 block : 'logo',
                 mods : { theme : 'proto', size : 'm' },
             },

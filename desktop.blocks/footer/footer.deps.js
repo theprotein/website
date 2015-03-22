@@ -1,5 +1,7 @@
 [{
     shouldDeps : [
+        { block : 'social-links' },
+        { block : 'icon', mods : { theme : 'proto' } },
         { block : 'logo', mods : { theme : 'proto' } },
         { block : 'link', mods : { theme : 'proto' } },
         { block : 'menu', mods : { theme : 'proto' } },
