@@ -1,5 +1,8 @@
 module.exports = function(bh) {
     bh.match('page', function(ctx, json) {
+        var content = json.view;
+        content.mix = { block : 'page', elem : 'content' };
+
         ctx.content([
             {
                 elem : 'header',
@@ -7,6 +10,7 @@ module.exports = function(bh) {
                     {
                         block : 'header',
                         content : [
+                            // TODO: share icon like registred sign
                             {
                                 block : 'logo',
                                 mods : { theme : 'proto', view : 'full', mode : 'default', size : 'xl' },
@@ -15,26 +19,11 @@ module.exports = function(bh) {
                     }
                 ]
             },
-            {
-                elem : 'content',
-                content : json.view
-            },
+            content,
             {
                 elem : 'footer',
                 content : [
-                    {
-                        block : 'footer',
-                        content : [
-                            {
-                                block : 'logo',
-                                mods : { theme : 'proto', view : 'letter', mode : 'desaturate', size : 'm' },
-                            },
-                            {
-                                block : 'copyright',
-                                content : 'Copyright © The Protein Corp., 2015'
-                            }
-                        ]
-                    }
+                    { block : 'footer' }
                 ]
             }
         ]);

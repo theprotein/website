@@ -7,16 +7,8 @@ module.exports = function(bh) {
                     {
                         elem : 'letter',
                         content : 'P'
-                    },
-                    {
-                        elem : 'title',
-                        content : 'Protein'
                     }
                 ]
-            },
-            {
-                elem : 'description',
-                content : 'Front end development workflow'
             }
         ]);
     });

@@ -2,6 +2,22 @@
 {
     display: inline-block;
 
+    transition: color 200ms ease;
+
+    .logo__letter
+    {
+        font-family: $logo_font_family;
+
+        cursor: default;
+    }
+
+    .logo__title, .logo__description
+    {
+        font-family: $base_font_family;
+        font-weight: $logo_font_weight;
+        color:       $base_font_color;
+    }
+
     &.logo_mode_default
     {
         color: #262d4c;
@@ -10,26 +26,11 @@
     &.logo_mode_desaturate
     {
         color: #a7a7a7;
-    }
 
-    &.logo_view_letter
-    {
-        .logo__title, .logo__description
+        &:hover
         {
-            display: none;
+            color: #262d4c;
         }
-    }
-
-    .logo__letter
-    {
-        font-family: $logo_font_family;
-    }
-
-    .logo__title, .logo__description
-    {
-        font-family: $base_font_family;
-        font-weight: $logo_font_weight;
-        color:       $base_font_color;
     }
 
     &.logo_view_full
@@ -41,19 +42,19 @@
     {
         .logo__letter
         {
-            font-size: remify(128px);
+            font-size: 6rem;
         }
 
         .logo__title
         {
-            font-size: remify(56px);
+            font-size: 3rem;
         }
 
         .logo__description
         {
             padding-top: 10px;
 
-            font-size: remify(24px);
+            font-size: 1.5rem;
         }
     }
 
@@ -61,19 +62,19 @@
     {
         .logo__letter
         {
-            font-size: remify(64px);
+            font-size: 4rem;
         }
 
         .logo__title
         {
-            font-size: remify(28px);
+            font-size: 1.2rem;
         }
 
         .logo__description
         {
             padding-top: 5px;
 
-            font-size: remify(16px);
+            font-size: 1rem;
         }
     }
 }

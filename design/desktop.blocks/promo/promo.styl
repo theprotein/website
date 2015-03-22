@@ -2,11 +2,30 @@
 {
     text-align: center;
 
-    padding: 40px 0 40px;
+    padding: 40px 0;
+
+    max-width: $page_width;
+
+    margin: auto;
 
     &:first-child
     {
-        padding-top: 80px;
+        padding-top:    80px;
+        padding-bottom: 20px;
+    }
+
+    &.promo_view_color
+    {
+        transition: background 400ms ease;
+
+        padding-bottom: 160px;
+
+        max-width: 100%;
+
+        &.promo_colorized
+        {
+            background: #FCC961;
+        }
     }
 }
 
@@ -18,4 +37,14 @@
 .promo__actions
 {
     padding-top: 60px;
+}
+
+.promo__icon
+{
+    margin-left: 20px;
+
+    &:first-child
+    {
+        margin-left: 0;
+    }
 }

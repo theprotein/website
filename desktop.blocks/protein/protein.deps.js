@@ -1,8 +1,8 @@
 [{
     shouldDeps : [
         { block : 'features' },
-        { block : 'heading' },
-        { block : 'paragraph', mods : { type : 'lead' } },
+        { block : 'heading', mods : { theme : 'proto' } },
+        { block : 'paragraph', mods : { type : 'lead', theme : 'proto' } },
         { block : 'promo' },
         { block : 'feature', mods : { theme : 'proto' } },
         { block : 'icon', mods : { theme : 'proto' } },
