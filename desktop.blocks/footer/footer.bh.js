@@ -86,6 +86,18 @@ module.exports = function(bh) {
                 mods : { theme : 'proto', size : 'm' },
             },
             {
+                block : 'love',
+                content : [
+                    'Made with ',
+                    {
+                        elem : 'heart',
+                        tag : 'span',
+                        content : '❤'
+                    },
+                    ' in Russia'
+                ]
+            },
+            {
                 block : 'copyright',
                 content : 'Copyright © The Protein Corp., 2015'
             }

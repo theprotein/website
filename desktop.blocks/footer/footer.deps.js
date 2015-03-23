@@ -6,6 +6,7 @@
         { block : 'link', mods : { theme : 'proto' } },
         { block : 'menu', mods : { theme : 'proto' } },
         { block : 'menu-item', mods : { theme : 'proto', type : 'link' } },
+        { block : 'love' },
         { block : 'copyright' }
     ]
 }]
