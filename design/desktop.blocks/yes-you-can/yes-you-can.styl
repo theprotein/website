@@ -1,6 +1,10 @@
 .yes-you-can
 {
+    position: relative;
+
     display: inline-block;
+
+    padding-top: 15px;
 
     box-sizing: border-box;
 
@@ -11,6 +15,7 @@
             border: 1px dotted #cecece;
         }
 
+        .yes-you-can__info,
         .yes-you-can__settings
         {
             visibility: visible;
@@ -25,7 +30,27 @@
         border:        1px dotted transparent;
 
         transition: border-color 200ms ease;
+    }
 
+    .yes-you-can__info
+    {
+        position: absolute;
+
+        top:  0;
+        left: 0;
+
+        font-family: $base_font_family;
+        font-weight: 100;
+
+        font-size: remify(12px);
+
+        color: #a7a7a7;
+
+        visibility: hidden;
+
+        padding-bottom: 5px;
+
+        transition: border-color 200ms ease;
     }
 
     .yes-you-can__settings
@@ -33,5 +58,7 @@
         visibility: hidden;
 
         padding-top: 10px;
+
+        transition: border-color 200ms ease;
     }
 }

@@ -4,6 +4,10 @@ module.exports = function(bh) {
 
         ctx.content([
             {
+                elem : 'info',
+                content : json.info
+            },
+            {
                 elem : 'control',
                 content : json.control
             },

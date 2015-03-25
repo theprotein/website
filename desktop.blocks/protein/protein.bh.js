@@ -182,7 +182,7 @@ module.exports = function(bh) {
                                 control : [
                                     {
                                         block : 'button',
-                                        mods : { theme : 'example', size : 'xl', type : 'link' },
+                                        mods : { theme : 'example', size : 'xl' },
                                         url : '#',
                                         text : 'Hey designer!'
                                     }
@@ -190,8 +190,7 @@ module.exports = function(bh) {
                                 settings : [
                                     {
                                         block : 'button',
-                                        mods : { theme : 'example', size : 's', type : 'link', mode : 'icon' },
-                                        url : '#',
+                                        mods : { theme : 'example', size : 's', mode : 'icon' },
                                         text : '+'
                                     }
                                 ]

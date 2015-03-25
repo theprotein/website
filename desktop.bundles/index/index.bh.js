@@ -78,7 +78,7 @@ dropRequireCache(require, require.resolve("../../desktop.blocks/footer/footer.bh
 require("../../desktop.blocks/footer/footer.bh.js")(bh);
 dropRequireCache(require, require.resolve("../../libs/bem-components/common.blocks/menu-item/_type/menu-item_type_link.bh.js"));
 require("../../libs/bem-components/common.blocks/menu-item/_type/menu-item_type_link.bh.js")(bh);
-dropRequireCache(require, require.resolve("../../common.blocks/yes-you-can/yes-you-can.bh.js"));
-require("../../common.blocks/yes-you-can/yes-you-can.bh.js")(bh);
+dropRequireCache(require, require.resolve("../../desktop.blocks/yes-you-can/yes-you-can.bh.js"));
+require("../../desktop.blocks/yes-you-can/yes-you-can.bh.js")(bh);
 
 module.exports = bh;

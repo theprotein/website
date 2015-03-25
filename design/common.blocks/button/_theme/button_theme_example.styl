@@ -101,6 +101,28 @@
         }
     }
 
+    &.button_view_action
+    {
+        color: #fff;
+
+        background: #439fe0;
+
+        &:before
+        {
+            background: #439fe0;
+        }
+
+        &.button_hovered
+        {
+            color: #fff;
+
+            &:before
+            {
+                background: lighten(#439fe0, 20%);
+            }
+        }
+    }
+
     &.button_hovered
     {
         cursor: pointer;
