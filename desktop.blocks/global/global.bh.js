@@ -4,6 +4,7 @@ module.exports = function(bh) {
             block : 'page',
             mods : { theme : 'proto' },
             title : 'Protein',
+            favicon : 'favicon/favicon.png',
             styles : [
                 { elem : 'css', url : '//fonts.googleapis.com/css?family=Arvo:700' },
                 { elem : 'css', url : '//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' },

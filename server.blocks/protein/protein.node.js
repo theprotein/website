@@ -7,6 +7,7 @@ modules.define('protein',
         path    = require('path'),
         cookies = require('cookie-parser'),
         session = require('express-session'),
+        favicon = require('express-favicon'),
         body    = require('body-parser');
 
     var app = express();
