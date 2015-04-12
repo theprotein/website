@@ -281,6 +281,45 @@ module.exports = function(bh) {
                                 block : 'heading',
                                 mods : { theme : 'proto' },
                                 lvl : 2,
+                                content : 'See users interactions on live user flow'
+                            }
+                        ]
+                    },
+                    {
+                        elem : 'description',
+                        content : [
+                            {
+                                block : 'paragraph',
+                                mods : { theme : 'proto' },
+                                content : [
+                                    'We work hard on Protein beta version and you can will be one of ',
+                                    'firstly happiness users.<br>',
+                                    'Now you can preorder yearly license with optimal sale.'
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        elem : 'actions',
+                        content : [
+                            {
+                                block : 'image',
+                                url : 'image/_feature/image_feature_user-flow.svg'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                block : 'promo',
+                content : [
+                    {
+                        elem : 'heading',
+                        content : [
+                            {
+                                block : 'heading',
+                                mods : { theme : 'proto' },
+                                lvl : 2,
                                 content : 'Integrate projects with external services'
                             }
                         ]
@@ -352,45 +391,6 @@ module.exports = function(bh) {
                                 block : 'icon',
                                 mix : { block : 'promo', elem : 'icon' },
                                 mods : { theme : 'proto', service : 'code-climate', size : 'l' }
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                block : 'promo',
-                content : [
-                    {
-                        elem : 'heading',
-                        content : [
-                            {
-                                block : 'heading',
-                                mods : { theme : 'proto' },
-                                lvl : 2,
-                                content : 'User Flow'
-                            }
-                        ]
-                    },
-                    {
-                        elem : 'description',
-                        content : [
-                            {
-                                block : 'paragraph',
-                                mods : { theme : 'proto' },
-                                content : [
-                                    'We work hard on Protein beta version and you can will be one of ',
-                                    'firstly happiness users.<br>',
-                                    'Now you can preorder yearly license with optimal sale.'
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        elem : 'actions',
-                        content : [
-                            {
-                                block : 'image',
-                                url : 'image/_feature/image_feature_user-flow.svg'
                             }
                         ]
                     }
