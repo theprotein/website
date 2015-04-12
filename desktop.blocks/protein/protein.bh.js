@@ -359,6 +359,45 @@ module.exports = function(bh) {
             },
             {
                 block : 'promo',
+                content : [
+                    {
+                        elem : 'heading',
+                        content : [
+                            {
+                                block : 'heading',
+                                mods : { theme : 'proto' },
+                                lvl : 2,
+                                content : 'User Flow'
+                            }
+                        ]
+                    },
+                    {
+                        elem : 'description',
+                        content : [
+                            {
+                                block : 'paragraph',
+                                mods : { theme : 'proto' },
+                                content : [
+                                    'We work hard on Protein beta version and you can will be one of ',
+                                    'firstly happiness users.<br>',
+                                    'Now you can preorder yearly license with optimal sale.'
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        elem : 'actions',
+                        content : [
+                            {
+                                block : 'image',
+                                url : 'image/_feature/image_feature_user-flow.svg'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                block : 'promo',
                 mods : { view : 'color' },
                 js : true,
                 content : [
