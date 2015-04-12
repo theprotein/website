@@ -5,6 +5,9 @@ module.exports = function(bh) {
             mods : { theme : 'proto' },
             title : 'Protein',
             favicon : 'favicon/favicon.png',
+            head : [
+                { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } }
+            ],
             styles : [
                 { elem : 'css', url : '//fonts.googleapis.com/css?family=Arvo:700' },
                 { elem : 'css', url : '//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' },

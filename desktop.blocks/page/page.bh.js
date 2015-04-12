@@ -10,7 +10,6 @@ module.exports = function(bh) {
                     {
                         block : 'header',
                         content : [
-                            // TODO: share icon like registred sign
                             {
                                 block : 'logo',
                                 mods : { theme : 'proto', view : 'full', mode : 'default', size : 'xl' },

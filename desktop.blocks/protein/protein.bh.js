@@ -8,102 +8,146 @@ module.exports = function(bh) {
                         block : 'row',
                         content : [
                             {
-                                block : 'feature',
+                                elem : 'col',
+                                mods : { m : true, sw : 6 },
                                 content : [
                                     {
-                                        elem : 'icon',
+                                        block : 'feature',
                                         content : [
                                             {
-                                                block : 'icon',
-                                                mods : { theme : 'proto', size : 'xl', feature : 'components' }
+                                                elem : 'icon',
+                                                content : [
+                                                    {
+                                                        block : 'icon',
+                                                        mods : {
+                                                            theme : 'proto',
+                                                            size : 'xl',
+                                                            feature : 'components'
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                elem : 'title',
+                                                content : 'Live components'
                                             }
                                         ]
-                                    },
-                                    {
-                                        elem : 'title',
-                                        content : 'Live components'
                                     }
                                 ]
                             },
                             {
-                                block : 'feature',
+                                elem : 'col',
+                                mods : { m : true, sw : 6 },
                                 content : [
                                     {
-                                        elem : 'icon',
+                                        block : 'feature',
                                         content : [
                                             {
-                                                block : 'icon',
-                                                mods : { theme : 'proto', size : 'xl', feature : 'prototype' }
+                                                elem : 'icon',
+                                                content : [
+                                                    {
+                                                        block : 'icon',
+                                                        mods : {
+                                                            theme : 'proto',
+                                                            size : 'xl',
+                                                            feature : 'prototype'
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                elem : 'title',
+                                                content : 'Live interfaces'
                                             }
                                         ]
-                                    },
-                                    {
-                                        elem : 'title',
-                                        content : 'Live interfaces'
                                     }
                                 ]
                             },
                             {
-                                block : 'feature',
+                                elem : 'col',
+                                mods : { m : true, sw : 6 },
                                 content : [
                                     {
-                                        elem : 'icon',
+                                        block : 'feature',
                                         content : [
                                             {
-                                                block : 'icon',
-                                                mods : { theme : 'proto', size : 'xl', feature : 'guidelines' }
+                                                elem : 'icon',
+                                                content : [
+                                                    {
+                                                        block : 'icon',
+                                                        mods : {
+                                                            theme : 'proto',
+                                                            size : 'xl',
+                                                            feature : 'guidelines'
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                elem : 'title',
+                                                content : 'Live guidelines'
                                             }
                                         ]
-                                    },
-                                    {
-                                        elem : 'title',
-                                        content : 'Live guidelines'
                                     }
                                 ]
                             },
                             {
-                                block : 'feature',
+                                elem : 'col',
+                                mods : { m : true, sw : 6 },
                                 content : [
                                     {
-                                        elem : 'icon',
+                                        block : 'feature',
                                         content : [
                                             {
-                                                block : 'icon',
-                                                mods : { theme : 'proto', size : 'xl', feature : 'user-flow' }
+                                                elem : 'icon',
+                                                content : [
+                                                    {
+                                                        block : 'icon',
+                                                        mods : {
+                                                            theme : 'proto',
+                                                            size : 'xl',
+                                                            feature : 'user-flow'
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                elem : 'title',
+                                                content : 'Live user flow'
                                             }
                                         ]
-                                    },
-                                    {
-                                        elem : 'title',
-                                        content : 'Live user flow'
                                     }
                                 ]
                             },
                             {
-                                block : 'feature',
+                                elem : 'col',
+                                mods : { m : true, sw : 12 },
                                 content : [
                                     {
-                                        elem : 'icon',
+                                        block : 'feature',
                                         content : [
                                             {
-                                                block : 'icon',
-                                                mods : { theme : 'proto', size : 'xl', feature : 'integrations' }
+                                                elem : 'icon',
+                                                content : [
+                                                    {
+                                                        block : 'icon',
+                                                        mods : {
+                                                            theme : 'proto',
+                                                            size : 'xl',
+                                                            feature : 'integrations'
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                elem : 'title',
+                                                content : 'Awesome integrations'
                                             }
                                         ]
-                                    },
-                                    {
-                                        elem : 'title',
-                                        content : 'Awesome integrations'
                                     }
                                 ]
                             }
-                        ].map(function(item) {
-                            return {
-                                elem : 'col',
-                                mods : { s : true },
-                                content : item
-                            };
-                        })
+                        ]
                     }
                 ]
             },
@@ -116,7 +160,11 @@ module.exports = function(bh) {
                         content : [
                             {
                                 block : 'button',
-                                mods : { theme : 'proto', size : 'xl', type : 'link' },
+                                mods : {
+                                    theme : 'proto',
+                                    size : 'xl',
+                                    type : 'link'
+                                },
                                 url : '#',
                                 text : 'Be founding member #1124'
                             }
@@ -190,7 +238,11 @@ module.exports = function(bh) {
                                 settings : [
                                     {
                                         block : 'button',
-                                        mods : { theme : 'example', size : 's', mode : 'icon' },
+                                        mods : {
+                                            theme : 'example',
+                                            size : 's',
+                                            mode : 'icon'
+                                        },
                                         text : '+'
                                     }
                                 ]
@@ -360,37 +412,65 @@ module.exports = function(bh) {
                             {
                                 block : 'icon',
                                 mix : { block : 'promo', elem : 'icon' },
-                                mods : { theme : 'proto', service : 'sketch', size : 'l' }
+                                mods : {
+                                    theme : 'proto',
+                                    service : 'sketch',
+                                    size : 'l'
+                                }
                             },
                             {
                                 block : 'icon',
                                 mix : { block : 'promo', elem : 'icon' },
-                                mods : { theme : 'proto', service : 'illustrator', size : 'l' }
+                                mods : {
+                                    theme : 'proto',
+                                    service : 'illustrator',
+                                    size : 'l'
+                                }
                             },
                             {
                                 block : 'icon',
                                 mix : { block : 'promo', elem : 'icon' },
-                                mods : { theme : 'proto', service : 'atom', size : 'l' }
+                                mods : {
+                                    theme : 'proto',
+                                    service : 'atom',
+                                    size : 'l'
+                                }
                             },
                             {
                                 block : 'icon',
                                 mix : { block : 'promo', elem : 'icon' },
-                                mods : { theme : 'proto', service : 'github', size : 'l' }
+                                mods : {
+                                    theme : 'proto',
+                                    service : 'github',
+                                    size : 'l'
+                                }
                             },
                             {
                                 block : 'icon',
                                 mix : { block : 'promo', elem : 'icon' },
-                                mods : { theme : 'proto', service : 'bitbacket', size : 'l' }
+                                mods : {
+                                    theme : 'proto',
+                                    service : 'bitbacket',
+                                    size : 'l'
+                                }
                             },
                             {
                                 block : 'icon',
                                 mix : { block : 'promo', elem : 'icon' },
-                                mods : { theme : 'proto', service : 'travis', size : 'l' }
+                                mods : {
+                                    theme : 'proto',
+                                    service : 'travis',
+                                    size : 'l'
+                                }
                             },
                             {
                                 block : 'icon',
                                 mix : { block : 'promo', elem : 'icon' },
-                                mods : { theme : 'proto', service : 'code-climate', size : 'l' }
+                                mods : {
+                                    theme : 'proto',
+                                    service : 'code-climate',
+                                    size : 'l'
+                                }
                             }
                         ]
                     }
@@ -431,7 +511,12 @@ module.exports = function(bh) {
                         content : [
                             {
                                 block : 'button',
-                                mods : { theme : 'proto', view : 'action', size : 'xl', type : 'link' },
+                                mods : {
+                                    theme : 'proto',
+                                    view : 'action',
+                                    size : 'xl',
+                                    type : 'link'
+                                },
                                 url : '#',
                                 text : 'Preorder Protein'
                             }
