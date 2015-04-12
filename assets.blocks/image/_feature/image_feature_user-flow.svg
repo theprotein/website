@@ -788,7 +788,7 @@
 <rect x="780" y="250" fill-rule="evenodd" clip-rule="evenodd" fill="#8C90A5" width="37" height="3"/>
 <rect x="840" y="215" fill-rule="evenodd" clip-rule="evenodd" fill="#C7CAD8" width="31" height="31"/>
 <rect x="837" y="250" fill-rule="evenodd" clip-rule="evenodd" fill="#8C90A5" width="37" height="3"/>
-<path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" fill="#000033" d="M620.147,375H416.853
+<path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" fill="#C7CAD8" d="M620.147,375H416.853
 	c-16.211,0-31.352,9.995-33.817,22.5c-2.466,12.506,8.677,22.5,24.888,22.5H547.32l-34.82,96.714L566.387,420h44.831
 	c16.211,0,31.352-9.994,33.817-22.5C647.501,384.995,636.358,375,620.147,375z"/>
 <path fill-rule="evenodd" clip-rule="evenodd" fill="#333333" d="M591.647,332H388.353C372.142,332,359,345.207,359,361.5
