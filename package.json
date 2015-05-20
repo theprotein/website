@@ -47,7 +47,7 @@
     "make": "./node_modules/.bin/enb make --no-cache",
     "dev": "./node_modules/.bin/enb make && node server.bundles/index/index.node.js",
     "production": "YENV=production NODE_ENV=production BEM_ENV=production node ./configs/production/index.js",
-    "deps": "bower i",
+    "deps": "./node_modules/.bin/bower i",
     "lint": "jshint-groups && jscs .",
     "specs": "npm run test-specs",
     "postinstall": "npm run deps"
