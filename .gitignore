@@ -13,6 +13,7 @@ test/libs
 
 
 *.bundles/*/*
+!assets.bundles/*
 !*.bundles/*/index.bemjson.js
 !*.bundles/*/_index.js
 !*.bundles/*/_index.css
