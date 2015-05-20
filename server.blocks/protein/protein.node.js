@@ -1,8 +1,10 @@
-modules.define('protein',
-    ['log', 'config', 'utils', 'router', 'page'],
-    function(provide, log, config, utils, router, page) {
+modules.require(
+    ['log', 'config', 'router'],
+    function(log, config, router) {
 
-    var vow     = require('vow'),
+    var path    = require('path'),
+        cwd     = process.cwd(),
+        vow     = require('vow'),
         express = require('express'),
         path    = require('path'),
         cookies = require('cookie-parser'),
@@ -21,16 +23,21 @@ modules.define('protein',
     app.use(body.urlencoded({ extended : true }));
     app.use(body.json());
 
-    app.use(express.static(utils.getStaticLevel(config.get('static'))));
-    app.use(express.static(utils.getAssetsBlocks(config.get('assets'))));
+    app.use(express.static(path.join(cwd, 'desktop.bundles', 'index')));
 
-    // Setup log middleware
+    app.use('/assets.bundles', express.static(path.join(cwd, 'assets.bundles')));
+    app.use('/assets.bundles', express.static(path.join(cwd, 'assets.blocks')));
+
     app.post('/system/log', log.middle);
 
     app.use(router);
 
-    app.use(page);
+    app.listen(process.env.PORT || config.get('port'), function(err) {
+        log.info('start worker: ' + process.env.WORKER_ID);
+        log.info('start PID: ' + process.pid);
 
-provide(app);
+        log.verbose('protein-landing started on port:' + config.get('port'));
+        log.verbose('protein-landing environment: ' + config.get('env'));
+    });
 
 });

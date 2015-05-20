@@ -16,7 +16,7 @@ module.exports = function(bh) {
             },
             {
                 elem : 'description',
-                content : 'Front end development workflow'
+                content : 'New front end development workflow'
             }
         ]);
     });

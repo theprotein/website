@@ -1,4 +1,9 @@
 [{
+    mustDeps : [
+        { block : 'variables', mods : { theme : 'proto' } },
+        { block : 'heading' }
+    ]
+}, {
     shouldDeps : [
         { block : 'social-links' },
         { block : 'icon', mods : { theme : 'proto' } },

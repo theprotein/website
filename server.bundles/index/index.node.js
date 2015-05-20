@@ -6,7 +6,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.gnu.org/licenses/gpl.html
  *
- * @version 0.1.0
+ * @version 0.1.1
  */
 
 (function(global) {
@@ -123,6 +123,20 @@ var undef,
                 }
             },
 
+            getStat = function() {
+                var res = {},
+                    module;
+
+                for(var name in modulesStorage) {
+                    if(modulesStorage.hasOwnProperty(name)) {
+                        module = modulesStorage[name];
+                        (res[module.decl.state] || (res[module.decl.state] = [])).push(name);
+                    }
+                }
+
+                return res;
+            },
+
             onNextTick = function() {
                 waitForNextTick = false;
                 applyRequires();
@@ -146,6 +160,21 @@ var undef,
                 }
 
                 var decls = [],
+                    onDeclResolved = function(_, error) {
+                        if(error) {
+                            cb(null, error);
+                            return;
+                        }
+
+                        if(!--unresolvedDepsCnt) {
+                            var exports = [],
+                                i = 0, decl;
+                            while(decl = decls[i++]) {
+                                exports.push(decl.exports);
+                            }
+                            cb(exports);
+                        }
+                    },
                     i = 0, len = unresolvedDepsCnt,
                     dep, decl;
 
@@ -163,33 +192,9 @@ var undef,
                         decl = dep;
                     }
 
-                    if(decl.state === DECL_STATES.IN_RESOLVING &&
-                            curOptions.trackCircularDependencies &&
-                            isDependenceCircular(decl, path)) {
-                        cb(null, buildCircularDependenceError(decl, path));
-                        return;
-                    }
-
                     decls.push(decl);
 
-                    startDeclResolving(
-                        decl,
-                        path,
-                        function(_, error) {
-                            if(error) {
-                                cb(null, error);
-                                return;
-                            }
-
-                            if(!--unresolvedDepsCnt) {
-                                var exports = [],
-                                    i = 0, decl;
-                                while(decl = decls[i++]) {
-                                    exports.push(decl.exports);
-                                }
-                                cb(exports);
-                            }
-                        });
+                    startDeclResolving(decl, path, onDeclResolved);
                 }
             },
 
@@ -198,13 +203,14 @@ var undef,
                     cb(decl.exports);
                     return;
                 }
-                else {
-                    decl.dependents.push(cb);
-                }
-
-                if(decl.state === DECL_STATES.IN_RESOLVING) {
+                else if(decl.state === DECL_STATES.IN_RESOLVING) {
+                    curOptions.trackCircularDependencies && isDependenceCircular(decl, path)?
+                        cb(null, buildCircularDependenceError(decl, path)) :
+                        decl.dependents.push(cb);
                     return;
                 }
+
+                decl.dependents.push(cb);
 
                 if(decl.prev && !curOptions.allowMultipleDeclarations) {
                     provideError(decl, buildMultipleDeclarationError(decl));
@@ -278,7 +284,8 @@ var undef,
             require    : require,
             getState   : getState,
             isDefined  : isDefined,
-            setOptions : setOptions
+            setOptions : setOptions,
+            getStat    : getStat
         };
     },
 
@@ -442,17 +449,11 @@ dropRequireCache(require, require.resolve("../../libs/bem-core/common.blocks/fun
 require("../../libs/bem-core/common.blocks/functions/functions.vanilla.js")
 dropRequireCache(require, require.resolve("../../libs/bem-core/common.blocks/events/events.vanilla.js"));
 require("../../libs/bem-core/common.blocks/events/events.vanilla.js")
-dropRequireCache(require, require.resolve("../../server.blocks/global/global.node.js"));
-require("../../server.blocks/global/global.node.js")
-dropRequireCache(require, require.resolve("../../server.blocks/config/config.node.js"));
-require("../../server.blocks/config/config.node.js")
-dropRequireCache(require, require.resolve("../../server.blocks/utils/utils.node.js"));
-require("../../server.blocks/utils/utils.node.js")
-dropRequireCache(require, require.resolve("../../server.blocks/log/log.node.js"));
-require("../../server.blocks/log/log.node.js")
-dropRequireCache(require, require.resolve("../../server.blocks/protein/protein.node.js"));
-require("../../server.blocks/protein/protein.node.js")
 dropRequireCache(require, require.resolve("../../server.blocks/router/router.node.js"));
 require("../../server.blocks/router/router.node.js")
-dropRequireCache(require, require.resolve("../../server.blocks/page/page.node.js"));
-require("../../server.blocks/page/page.node.js")
+dropRequireCache(require, require.resolve("../../server.blocks/log/log.node.js"));
+require("../../server.blocks/log/log.node.js")
+dropRequireCache(require, require.resolve("../../server.blocks/config/config.node.js"));
+require("../../server.blocks/config/config.node.js")
+dropRequireCache(require, require.resolve("../../server.blocks/protein/protein.node.js"));
+require("../../server.blocks/protein/protein.node.js")

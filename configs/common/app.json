@@ -1,24 +1,4 @@
 {
-    "bemhtml" : {
-        "level" : "desktop",
-        "bundle" : "index"
-    },
-    "bh" : {
-        "level" : "desktop",
-        "bundle" : "index"
-    },
-    "bemtree" : {
-        "level" : "desktop",
-        "bundle" : "index"
-    },
-    "static" : {
-        "level" : "desktop",
-        "bundle" : "index"
-    },
-    "assets" : {
-        "level" : "assets",
-        "bundle" : "index"
-    },
     "port"     : 9000,
     "baseUrl"  : "/",
     "log" : {

@@ -3,7 +3,6 @@ node_modules
 .tmp
 .enb/tmp
 .sass-cache
-.borschik
 
 libs
 test/libs
@@ -14,10 +13,10 @@ test/libs
 
 
 *.bundles/*/*
-!*.bundles/*/index.bemdecl.js
-!*.bundles/*/index.min.js
-!*.bundles/*/index.bh.js
-!*.bundles/*/index.min.css
+!*.bundles/*/index.bemjson.js
+!*.bundles/*/_index.js
+!*.bundles/*/_index.css
+!*.bundles/*/index.html
 !*.bundles/*/index.node.js
 
 /coverage

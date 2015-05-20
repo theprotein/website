@@ -6,7 +6,6 @@ modules.define('router',
         router  = express();
 
     router.get('/', function(req, res, next) {
-        req.view = { block : 'protein' };
 
         next();
     });
