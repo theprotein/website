@@ -38,6 +38,12 @@ dropRequireCache(require, require.resolve("../../libs/bem-components/common.bloc
 require("../../libs/bem-components/common.blocks/icon/icon.bh.js")(bh);
 dropRequireCache(require, require.resolve("../../libs/bem-typography/common.blocks/paragraph/paragraph.bh.js"));
 require("../../libs/bem-typography/common.blocks/paragraph/paragraph.bh.js")(bh);
+dropRequireCache(require, require.resolve("../../libs/bem-components/common.blocks/button/button.bh.js"));
+require("../../libs/bem-components/common.blocks/button/button.bh.js")(bh);
+dropRequireCache(require, require.resolve("../../libs/bem-components/common.blocks/button/_focused/button_focused.bh.js"));
+require("../../libs/bem-components/common.blocks/button/_focused/button_focused.bh.js")(bh);
+dropRequireCache(require, require.resolve("../../libs/bem-components/common.blocks/button/__text/button__text.bh.js"));
+require("../../libs/bem-components/common.blocks/button/__text/button__text.bh.js")(bh);
 dropRequireCache(require, require.resolve("../../libs/bem-components/common.blocks/link/link.bh.js"));
 require("../../libs/bem-components/common.blocks/link/link.bh.js")(bh);
 dropRequireCache(require, require.resolve("../../libs/bem-components/common.blocks/menu/menu.bh.js"));
@@ -54,6 +60,8 @@ dropRequireCache(require, require.resolve("../../common.blocks/logo/_view/logo_v
 require("../../common.blocks/logo/_view/logo_view_full.bh.js")(bh);
 dropRequireCache(require, require.resolve("../../desktop.blocks/promo/promo.bh.js"));
 require("../../desktop.blocks/promo/promo.bh.js")(bh);
+dropRequireCache(require, require.resolve("../../libs/bem-components/common.blocks/button/_type/button_type_link.bh.js"));
+require("../../libs/bem-components/common.blocks/button/_type/button_type_link.bh.js")(bh);
 dropRequireCache(require, require.resolve("../../libs/bem-components/common.blocks/menu-item/_type/menu-item_type_link.bh.js"));
 require("../../libs/bem-components/common.blocks/menu-item/_type/menu-item_type_link.bh.js")(bh);
 dropRequireCache(require, require.resolve("../../libs/bem-typography/common.blocks/heading/heading.bh.js"));

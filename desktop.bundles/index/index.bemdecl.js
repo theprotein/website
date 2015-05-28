@@ -112,6 +112,9 @@ exports.blocks = [
         "name": "promo"
     },
     {
+        "name": "features"
+    },
+    {
         "name": "row"
     },
     {
@@ -240,19 +243,6 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "guidelines"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "icon",
-        "mods": [
-            {
-                "name": "feature",
-                "vals": [
-                    {
-                        "name": "user-flow"
                     }
                 ]
             }
@@ -399,19 +389,6 @@ exports.blocks = [
                 "name": "service",
                 "vals": [
                     {
-                        "name": "illustrator"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "icon",
-        "mods": [
-            {
-                "name": "service",
-                "vals": [
-                    {
                         "name": "github"
                     }
                 ]
@@ -426,6 +403,139 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "bitbacket"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "service",
+                "vals": [
+                    {
+                        "name": "travis"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "service",
+                "vals": [
+                    {
+                        "name": "code-climate"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "service",
+                "vals": [
+                    {
+                        "name": "dropbox"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "service",
+                "vals": [
+                    {
+                        "name": "framer"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "service",
+                "vals": [
+                    {
+                        "name": "parse"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "promo",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "color"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "button"
+    },
+    {
+        "name": "button",
+        "mods": [
+            {
+                "name": "theme",
+                "vals": [
+                    {
+                        "name": "proto"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "button",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "action"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "button",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xl"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "button",
+        "mods": [
+            {
+                "name": "type",
+                "vals": [
+                    {
+                        "name": "link"
                     }
                 ]
             }

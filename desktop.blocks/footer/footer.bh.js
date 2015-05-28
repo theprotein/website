@@ -51,39 +51,50 @@ module.exports = function(bh) {
             //         }
             //     ]
             // },
-            // {
-            //     block : 'social-links',
-            //     content : [
-            //         {
-            //             block : 'icon',
-            //             mix : { block : 'social-links', elem : 'link' },
-            //             mods : { theme : 'proto', social : 'facebook', size : 's' }
-            //         },
-            //         {
-            //             block : 'icon',
-            //             mix : { block : 'social-links', elem : 'link' },
-            //             mods : { theme : 'proto', social : 'twitter', size : 's' }
-            //         },
-            //         {
-            //             block : 'icon',
-            //             mix : { block : 'social-links', elem : 'link' },
-            //             mods : { theme : 'proto', social : 'github', size : 's' }
-            //         },
-            //         {
-            //             block : 'icon',
-            //             mix : { block : 'social-links', elem : 'link' },
-            //             mods : { theme : 'proto', social : 'linkedin', size : 's' }
-            //         },
-            //         {
-            //             block : 'icon',
-            //             mix : { block : 'social-links', elem : 'link' },
-            //             mods : { theme : 'proto', social : 'vimeo', size : 's' }
-            //         }
-            //     ]
-            // },
             {
                 block : 'logo',
                 mods : { theme : 'proto', size : 'm' },
+            },
+            {
+                block : 'social-links',
+                content : [
+                    {
+                        block : 'link',
+                        mix : { block : 'social-links', elem : 'link' },
+                        target : '_blank',
+                        url : '//facebook.com/proteinio',
+                        content : [
+                            {
+                                block : 'icon',
+                                mods : { theme : 'proto', social : 'facebook', size : 's' }
+                            }
+                        ]
+                    },
+                    {
+                        block : 'link',
+                        mix : { block : 'social-links', elem : 'link' },
+                        target : '_blank',
+                        url : '//twitter.com/protein_io',
+                        content : [
+                            {
+                                block : 'icon',
+                                mods : { theme : 'proto', social : 'twitter', size : 's' }
+                            }
+                        ]
+                    },
+                    {
+                        block : 'link',
+                        mix : { block : 'social-links', elem : 'link' },
+                        target : '_blank',
+                        url : '//github.com/theprotein',
+                        content : [
+                            {
+                                block : 'icon',
+                                mods : { theme : 'proto', social : 'github', size : 's' }
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 block : 'love',
@@ -94,7 +105,7 @@ module.exports = function(bh) {
                         tag : 'span',
                         content : '❤'
                     },
-                    ' in Russia'
+                    ' in Moscow'
                 ]
             },
             {

@@ -1,5 +1,5 @@
 $features = ( 'components' 'prototype' 'guidelines' 'user-flow' 'integrations' )
-$services = ( 'sketch' 'atom' 'github' 'bitbacket' 'travis' 'illustrator' 'code-climate' )
+$services = ( 'sketch' 'atom' 'github' 'bitbacket' 'travis' 'illustrator' 'code-climate' 'parse' 'framer' 'dropbox')
 $socials = ('facebook' 'twitter' 'vimeo' 'github' 'linkedin')
 
 $icon_size_s  = 25px;
@@ -62,16 +62,22 @@ $icon_size_xl = 115px;
         }
     }
 
+    &.icon_service_parse
+    {
+        width: 100px;
+    }
+
     &.icon_service_bitbacket
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+    &.icon_service_github,
+    &.icon_service_dropbox
     {
         width: 74px;
         height: 74px;
-    }
-
-    &.icon_service_illustrator
-    {
-        width: 60px;
-        height: 60px;
     }
 
 }
