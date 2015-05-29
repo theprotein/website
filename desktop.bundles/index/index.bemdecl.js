@@ -551,5 +551,98 @@ exports.blocks = [
                 "name": "footer"
             }
         ]
+    },
+    {
+        "name": "logo",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "social-links"
+    },
+    {
+        "name": "link"
+    },
+    {
+        "name": "social-links",
+        "elems": [
+            {
+                "name": "link"
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "social",
+                "vals": [
+                    {
+                        "name": "facebook"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "s"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "social",
+                "vals": [
+                    {
+                        "name": "twitter"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "social",
+                "vals": [
+                    {
+                        "name": "github"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "love"
+    },
+    {
+        "name": "love",
+        "elems": [
+            {
+                "name": "heart"
+            }
+        ]
+    },
+    {
+        "name": "copyright"
     }
 ];

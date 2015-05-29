@@ -1,7 +1,7 @@
 ({
     block : 'page',
     mods : { theme : 'proto' },
-    title : 'Protein - Front end development workflow',
+    title : 'Protein - Front-end development workflow',
     styles : [
         { elem : 'css', url : '_index.css' },
         { elem : 'css', url : '//fonts.googleapis.com/css?family=Arvo:700' },
@@ -168,7 +168,7 @@
                                     block : 'heading',
                                     mods : { theme : 'proto' },
                                     lvl : 2,
-                                    content : 'Use UI components in graphical editors'
+                                    content : 'Use UI components in graphic editors'
                                 }
                             ]
                         },
@@ -179,25 +179,25 @@
                                     block : 'paragraph',
                                     mods : { type : 'lead', theme : 'proto' },
                                     content : [
-                                        'Protein is service for incredible productivity every day. <br>',
-                                        'It\'s like Dropbox for your components.'
+                                        'Protein is simple service for incredible productivity every day. <br>',
+                                        'It\'s like Dropbox for your UI components.'
                                     ]
                                 },
                                 {
                                     block : 'paragraph',
                                     mods : { theme : 'proto' },
                                     content : [
-                                        'Protein sync changes from <b>Sketch</b>, <b>AI</b> and sources updates in the repository. All new changes from editors <br>',
+                                        'Protein sync changes from <b>Sketch</b> and sources in the repositories. All new changes from editors <br>',
                                         'will be pushed to repository and then Protein will create new pull request<br>',
-                                        'for your front end developers.',
+                                        'for your front-end developers.',
                                     ]
                                 },
                                 {
                                     block : 'paragraph',
                                     mods : { theme : 'proto' },
                                     content : [
-                                        'Protein can build vector implementation of your components in the background. <br>',
-                                        'Absolutly fast and intergated with your code repositories.'
+                                        'Protein can build vector implementation of your components in the background. Without pain and double work.<br>',
+                                        'It\'s absolutely fast and intergated with your repositories of sources.'
                                     ]
                                 }
                             ]
@@ -246,7 +246,7 @@
                                     block : 'heading',
                                     mods : { theme : 'proto' },
                                     lvl : 2,
-                                    content : 'Integrate projects with external services'
+                                    content : 'Integrate components with external services'
                                 }
                             ]
                         },
@@ -354,12 +354,11 @@
                                     block : 'paragraph',
                                     mods : { theme : 'proto' },
                                     content : [
-                                        'Each component can be build with a number of technologies, <br>',
-                                        'each of which can be replaced by a suitable specifically for you: ',
-                                        '<b>interactions</b>, <b>template</b>, <b>style</b>, <b>test</b>, <b>doc</b>.<br>',
+                                        'Each component can be build with a number of technologies, and every technology <br>',
+                                        'can be replaced: <b>interactions</b>, <b>templates</b>, <b>styles</b>, <b>tests</b>, <b>docs</b>.<br>',
                                         'Protein support: <b>JSX</b>, <b>BH</b>, <b>BEMHTML</b> as templates; ',
                                         '<b>React</b>, <b>ES6</b> and <b>i-bem.js</b> ',
-                                        'as interactions; <b>LESS</b>, <b>Sass</b> and <b>Stylus</b> as preprocessors;<br>',
+                                        'as interactions; <br> <b>LESS</b>, <b>Sass</b> and <b>Stylus</b> as preprocessors;<br>',
                                         '<b>Markdown</b> as docs; <b>Mocha</b>, <b>Jasmine</b>, <b>Karma</b> and <b>Istanbul</b> as test engines;'
                                     ]
                                 },
@@ -427,7 +426,70 @@
         },
         {
             block : 'footer',
-            mix : { block : 'page', elem : 'footer' }
+            mix : { block : 'page', elem : 'footer' },
+            content :  [
+                {
+                    block : 'logo',
+                    mods : { theme : 'proto', size : 'm' },
+                },
+                {
+                    block : 'social-links',
+                    content : [
+                        {
+                            block : 'link',
+                            mix : { block : 'social-links', elem : 'link' },
+                            target : '_blank',
+                            url : '//facebook.com/proteinio',
+                            content : [
+                                {
+                                    block : 'icon',
+                                    mods : { theme : 'proto', social : 'facebook', size : 's' }
+                                }
+                            ]
+                        },
+                        {
+                            block : 'link',
+                            mix : { block : 'social-links', elem : 'link' },
+                            target : '_blank',
+                            url : '//twitter.com/protein_io',
+                            content : [
+                                {
+                                    block : 'icon',
+                                    mods : { theme : 'proto', social : 'twitter', size : 's' }
+                                }
+                            ]
+                        },
+                        {
+                            block : 'link',
+                            mix : { block : 'social-links', elem : 'link' },
+                            target : '_blank',
+                            url : '//github.com/theprotein',
+                            content : [
+                                {
+                                    block : 'icon',
+                                    mods : { theme : 'proto', social : 'github', size : 's' }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    block : 'love',
+                    content : [
+                        'Made with ',
+                        {
+                            elem : 'heart',
+                            tag : 'span',
+                            content : '❤'
+                        },
+                        ' in Moscow'
+                    ]
+                },
+                {
+                    block : 'copyright',
+                    content : 'Copyright © The Protein Corp., 2015'
+                }
+            ]
         }
     ]
 })
