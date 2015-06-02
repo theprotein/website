@@ -349,6 +349,9 @@ exports.blocks = [
         ]
     },
     {
+        "name": "integration"
+    },
+    {
         "name": "icon",
         "mods": [
             {
@@ -375,10 +378,18 @@ exports.blocks = [
         ]
     },
     {
-        "name": "promo",
+        "name": "integration",
         "elems": [
             {
                 "name": "icon"
+            }
+        ]
+    },
+    {
+        "name": "integration",
+        "elems": [
+            {
+                "name": "title"
             }
         ]
     },

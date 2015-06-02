@@ -187,7 +187,7 @@
                                     block : 'paragraph',
                                     mods : { theme : 'proto' },
                                     content : [
-                                        'Protein sync changes from <b>Sketch</b> and sources in the repositories. All new changes from editors <br>',
+                                        'Protein sync changes from Sketch and sources in the repositories. All new changes from editors <br>',
                                         'will be pushed to repository and then Protein will create new pull request<br>',
                                         'for your front-end developers.',
                                     ]
@@ -206,31 +206,58 @@
                             elem : 'actions',
                             content : [
                                 {
-                                    block : 'icon',
-                                    mix : { block : 'promo', elem : 'icon' },
-                                    mods : {
-                                        theme : 'proto',
-                                        service : 'sketch',
-                                        size : 'l'
-                                    }
+                                    block : 'integration',
+                                    content : [
+                                        {
+                                            block : 'icon',
+                                            mix : { block : 'integration', elem : 'icon' },
+                                            mods : {
+                                                theme : 'proto',
+                                                service : 'sketch',
+                                                size : 'l'
+                                            }
+                                        },
+                                        {
+                                            elem : 'title',
+                                            content : 'Sketch'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block : 'icon',
-                                    mix : { block : 'promo', elem : 'icon' },
-                                    mods : {
-                                        theme : 'proto',
-                                        service : 'github',
-                                        size : 'l'
-                                    }
+                                    block : 'integration',
+                                    content : [
+                                        {
+                                            block : 'icon',
+                                            mix : { block : 'integration', elem : 'icon' },
+                                            mods : {
+                                                theme : 'proto',
+                                                service : 'github',
+                                                size : 'l'
+                                            }
+                                        },
+                                        {
+                                            elem : 'title',
+                                            content : 'GitHub'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block : 'icon',
-                                    mix : { block : 'promo', elem : 'icon' },
-                                    mods : {
-                                        theme : 'proto',
-                                        service : 'bitbacket',
-                                        size : 'l'
-                                    }
+                                    block : 'integration',
+                                    content : [
+                                        {
+                                            block : 'icon',
+                                            mix : { block : 'integration', elem : 'icon' },
+                                            mods : {
+                                                theme : 'proto',
+                                                service : 'bitbacket',
+                                                size : 'l'
+                                            }
+                                        },
+                                        {
+                                            elem : 'title',
+                                            content : 'BitBucket'
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -278,50 +305,96 @@
                             elem : 'actions',
                             content : [
                                 {
-                                    block : 'icon',
-                                    mix : { block : 'promo', elem : 'icon' },
-                                    mods : {
-                                        theme : 'proto',
-                                        service : 'travis',
-                                        size : 'l'
-                                    }
+                                    block : 'integration',
+                                    content : [
+                                        {
+                                            block : 'icon',
+                                            mix : { block : 'integration', elem : 'icon' },
+                                            mods : {
+                                                theme : 'proto',
+                                                service : 'travis',
+                                                size : 'l'
+                                            }
+                                        },
+                                        {
+                                            elem : 'title',
+                                            content : 'Travis CI'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block : 'icon',
-                                    mix : { block : 'promo', elem : 'icon' },
-                                    mods : {
-                                        theme : 'proto',
-                                        service : 'code-climate',
-                                        size : 'l'
-                                    }
+                                    block : 'integration',
+                                    content : [
+                                        {
+                                            block : 'icon',
+                                            mix : { block : 'integration', elem : 'icon' },
+                                            mods : {
+                                                theme : 'proto',
+                                                service : 'code-climate',
+                                                size : 'l'
+                                            }
+                                        },
+                                        {
+                                            elem : 'title',
+                                            content : 'Code Climate'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block : 'icon',
-                                    mix : { block : 'promo', elem : 'icon' },
-                                    mods : {
-                                        theme : 'proto',
-                                        service : 'dropbox',
-                                        size : 'l'
-                                    }
+                                    block : 'integration',
+                                    content : [
+                                        {
+                                            block : 'icon',
+                                            mix : { block : 'integration', elem : 'icon' },
+                                            mods : {
+                                                theme : 'proto',
+                                                service : 'dropbox',
+                                                size : 'l'
+                                            }
+                                        },
+                                        {
+                                            elem : 'title',
+                                            content : 'Dropbox'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block : 'icon',
-                                    mix : { block : 'promo', elem : 'icon' },
-                                    mods : {
-                                        theme : 'proto',
-                                        service : 'framer',
-                                        size : 'l'
-                                    }
+                                    block : 'integration',
+                                    content : [
+                                        {
+                                            block : 'icon',
+                                            mix : { block : 'integration', elem : 'icon' },
+                                            mods : {
+                                                theme : 'proto',
+                                                service : 'framer',
+                                                size : 'l'
+                                            }
+                                        },
+                                        {
+                                            elem : 'title',
+                                            content : 'FramerJS'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block : 'icon',
-                                    mix : { block : 'promo', elem : 'icon' },
-                                    mods : {
-                                        theme : 'proto',
-                                        service : 'parse',
-                                        size : 'l'
-                                    }
+                                    block : 'integration',
+                                    content : [
+                                        {
+                                            block : 'icon',
+                                            mix : { block : 'integration', elem : 'icon' },
+                                            mods : {
+                                                theme : 'proto',
+                                                service : 'parse',
+                                                size : 'l'
+                                            }
+                                        },
+                                        {
+                                            elem : 'title',
+                                            content : 'Parse'
+                                        }
+                                    ]
                                 }
+
                             ]
                         }
                     ]
@@ -355,18 +428,18 @@
                                     mods : { theme : 'proto' },
                                     content : [
                                         'Each component can be build with a number of technologies, and every technology <br>',
-                                        'can be replaced: <b>interactions</b>, <b>templates</b>, <b>styles</b>, <b>tests</b>, <b>docs</b>.<br>',
-                                        'Protein support: <b>JSX</b>, <b>BH</b>, <b>BEMHTML</b> as templates; ',
-                                        '<b>React</b>, <b>ES6</b> and <b>i-bem.js</b> ',
-                                        'as interactions; <br> <b>LESS</b>, <b>Sass</b> and <b>Stylus</b> as preprocessors;<br>',
-                                        '<b>Markdown</b> as docs; <b>Mocha</b>, <b>Jasmine</b>, <b>Karma</b> and <b>Istanbul</b> as test engines;'
+                                        'can be replaced: interactions, templates, styles, tests, docs.<br>',
+                                        'Protein support: JSX, BH, BEMHTML as templates; ',
+                                        'React, ES6 and i-bem.js ',
+                                        'as interactions; <br> LESS, Sass and Stylus as preprocessors;<br>',
+                                        'Markdown as docs; Mocha, Jasmine, Karma and Istanbul as test engines;'
                                     ]
                                 },
                                 {
                                     block : 'paragraph',
                                     mods : { theme : 'proto' },
                                     content : [
-                                        'Also Protein work with <b>Autoprefixer</b>, <b>Autopolyfiller</b> and <b>PostCSS</b>.'
+                                        'Also Protein work with Autoprefixer, Autopolyfiller and PostCSS.'
                                     ]
                                 }
                             ]
