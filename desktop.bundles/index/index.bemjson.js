@@ -12,9 +12,9 @@
     ],
     content : [
         {
-            block: 'google-analytics',
-            params: {
-                id: 'UA-63201396-1'
+            block : 'google-analytics',
+            params : {
+                id :  'UA-63201396-1'
             }
         },
         {
@@ -458,7 +458,7 @@
                                     block : 'heading',
                                     mods : { theme : 'proto' },
                                     lvl : 2,
-                                    content : 'Protein will open in the autumn of 2015'
+                                    content : ' Pre-order starts early fall of 2015'
                                 }
                             ]
                         },
@@ -469,9 +469,8 @@
                                     block : 'paragraph',
                                     mods : { theme : 'proto' },
                                     content : [
-                                        'We work hard on Protein beta version and you can will be one of ',
-                                        'firstly happiness users.<br>',
-                                        'Now you can sign up to get news about Protein.'
+                                        'Since we launch a limited number of pre-ordered licenses, <br>',
+                                        'subscribe to pre-order start and get a chance to pre-order first!'
                                     ]
                                 }
                             ]
