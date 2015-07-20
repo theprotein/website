@@ -160,6 +160,54 @@
                 },
                 {
                     block : 'promo',
+                    mods : { view : 'color' },
+                    js : true,
+                    content : [
+                        {
+                            elem : 'heading',
+                            content : [
+                                {
+                                    block : 'heading',
+                                    mods : { theme : 'proto' },
+                                    lvl : 2,
+                                    content : ' Pre-order starts early fall of 2015'
+                                }
+                            ]
+                        },
+                        {
+                            elem : 'description',
+                            content : [
+                                {
+                                    block : 'paragraph',
+                                    mods : { theme : 'proto' },
+                                    content : [
+                                        'Since we launch a limited number of pre-ordered licenses, <br>',
+                                        'subscribe to pre-order start and get a chance to pre-order first!'
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            elem : 'actions',
+                            content : [
+                                {
+                                    block : 'button',
+                                    mods : {
+                                        theme : 'proto',
+                                        view : 'action',
+                                        size : 'xl',
+                                        type : 'link'
+                                    },
+                                    target : '_blank',
+                                    url : 'http://eepurl.com/boJcIH',
+                                    text : 'Subscribe'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    block : 'promo',
                     content : [
                         {
                             elem : 'heading',
@@ -441,54 +489,6 @@
                                     content : [
                                         'Also Protein work with Autoprefixer, Autopolyfiller and PostCSS.'
                                     ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    block : 'promo',
-                    mods : { view : 'color' },
-                    js : true,
-                    content : [
-                        {
-                            elem : 'heading',
-                            content : [
-                                {
-                                    block : 'heading',
-                                    mods : { theme : 'proto' },
-                                    lvl : 2,
-                                    content : ' Pre-order starts early fall of 2015'
-                                }
-                            ]
-                        },
-                        {
-                            elem : 'description',
-                            content : [
-                                {
-                                    block : 'paragraph',
-                                    mods : { theme : 'proto' },
-                                    content : [
-                                        'Since we launch a limited number of pre-ordered licenses, <br>',
-                                        'subscribe to pre-order start and get a chance to pre-order first!'
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            elem : 'actions',
-                            content : [
-                                {
-                                    block : 'button',
-                                    mods : {
-                                        theme : 'proto',
-                                        view : 'action',
-                                        size : 'xl',
-                                        type : 'link'
-                                    },
-                                    target : '_blank',
-                                    url : 'http://eepurl.com/boJcIH',
-                                    text : 'Subscribe'
                                 }
                             ]
                         }
