@@ -1,0 +1,8 @@
+{
+  "name":"protein-landing",
+  "scripts":{},
+  "env":{},
+  "addons":[
+    "pointdns"
+  ]
+}

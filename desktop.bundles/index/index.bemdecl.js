@@ -281,6 +281,19 @@ exports.blocks = [
     },
     {
         "name": "promo",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "color"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "promo",
         "elems": [
             {
                 "name": "heading"
@@ -318,6 +331,19 @@ exports.blocks = [
         "name": "paragraph",
         "mods": [
             {
+                "name": "theme",
+                "vals": [
+                    {
+                        "name": "proto"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "paragraph",
+        "mods": [
+            {
                 "name": "type",
                 "vals": [
                     {
@@ -328,7 +354,18 @@ exports.blocks = [
         ]
     },
     {
-        "name": "paragraph",
+        "name": "promo",
+        "elems": [
+            {
+                "name": "actions"
+            }
+        ]
+    },
+    {
+        "name": "button"
+    },
+    {
+        "name": "button",
         "mods": [
             {
                 "name": "theme",
@@ -341,10 +378,41 @@ exports.blocks = [
         ]
     },
     {
-        "name": "promo",
-        "elems": [
+        "name": "button",
+        "mods": [
             {
-                "name": "actions"
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "action"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "button",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xl"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "button",
+        "mods": [
+            {
+                "name": "type",
+                "vals": [
+                    {
+                        "name": "link"
+                    }
+                ]
             }
         ]
     },
@@ -479,74 +547,6 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "parse"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "promo",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "color"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "button"
-    },
-    {
-        "name": "button",
-        "mods": [
-            {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "proto"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "button",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "action"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "button",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xl"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "button",
-        "mods": [
-            {
-                "name": "type",
-                "vals": [
-                    {
-                        "name": "link"
                     }
                 ]
             }
