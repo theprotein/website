@@ -179,7 +179,7 @@
                             content : [
                                 {
                                     block : 'paragraph',
-                                    mods : { theme : 'proto' },
+                                    mods : { theme : 'proto', type : 'lead' },
                                     content : [
                                         'Since we launch a limited number of pre-ordered licenses, <br>',
                                         'subscribe to pre-order start and get a chance to pre-order first!'

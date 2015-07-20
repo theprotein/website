@@ -341,6 +341,19 @@ exports.blocks = [
         ]
     },
     {
+        "name": "paragraph",
+        "mods": [
+            {
+                "name": "type",
+                "vals": [
+                    {
+                        "name": "lead"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "promo",
         "elems": [
             {
@@ -398,19 +411,6 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "link"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "paragraph",
-        "mods": [
-            {
-                "name": "type",
-                "vals": [
-                    {
-                        "name": "lead"
                     }
                 ]
             }
