@@ -25,10 +25,14 @@
                     block : 'logo',
                     mods : {
                         theme : 'proto',
-                        view : 'full',
-                        mode : 'default',
-                        size : 'xl'
+                        view : 'full'
                     }
+                },
+                {
+                    block : 'heading',
+                    lvl : 3,
+                    mods : { theme : 'proto' },
+                    content : 'New front-end development workflow'
                 }
             ]
         },
@@ -502,7 +506,7 @@
             content :  [
                 {
                     block : 'logo',
-                    mods : { theme : 'proto', size : 'm' },
+                    mods : { theme : 'proto', view : 'cut' },
                 },
                 {
                     block : 'social-links',

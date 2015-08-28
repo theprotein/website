@@ -6,7 +6,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.gnu.org/licenses/gpl.html
  *
- * @version 0.1.1
+ * @version 0.1.2
  */
 
 (function(global) {
@@ -415,7 +415,7 @@ else {
     global.modules = create();
 }
 
-})(this);
+})(typeof window !== 'undefined' ? window : global);
 if(typeof module !== 'undefined') {modules = module.exports;}
 function dropRequireCache(requireFunc, filename) {
     var module = requireFunc.cache[filename];

@@ -75,26 +75,16 @@ exports.blocks = [
         ]
     },
     {
-        "name": "logo",
-        "mods": [
-            {
-                "name": "mode",
-                "vals": [
-                    {
-                        "name": "default"
-                    }
-                ]
-            }
-        ]
+        "name": "heading"
     },
     {
-        "name": "logo",
+        "name": "heading",
         "mods": [
             {
-                "name": "size",
+                "name": "theme",
                 "vals": [
                     {
-                        "name": "xl"
+                        "name": "proto"
                     }
                 ]
             }
@@ -297,22 +287,6 @@ exports.blocks = [
         "elems": [
             {
                 "name": "heading"
-            }
-        ]
-    },
-    {
-        "name": "heading"
-    },
-    {
-        "name": "heading",
-        "mods": [
-            {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "proto"
-                    }
-                ]
             }
         ]
     },
@@ -567,10 +541,10 @@ exports.blocks = [
         "name": "logo",
         "mods": [
             {
-                "name": "size",
+                "name": "view",
                 "vals": [
                     {
-                        "name": "m"
+                        "name": "cut"
                     }
                 ]
             }

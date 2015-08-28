@@ -1,86 +1,23 @@
 .logo_theme_proto
 {
     display: inline-block;
-
-    transition: color 200ms ease;
-
-    .logo__letter
-    {
-        font-family: 'Arvo';
-
-        cursor: default;
-    }
-
-    .logo__title, .logo__description
-    {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 100;
-        color:       #333;
-    }
-
-    .logo__description
-    {
-        font-weight: 300;
-        color:       #333;
-    }
-
-    &.logo_mode_default
-    {
-        color: #262d4c;
-    }
-
-    &.logo_mode_desaturate
-    {
-        color: #a7a7a7;
-
-        &:hover
-        {
-            color: #262d4c;
-        }
-    }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
     &.logo_view_full
     {
-        text-align: center;
+        background-image: url('../_view/logo_view_full.svg');
+
+        width: 350px;
+        height: 150px;
     }
 
-    &.logo_size_xl
+    &.logo_view_cut
     {
-        .logo__letter
-        {
-            font-size: 7rem;
-        }
+        background-image: url('../_view/logo_view_cut.svg');
 
-        .logo__title
-        {
-            font-size: 4rem;
-        }
-
-        .logo__description
-        {
-            padding-top: 10px;
-
-            font-size: 1.7rem;
-        }
-    }
-
-    &.logo_size_m
-    {
-        .logo__letter
-        {
-            font-size: 4rem;
-        }
-
-        .logo__title
-        {
-            font-size: 1.2rem;
-        }
-
-        .logo__description
-        {
-            padding-top: 5px;
-
-            font-size: 1rem;
-        }
+        width: 40px;
+        height: 40px;
     }
 }
