@@ -1,15 +1,17 @@
 {
-  "name": "protein-landing",
+  "name": "express-bemtree-project-stub",
+  "version": "0.0.0",
+  "description": "bem express bemtree bemhtml",
+  "ignore": [
+    ".bem/cache",
+    "node_modules",
+    "libs"
+  ],
   "dependencies": {
-    "bem-components": "2.1.0",
-    "bem-grid": "1.2.3",
-    "bem-typography": "1.0.1",
-    "bem-stat-counters": "~1.1.0"
-  },
-  "devDependencies": {
-    "bem-pr": "~0.10.0"
+    "bem-components": "2.3.0",
+    "bem-grid": "~2.0.0"
   },
   "resolutions": {
-    "bem-core": "2.6.0"
+    "bem-core": "2.7.0"
   }
 }

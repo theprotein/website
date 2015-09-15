@@ -1,57 +1,51 @@
 {
-  "private": true,
-  "name": "protein-landing",
-  "version": "0.0.1",
-  "description": "Protein.io landing page",
-  "homepage": "http://theprotein.io",
-  "author": "Anton Winogradov <winogradovaa@gmail.com>",
+  "author": "voischev",
+  "name": "express-bemtree-project-stub",
+  "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:theprotein/protein-landing.git"
-  },
-  "dependencies": {
-    "body-parser": "^1.10.2",
-    "cookie-parser": "^1.3.3",
-    "express": "~4.3.0",
-    "express-favicon": "^1.0.1",
-    "express-session": "^1.9.2",
-    "lodash": "^2.4.1",
-    "nconf": "^0.7.1",
-    "vow": "^0.4.9",
-    "vow-fs": "^0.3.4",
-    "winston": "^1.0.0",
-    "bower": "1.3.12"
-  },
-  "devDependencies": {
-    "bh": "^3.3.0",
-    "borschik": "^1.3.0",
-    "borschik-tech-cleancss": "2.0.0",
-    "csscomb": "~3.0.3",
-    "enb": "0.15.0",
-    "enb-bem-techs": "^1.0.3",
-    "enb-bemxjst": "1.3.4",
-    "enb-bh": "^0.5.0",
-    "enb-borschik": "^1.5.0",
-    "enb-diverse-js": "0.1.0",
-    "enb-modules": "0.2.0",
-    "enb-stylus": "1.2.2",
-    "jscs": "^1.11.2",
-    "jscs-bem": "^0.2.0",
-    "jshint": "2.6.0",
-    "jshint-groups": "0.7.0",
-    "stylus": "0.50.0"
-  },
-  "scripts": {
-    "start": "npm run dev",
-    "make": "./node_modules/.bin/enb make --no-cache",
-    "dev": "./node_modules/.bin/enb make && node server.bundles/index/index.node.js",
-    "production": "YENV=production NODE_ENV=production BEM_ENV=production node ./configs/production/index.js",
-    "deps": "./node_modules/.bin/bower i",
-    "lint": "jshint-groups && jscs .",
-    "specs": "npm run test-specs",
-    "postinstall": "npm run deps"
+    "url": "https://github.com/voischev/express-bemtree-project-stub"
   },
   "engines": {
     "node": ">=0.10"
-  }
+  },
+  "dependencies": {
+    "cookie-parser": "^1.3.5",
+    "express": "^4.13.3",
+    "winston": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.2",
+    "borschik": "^1.4.1",
+    "borschik-tech-cleancss": "^2.0.1",
+    "bower": "^1.5.2",
+    "enb": "^0.17.2",
+    "enb-bem-techs": "^2.0.1",
+    "enb-bemxjst": "^2.0.1",
+    "enb-borschik": "^2.0.0",
+    "enb-diverse-js": "0.1.0",
+    "enb-modules": "0.2.0",
+    "enb-postcss": "^0.1.2",
+    "enb-stylus": "^2.0.0",
+    "jscs": "^2.1.1",
+    "jscs-bem": "^0.2.0",
+    "jshint": "^2.8.0",
+    "jshint-groups": "^0.8.0",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-each": "^0.7.0",
+    "postcss-nested": "^1.0.0",
+    "postcss-url": "^5.0.0",
+    "watch-run": "^1.2.2"
+  },
+  "scripts": {
+    "postinstall": "npm run deps",
+    "deps": "bower i",
+    "start": "node server/app.js",
+    "prestart": "enb make",
+    "watch": "watch-run -p 'src/*.blocks/**' enb make",
+    "lint": "jshint-groups && jscs .",
+    "clean": "rm -rf public/_index.js public/_index.css .enb/tmp && enb make clean",
+    "build": "NODE_ENV=production enb make"
+  },
+  "private": true
 }

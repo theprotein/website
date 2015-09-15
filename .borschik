@@ -1,1 +1,8 @@
-configs/development/borschik
+{
+    "freeze_paths": {
+        "**": "public/freeze/"
+    },
+    "paths" : {
+        "./public/freeze/": "freeze/"
+    }
+}
