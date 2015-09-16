@@ -1,0 +1,69 @@
+block('header')(
+    tag()('header'),
+    content()(function() {
+        return {
+            elem: 'content',
+            content: [
+                {
+                    block: 'logo',
+                    mix: { block: this.block, elem: 'logo' }
+                },
+                {
+                    block: 'menu',
+                    mix: { block: this.block, elem: 'menu' },
+                    content: [
+                        {
+                            block: 'menu-item',
+                            mods: { type: 'link' },
+                            content: {
+                                block: 'link',
+                                mods: { pseudo: true },
+                                url: '#starter-kit',
+                                content: 'Starter kit'
+                            }
+                        },
+                        {
+                            block: 'menu-item',
+                            mods: { type: 'link' },
+                            content: {
+                                block: 'link',
+                                mods: { pseudo: true },
+                                url: '#features',
+                                content: 'Features'
+                            }
+                        },
+                        {
+                            block: 'menu-item',
+                            mods: { type: 'link' },
+                            content: {
+                                block: 'link',
+                                mods: { pseudo: true },
+                                url: '#pricing',
+                                content: 'Pricing'
+                            }
+                        },
+                        {
+                            block: 'menu-item',
+                            mods: { type: 'link' },
+                            content: {
+                                block: 'link',
+                                mods: { pseudo: true },
+                                url: '#release-dates',
+                                content: 'Release dates'
+                            }
+                        },
+                        {
+                            block: 'menu-item',
+                            mods: { type: 'button' },
+                            content: {
+                                block: 'button',
+                                mods: { type: 'link', theme: 'bagel-in-color' },
+                                text: 'Subscribe'
+                            }
+                        }
+                    ]
+                }
+            ]
+        };
+    })
+);

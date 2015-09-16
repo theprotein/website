@@ -1,0 +1,13 @@
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon_theme_on-color {
+    /*@each $name in medium, github, facebook, twitter {
+        &.icon_social_$(name) {
+            background-image: url('_social/icon_social_$(name)-on-color.svg');
+        }
+    }*/
+}

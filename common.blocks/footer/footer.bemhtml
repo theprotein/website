@@ -1,0 +1,57 @@
+block('footer')(
+    tag()('footer'),
+    content()(function() {
+        return {
+            elem: 'content',
+            content: [
+                {
+                    block: 'social',
+                    mix: { block: this.block, elem: 'social' },
+                    mods: { theme: 'on-color' }
+                },
+                {
+                    elem: 'text',
+                    content: [
+                        'If you have any questions or suggestions ',
+                        { tag: 'br' },
+                        {
+                            block: 'link',
+                            url: 'mailto:ask@theprotein.io',
+                            content: 'ask@theprotein.io'
+                        }
+                    ]
+                },
+                {
+                    block: 'menu',
+                    mix: { block: this.block, elem: 'menu' },
+                    content: [
+                        {
+                            block: 'menu-item',
+                            mods: { type: 'link' },
+                            content: {
+                                block: 'link',
+                                url: '#',
+                                content: 'Privacy'
+                            }
+                        },
+                        {
+                            block: 'menu-item',
+                            mods: { type: 'link' },
+                            content: {
+                                block: 'link',
+                                url: '#',
+                                content: 'Terms of use'
+                            }
+                        }
+                    ]
+                },
+                {
+                    elem: 'copy',
+                    content: [
+                        'All you need is Protein © The Protein Corp. All rights reserved.'
+                    ]
+                }
+            ]
+        };
+    })
+);

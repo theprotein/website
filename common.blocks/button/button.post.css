@@ -1,0 +1,23 @@
+.button {
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.button_theme_bagel-in-color {
+    padding: 0 20px;
+    height: 36px;
+
+    line-height: 34px;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: bold;
+
+    border: 2px solid;
+    border-radius: 18px;
+
+    &.button_hovered {
+        color: red;
+    }
+}
+

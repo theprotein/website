@@ -1,0 +1,25 @@
+.social {
+
+    .link {
+        margin: 0 15px;
+        text-decoration: none;
+    }
+
+    .icon {
+        width: 36px;
+        height: 36px;
+        transition: 200ms;
+
+        &:hover {
+            circle {
+                transition: 200ms;
+                stroke: red !important;
+            }
+            path {
+                transition: 200ms;
+                fill: red !important;
+            }
+        }
+    }
+}
+

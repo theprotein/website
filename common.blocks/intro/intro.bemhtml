@@ -1,0 +1,11 @@
+block('intro').content()(function() {
+    return [
+        {
+            elem: 'scheme'
+        },
+        {
+            elem: 'content',
+            content: applyNext()
+        }
+    ];
+});

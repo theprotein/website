@@ -1,0 +1,15 @@
+block('technology')(
+    content()(function() {
+        return [
+            {
+                elem: 'icon',
+                content: this.ctx.icon
+            },
+            {
+                elem: 'text',
+                content: this.ctx.text
+            }
+        ];
+    }),
+    elem('sup').tag()('sup')
+);

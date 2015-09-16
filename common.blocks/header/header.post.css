@@ -1,0 +1,44 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__content {
+    margin: auto;
+    padding-top: 25px;
+    max-width: 1176px;
+    min-width: 846px;
+}
+
+.header__logo {
+    float: left;
+}
+
+.header__menu {
+    float: right;
+
+    .menu-item {
+        display: inline-block;
+    }
+
+    .menu-item_type_link {
+        margin: 0 25px;
+
+        .link {
+            color: #BCFF77;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .link_hovered {
+            color: red;
+        }
+    }
+
+    .menu-item_type_button {
+        margin-left: 20px;
+    }
+}

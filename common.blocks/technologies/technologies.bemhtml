@@ -1,0 +1,12 @@
+block('technologies')(
+    content()(function() {
+        return [
+            this.ctx.title && {
+                elem: 'title',
+                content: this.ctx.title
+            },
+            applyNext()
+        ];
+    }),
+    elem('title').tag()('h3')
+);

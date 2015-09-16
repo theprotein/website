@@ -1,0 +1,18 @@
+block('price')(
+    content()(function() {
+        return [
+            {
+                elem: 'title',
+                content: this.ctx.title
+            },
+            {
+                elem: 'price',
+                content: this.ctx.price
+            },
+            {
+                elem: 'footer',
+                content: '/year'
+            }
+        ];
+    })
+);

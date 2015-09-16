@@ -1,0 +1,18 @@
+.card {
+    text-align: center;
+}
+
+.card__title {
+    font-size: 24px;
+    color: #357EC3;
+    font-weight: bold;
+    line-height: 28px;
+    padding-bottom: 20px;
+}
+
+.card__desc {
+    font-size: 14px;
+    line-height: 24px;
+    color: #010101;
+}
+

@@ -1,0 +1,25 @@
+block('people')(
+    content()(function() {
+        return [
+            {
+                block: 'image',
+                mix: { block: this.block, elem: 'image'},
+                url: this.ctx.image
+            },
+            {
+                elem: 'name',
+                content: this.ctx.name
+            },
+            {
+                block: 'link',
+                mix: { block: this.block, elem: 'nickname' },
+                url: 'http://twitter.com/' + this.ctx.nickname,
+                content: '@' + this.ctx.nickname
+            },
+            {
+                elem: 'post',
+                content: this.ctx.post
+            }
+        ];
+    })
+);
