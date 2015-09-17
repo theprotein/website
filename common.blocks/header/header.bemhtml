@@ -12,52 +12,40 @@ block('header')(
                     block: 'menu',
                     mix: { block: this.block, elem: 'menu' },
                     content: [
-                        {
-                            block: 'menu-item',
-                            mods: { type: 'link' },
-                            content: {
-                                block: 'link',
-                                mods: { pseudo: true },
-                                url: '#starter-kit',
-                                content: 'Starter kit'
-                            }
+                        [{
+                            url: '#starter-kit',
+                            text: 'Starter kit'
                         },
                         {
-                            block: 'menu-item',
-                            mods: { type: 'link' },
-                            content: {
-                                block: 'link',
-                                mods: { pseudo: true },
-                                url: '#features',
-                                content: 'Features'
-                            }
+                            url: '#features',
+                            text: 'Features'
                         },
                         {
-                            block: 'menu-item',
-                            mods: { type: 'link' },
-                            content: {
-                                block: 'link',
-                                mods: { pseudo: true },
-                                url: '#pricing',
-                                content: 'Pricing'
-                            }
+                            url: '#pricing',
+                            text: 'Pricing'
                         },
                         {
-                            block: 'menu-item',
-                            mods: { type: 'link' },
-                            content: {
-                                block: 'link',
-                                mods: { pseudo: true },
-                                url: '#release-dates',
-                                content: 'Release dates'
-                            }
-                        },
+                            url: '#release-dates',
+                            text: 'Release dates'
+                        }].map(function(item) {
+                            return {
+                                block: 'menu-item',
+                                mods: { type: 'link' },
+                                content: {
+                                    block: 'link',
+                                    mods: { pseudo: true, theme: 'on-white' },
+                                    url: item.url,
+                                    content: item.text
+                                }
+                            };
+                        }),
                         {
                             block: 'menu-item',
                             mods: { type: 'button' },
                             content: {
                                 block: 'button',
                                 mods: { type: 'link', theme: 'bagel-in-color' },
+                                url: 'http://eepurl.com/boJcIH',
                                 text: 'Subscribe'
                             }
                         }

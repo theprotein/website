@@ -8,7 +8,8 @@ block('social')(
                 url: '#',
                 content: {
                     block: 'icon',
-                    mods: { theme: theme, social: 'medium' }
+                    mods: { inline: true, social: 'medium' },
+                    path: 'social/medium'
                 }
             },
             {
@@ -16,7 +17,8 @@ block('social')(
                 url: 'http://github.com/theprotein',
                 content: {
                     block: 'icon',
-                    mods: { theme: theme, social: 'github' }
+                    mods: { inline: true, social: 'github' },
+                    path: 'social/github'
                 }
             },
             {
@@ -24,7 +26,8 @@ block('social')(
                 url: 'http://twitter.com/protein_io',
                 content: {
                     block: 'icon',
-                    mods: { theme: theme, social: 'twitter' }
+                    mods: { inline: true, social: 'twitter' },
+                    path: 'social/twitter'
                 }
             },
             {
@@ -32,7 +35,8 @@ block('social')(
                 url: 'http://facebook.com/proteinio',
                 content: {
                     block: 'icon',
-                    mods: { theme: theme, social: 'facebook' }
+                    mods: { inline: true, social: 'facebook' },
+                    path: 'social/facebook'
                 }
             }
         ];

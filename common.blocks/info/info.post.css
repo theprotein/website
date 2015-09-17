@@ -1,0 +1,17 @@
+.info {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.info__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.info__text {
+    padding-left: 70px;
+    color: #D0021B;
+    font-size: 16px;
+    line-height: 24px;
+}
+

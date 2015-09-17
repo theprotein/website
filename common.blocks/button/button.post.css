@@ -5,6 +5,7 @@
 }
 
 .button_theme_bagel-in-color {
+    display: inline-block;
     padding: 0 20px;
     height: 36px;
 
@@ -15,9 +16,34 @@
 
     border: 2px solid;
     border-radius: 18px;
+    text-decoration: none;
+    transition: 200ms;
 
     &.button_hovered {
-        color: red;
+        color: #BCFF77;
+        border-color: #BCFF77;
     }
 }
 
+.button_theme_fill {
+    padding: 0 70px;
+    height: 40px;
+    display: inline-block;
+
+    background: #64C800;
+
+    border-radius: 40px;
+
+    font-weight: bold;
+    font-size: 21px;
+    color: #FFFFFF;
+    line-height: 40px;
+    text-align: center;
+
+    transition: 200ms;
+    text-decoration: none;
+
+    &.button_hovered {
+        background: #60C000;
+    }
+}

@@ -6,8 +6,8 @@ block('price')(
                 content: this.ctx.title
             },
             {
-                elem: 'price',
-                content: this.ctx.price
+                elem: 'val',
+                content: '$' + this.ctx.val
             },
             {
                 elem: 'footer',

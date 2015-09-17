@@ -1,7 +1,12 @@
 block('intro').content()(function() {
     return [
         {
-            elem: 'scheme'
+            elem: 'scheme',
+            content: {
+                block: 'icon',
+                mods: { inline: true },
+                path: 'scheme'
+            }
         },
         {
             elem: 'content',

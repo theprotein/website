@@ -1,8 +1,22 @@
 .technologies {
+    margin: auto;
+    width: 760px;
+    display: block;
+}
 
+.technologies__item {
+    padding-bottom: 40px;
+    text-align: center;
+    display: block;
+    width: 100%;
 }
 
 .technologies__title {
-
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #D0021B;
+    line-height: 28px;
+    padding-bottom: 25px;
 }
 

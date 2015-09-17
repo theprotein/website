@@ -1,0 +1,41 @@
+.people {
+    width: 220px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.people__image {
+    margin: 0 auto 30px;
+    height: 110px;
+    display: block;
+}
+
+.people__name {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #010101;
+    line-height: 1;
+}
+
+.people__nickname {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #008CDC;
+    line-height: 1;
+    transition: 200ms;
+
+    &:hover {
+        color: #167AB3;
+    }
+}
+
+.people__post {
+    padding-top: 10px;
+    font-size: 14px;
+}
+

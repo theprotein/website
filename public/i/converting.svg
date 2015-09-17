@@ -1,0 +1,34 @@
+<svg width="101" height="100" viewBox="0 0 101 100" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(9 24)" fill="#3264B4">
+            <rect x="40.617" y=".307" width="3.638" height="3.661" rx="2"/>
+            <rect x="47.894" y=".307" width="3.638" height="3.661" rx="2"/>
+            <rect x="55.17" y=".307" width="3.638" height="3.661" rx="2"/>
+            <rect x="62.447" y=".307" width="3.638" height="3.661" rx="2"/>
+            <rect x="69.723" y=".307" width="3.638" height="3.661" rx="2"/>
+            <rect x=".596" y="55.229" width="3.638" height="3.661" rx="2"/>
+            <rect x="7.872" y="55.229" width="3.638" height="3.661" rx="2"/>
+            <rect x="15.149" y="55.229" width="3.638" height="3.661" rx="2"/>
+            <rect x="22.426" y="55.229" width="3.638" height="3.661" rx="2"/>
+            <rect x="29.702" y="55.229" width="3.638" height="3.661" rx="2"/>
+            <rect x="69.723" y="7.63" width="3.638" height="3.661" rx="2"/>
+            <rect x="69.723" y="14.953" width="3.638" height="3.661" rx="2"/>
+            <rect x="69.723" y="22.276" width="3.638" height="3.661" rx="2"/>
+            <path d="M66.707 31.6c-.656-.884-.294-1.6.815-1.6h7.88c1.105 0 1.464.724.814 1.6l-3.566 4.8c-.656.884-1.726.876-2.377 0l-3.566-4.8z"/>
+            <rect x=".596" y="33.26" width="3.638" height="3.661" rx="2"/>
+            <rect x=".596" y="40.583" width="3.638" height="3.661" rx="2"/>
+            <rect x=".596" y="47.906" width="3.638" height="3.661" rx="2"/>
+        </g>
+        <path d="M6.707 51.4c-.656.884-.294 1.6.815 1.6h7.88c1.105 0 1.464-.724.814-1.6l-3.566-4.8c-.656-.884-1.726-.876-2.377 0l-3.566 4.8z" fill="#3264B4"/>
+        <path d="M3 20.357l17.716 19.61 17.715-19.61L29.506 9.56h-18.79L3 20.356z" stroke="#FFC057" stroke-width="4" stroke-linecap="square"/>
+        <text font-family="Quicksand" font-size="31.544" font-weight="bold" fill="#64C800" transform="translate(3 9)">
+            <tspan x="51.721" y="84">&lt;</tspan>
+        </text>
+        <text font-family="Quicksand" font-size="31.544" font-weight="bold" fill="#64C800" transform="translate(3 9)">
+            <tspan x="81.721" y="84">&gt;</tspan>
+        </text>
+        <text font-family="Quicksand" font-size="31.544" font-weight="bold" fill="#64C800" transform="translate(3 9)">
+            <tspan x="66.844" y="84">/</tspan>
+        </text>
+    </g>
+</svg>

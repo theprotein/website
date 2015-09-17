@@ -1,0 +1,24 @@
+.technology {
+    text-align: center;
+    display: inline-block;
+}
+
+.technology__icon {
+    display: inline-block;
+}
+
+.technology__text {
+    font-weight: bold;
+    font-size: 14px;
+    color: #3264B4;
+    line-height: 37px;
+    display: block;
+    text-align: center;
+}
+
+.technology__sup {
+    font-weight: bold;
+    color: #E44D26;
+    font-size: 12px;
+    line-height: 1;
+}

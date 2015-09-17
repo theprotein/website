@@ -43,7 +43,11 @@ module.exports = {
                             mods: { mw: 6 },
                             content: {
                                 block: 'card',
-                                image: '',
+                                image: {
+                                    block: 'icon',
+                                    mods: { inline: true },
+                                    path: 'workflow'
+                                },
                                 title: 'Workflow',
                                 desc: [
                                     'Once the changes to a project were made, your ',
@@ -61,7 +65,11 @@ module.exports = {
                             mods: { mw: 6 },
                             content: {
                                 block: 'card',
-                                image: '',
+                                image: {
+                                    block: 'icon',
+                                    mods: { inline: true },
+                                    path: 'team'
+                                },
                                 title: 'Team',
                                 desc: [
                                     'Protein is a team product. It’s scientifically ',
@@ -80,18 +88,16 @@ module.exports = {
         },
         {
             block: 'section',
-            mods: { view: 'quote' },
-            content: {
-                block: 'quote',
-                content: [
-                    'We are inspired here at Protein and think that every tool the developer team uses ',
-                    { tag: 'br' },
-                    'should be compatible with Protein to empower the magic of one another'
-                ]
-            }
+            mix: { block: 'quote', mods: { theme: 'blue' } },
+            content: [
+                'We are inspired here at Protein and think that every tool the developer team uses ',
+                { tag: 'br' },
+                'should be compatible with Protein to empower the magic of one another'
+            ]
         },
         {
             block: 'section',
+            mix: { block: 'starter-kit' },
             title: 'Starter Kit',
             desc: [
                 'We launch Protein as a Starter Kit ',
@@ -101,13 +107,20 @@ module.exports = {
             content: [
                 {
                     block: 'row',
+                    mix: { block: 'starter-kit', elem: 'list' },
                     content: [
                         {
                             elem: 'col',
-                            mods: { mw: 4 },
+                            mods: {
+                                mw: 4
+                            },
                             content: {
                                 block: 'card',
-                                image: '',
+                                image: {
+                                    block: 'icon',
+                                    mods: { inline: true },
+                                    path: 'converting'
+                                },
                                 title: 'Converting',
                                 desc: [
                                     'Protein Starter Kit converts ',
@@ -120,10 +133,16 @@ module.exports = {
                         },
                         {
                             elem: 'col',
-                            mods: { mw: 4 },
+                            mods: {
+                                mw: 4
+                            },
                             content: {
                                 block: 'card',
-                                image: '',
+                                image: {
+                                    block: 'icon',
+                                    mods: { inline: true },
+                                    path: 'syncing'
+                                },
                                 title: 'Syncing',
                                 desc: [
                                     'Protein Starter Kit allows ',
@@ -136,10 +155,16 @@ module.exports = {
                         },
                         {
                             elem: 'col',
-                            mods: { mw: 4 },
+                            mods: {
+                                mw: 4
+                            },
                             content: {
                                 block: 'card',
-                                image: '',
+                                image: {
+                                    block: 'icon',
+                                    mods: { inline: true },
+                                    path: 'working'
+                                },
                                 title: 'Working',
                                 desc: [
                                     'Protein Starter Kit works ',
@@ -154,49 +179,143 @@ module.exports = {
                 },
                 {
                     block: 'technologies',
+                    mix: { block: 'starter-kit', elem: 'technologies' },
                     title: 'Goes along well with',
                     content: [
                         {
-                            block: 'technology',
-                            icon: { block: 'icon', mods: { technology: 'html' }},
-                            text: 'HTML + CSS'
-                        },
-                        {
-                            block: 'technology',
-                            icon: { block: 'icon', mods: { technology: 'os-x' }},
-                            text: 'OS X'
-                        },
-                        {
-                            block: 'technology',
-                            icon: { block: 'icon', mods: { technology: 'sketch' }},
-                            text: [
-                                'Sketch',
+                            block: 'row',
+                            content: [
                                 {
-                                    elem: 'sup',
-                                    content: '3'
+                                    elem: 'col',
+                                    elemMods: {
+                                        m: true
+                                    },
+                                    content: ''
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        m: true
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'html' }},
+                                            text: 'HTML + CSS'
+                                        }
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        m: true
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'osx' }},
+                                            text: 'OS X'
+                                        }
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        m: true
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'sketch' }},
+                                            text: [
+                                                'Sketch',
+                                                {
+                                                    elem: 'sup',
+                                                    content: '3'
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        m: true
+                                    },
+                                    content: ''
                                 }
                             ]
                         },
-                        { tag: 'br' },
                         {
-                            block: 'technology',
-                            icon: { block: 'icon', mods: { technology: 'react' }},
-                            text: 'React'
-                        },
-                        {
-                            block: 'technology',
-                            icon: { block: 'icon', mods: { technology: 'angular' }},
-                            text: 'Angular'
-                        },
-                        {
-                            block: 'technology',
-                            icon: { block: 'icon', mods: { technology: 'backbone' }},
-                            text: 'Backbone'
-                        },
-                        {
-                            block: 'technology',
-                            icon: { block: 'icon', mods: { technology: 'bem' }},
-                            text: 'BEM'
+                            block: 'row',
+                            content: [
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        mw: '3'
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'react' }},
+                                            text: 'React'
+                                        }
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        mw: '3'
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'angular' }},
+                                            text: 'Angular'
+                                        }
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        mw: '3'
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'backbone' }},
+                                            text: 'Backbone'
+                                        }
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        mw: '3'
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'bem' }},
+                                            text: 'BEM'
+                                        }
+                                    }
+                                }
+                            ]
                         }
                     ]
                 }
@@ -207,6 +326,7 @@ module.exports = {
         },
         {
             block: 'section',
+            mix: { block: 'integrations' },
             title: 'Integrations',
             desc: [
                 'We plan on extending Protein to any service you might use as integration',
@@ -216,47 +336,133 @@ module.exports = {
             content: [
                 {
                     block: 'technologies',
+                    mix: { block: 'integrations', elem: 'technologies' },
                     title: 'Integrations available',
                     content: [
                         {
-                            block: 'technology',
-                            icon: { block: 'icon', mods: { technology: 'parse' }},
-                            text: 'Parse'
+                            block: 'row',
+                            content: [
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        mw: 3
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'parse' }},
+                                            text: 'Parse'
+                                        }
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        mw: 3
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'invision' }},
+                                            text: 'Invision'
+                                        }
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        mw: 3
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'framerjs' }},
+                                            text: 'FramerJS'
+                                        }
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        mw: 3
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'google-form' }},
+                                            text: 'Google Form'
+                                        }
+                                    }
+                                }
+                            ]
                         },
                         {
-                            block: 'technology',
-                            icon: { block: 'icon', mods: { technology: 'invision' }},
-                            text: 'Invision'
-                        },
-                        {
-                            block: 'technology',
-                            icon: { block: 'icon', mods: { technology: 'framerjs' }},
-                            text: 'FramerJS'
-                        },
-                        {
-                            block: 'technology',
-                            icon: { block: 'icon', mods: { technology: 'google-form' }},
-                            text: 'Google Form'
-                        },
-                        { tag: 'br' },
-                        {
-                            block: 'technology',
-                            icon: { block: 'icon', mods: { technology: 'pixate' }},
-                            text: 'Pixate'
-                        },
-                        {
-                            block: 'technology',
-                            icon: { block: 'icon', mods: { technology: 'marvel' }},
-                            text: 'Marvel'
+                            block: 'row',
+                            content: [
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        mw: '3'
+                                    },
+                                    content: ''
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        mw: '3'
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'pixate' }},
+                                            text: 'Pixate'
+                                        }
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        mw: '3'
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'marvel' }},
+                                            text: 'Marvel'
+                                        }
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        mw: '3'
+                                    },
+                                    content: ''
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     block: 'hint',
+                    mix: { block: 'integrations', elem: 'hint' },
                     content: [
                         'If you use any other tool than listed above, email it to us at ',
                         {
                             block: 'link',
+                            mods: { theme: 'on-white' },
                             url: 'mailto:ask@theprotein.io',
                             content: 'ask@theprotein.io'
                         },
@@ -286,11 +492,15 @@ module.exports = {
                             mods: { mw: 4 },
                             content: {
                                 block: 'card',
-                                image: '',
+                                image: {
+                                    block: 'icon',
+                                    mods: { inline: true },
+                                    path: 'platforms'
+                                },
                                 title: 'Platforms',
                                 desc: [
                                     'Compatibility with ',
-                                    'Windows OS, iOS и Android OS ',
+                                    'Windows OS, iOS end Android OS ',
                                     'platforms to give your team ',
                                     'an option to provide layouts ',
                                     'as ready-to-go xml-schemas ',
@@ -303,7 +513,11 @@ module.exports = {
                             mods: { mw: 4 },
                             content: {
                                 block: 'card',
-                                image: '',
+                                image: {
+                                    block: 'icon',
+                                    mods: { inline: true },
+                                    path: 'live-preview'
+                                },
                                 title: 'Live preview',
                                 desc: [
                                     'Ability to live preview ',
@@ -320,7 +534,11 @@ module.exports = {
                             mods: { mw: 4 },
                             content: {
                                 block: 'card',
-                                image: '',
+                                image: {
+                                    block: 'icon',
+                                    mods: { inline: true },
+                                    path: 'conversions'
+                                },
                                 title: 'Conversions',
                                 desc: [
                                     'Possibility to convert ',
@@ -348,11 +566,17 @@ module.exports = {
                 'It requires no additional knowledge or change of tools the team already use '
             ],
             content: [
-                'Картиночка'
+                {
+                    block: 'icon',
+                    attrs: { style: 'margin:auto;width:228px;display:block;'},
+                    mods: { inline: true },
+                    path: 'pw'
+                }
             ]
         },
         {
             block: 'section',
+            mix: { block: 'quote', mods: { theme: 'green' } },
             content: [
                 'Protein helps your team speak one language and use one library instead of multiple copies and designs. ',
                 { tag: 'br' },
@@ -361,6 +585,7 @@ module.exports = {
         },
         {
             block: 'section',
+            mix: { block: 'quote', mods: { theme: 'green' } },
             content: [
                 'Protein helps your team speak one language and use one library instead of multiple copies and designs ',
                 { tag: 'br' },
@@ -369,6 +594,7 @@ module.exports = {
         },
         {
             block: 'section',
+            mods: { view: 'helps' },
             title: 'Protein helps your team',
             content: [
                 {
@@ -376,40 +602,84 @@ module.exports = {
                     content: [
                         {
                             elem: 'col',
-                            mods: { mw: 6 },
-                            content: [
-                                {
-                                    block: 'info',
-                                    icon: {},
-                                    text: [
-                                        'Edit live UI components in an editor',
-                                        'of your choice'
-                                    ]
-                                },
-                                {
-                                    block: 'info',
-                                    icon: {},
-                                    text: [
-                                        'Build and structurie them',
-                                        'with live preview'
-                                    ]
-                                }
-                            ]
+                            elemMods: { mw: 6 },
+                            content: {
+                                block: 'info',
+                                icon: { block: 'image', url: 'i/helps/1.svg'},
+                                text: [
+                                    'Edit live UI components in an editor',
+                                    'of your choice'
+                                ]
+                            }
                         },
                         {
                             elem: 'col',
-                            mods: { mw: 6 },
+                            elemMods: { mw: 6 },
                             content: {
-                                block: 'card',
-                                image: '',
-                                title: 'Live preview',
-                                desc: [
-                                    'Ability to live preview ',
-                                    'your components to help ',
-                                    'the team understand how ',
-                                    'it works while they work on ',
-                                    'it’s creation. Available across ',
-                                    'browsers and devices'
+                                block: 'info',
+                                icon: { block: 'image', url: 'i/helps/2.svg'},
+                                text: [
+                                    'Share libraries and layouts you create ',
+                                    'with other designers'
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    block: 'row',
+                    content: [
+                        {
+                            elem: 'col',
+                            elemMods: { mw: 6 },
+                            content: {
+                                block: 'info',
+                                icon: { block: 'image', url: 'i/helps/3.svg'},
+                                text: [
+                                    'Build and structurie them',
+                                    'with live preview'
+                                ]
+                            }
+                        },
+                        {
+                            elem: 'col',
+                            elemMods: { mw: 6 },
+                            content: {
+                                block: 'info',
+                                icon: { block: 'image', url: 'i/helps/4.svg'},
+                                text: [
+                                    'Link live UI components to the all project ',
+                                    'layouts you have'
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    block: 'row',
+                    content: [
+                        {
+                            elem: 'col',
+                            elemMods: { mw: 6 },
+                            content: {
+                                block: 'info',
+                                icon: { block: 'image', url: 'i/helps/5.svg'},
+                                text: [
+                                    'Sync them with code implementation',
+                                    'in the background'
+                                ]
+                            }
+                        },
+                        {
+                            elem: 'col',
+                            elemMods: { mw: 6 },
+                            content: {
+                                block: 'info',
+                                icon: { block: 'image', url: 'i/helps/6.svg'},
+                                text: [
+                                    'Get design changes by pull requests by ',
+                                    'just pressing a hotkey not as layouts but ',
+                                    'as code you can work with'
                                 ]
                             }
                         }
@@ -419,13 +689,19 @@ module.exports = {
         },
         {
             block: 'section',
+            mods: { view: 'dates' },
             title: 'Delivery Dates',
             desc: [
                 'Protein will go live on Easter 2016 as a Starter Kit version ',
                 'with integrations’ releases as fast as possible'
             ],
             content: [
-                'Картиночка с графиком'
+                {
+                    block: 'icon',
+                    attrs: { style: 'width:1000px'},
+                    mods: { inline: true },
+                    path: 'dates'
+                }
             ]
         },
         {
@@ -438,50 +714,68 @@ module.exports = {
             ],
             content: [
                 {
-                    block: 'row',
+                    block: 'pricing',
                     content: [
                         {
-                            elem: 'col',
-                            mods: { mw: 6 },
-                            content: {
-                                block: 'price',
-                                title: 'Early bird price',
-                                price: '$99'
-                            }
+                            block: 'row',
+                            mix: { block: 'pricing', elem: 'list' },
+                            content: [
+                                {
+                                    elem: 'col',
+                                    mods: { mw: 2 }
+                                },
+                                {
+                                    elem: 'col',
+                                    mods: { mw: 4 },
+                                    content: {
+                                        block: 'price',
+                                        mods: { theme: 'early' },
+                                        title: 'Early bird price',
+                                        val: '99'
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    mods: { mw: 4 },
+                                    content: {
+                                        block: 'price',
+                                        title: 'After release price',
+                                        val: '149'
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    mods: { mw: 2 }
+                                }
+                            ]
                         },
                         {
-                            elem: 'col',
-                            mods: { mw: 6 },
-                            content: {
-                                block: 'price',
-                                title: 'After release price',
-                                price: '$149'
-                            }
+                            block: 'hint',
+                            mix: { block: 'pricing', elem: 'hint' },
+                            content: [
+                                'Pre-order price (Early bird) includes a full version of Protein Starter Kit with features available at release date'
+                            ]
+                        },
+                        {
+                            elem: 'text',
+                            content: [
+                                'If you are interested in custom settings or an enterprise version  of the product, ',
+                                'please, drop us a line at ',
+                                {
+                                    block: 'link',
+                                    mods: { theme: 'on-white' },
+                                    url: 'mailto: ask@theprotein.io',
+                                    content: 'ask@theprotein.io'
+                                }
+                            ]
                         }
                     ]
-                },
-                {
-                    block: 'hint',
-                    content: [
-                        'Pre-order price (Early bird) includes a full version of Protein Starter Kit with features available at release date'
-                    ]
-                },
-                [
-                    'If you are interested in custom settings or an enterprise version  of the product, ',
-                    'please, drop us a line at ',
-                    {
-                        block: 'link',
-                        url: 'mailto: ask@theprotein.io',
-                        content: 'ask@theprotein.io'
-                    }
-                ]
+                }
             ]
         },
         {
-            block: 'sep'
-        },
-        {
             block: 'section',
+            mix: { block: 'pre-order' },
             title: 'Protein Pre-order',
             desc: [
                 'Protein Pre-order starts on Christmas 2015 as an early bird mode ',
@@ -490,17 +784,25 @@ module.exports = {
             ],
             content: [
                 {
-                    block: 'button',
-                    mods: { type: 'link' },
-                    url: '',
-                    text: 'Subscribe'
-                },
-                {
-                    block: 'hint',
+                    block: 'pre-order',
+                    elem: 'content',
                     content: [
-                        '<b>Important!</b> Since we launch a limited number of pre-ordered licenses which you get discounted, ',
-                        'we advise you to hit Subscribe button to subscribe to the pre-order start. ',
-                        'If you do so, we will email you a link to get your Christmas Protein  even cheaper!'
+                        {
+                            block: 'button',
+                            mix: { block: 'pre-order', elem: 'button' },
+                            mods: { type: 'link', theme: 'fill' },
+                            url: 'http://eepurl.com/boJcIH',
+                            text: 'Subscribe'
+                        },
+                        {
+                            block: 'hint',
+                            mix: { block: 'pre-order', elem: 'hint' },
+                            content: [
+                                '<b>Important!</b> Since we launch a limited number of pre-ordered licenses which you get discounted, ',
+                                'we advise you to hit Subscribe button to subscribe to the pre-order start. ',
+                                'If you do so, we will email you a link to get your Christmas Protein  even cheaper!'
+                            ]
+                        }
                     ]
                 }
             ]
@@ -517,7 +819,7 @@ module.exports = {
                             mods: { mw: 4 },
                             content: {
                                 block: 'people',
-                                image: 'image',
+                                image: 'i/people/awinogradov.png',
                                 name: 'Anton Winogradov',
                                 nickname: 'awinogradov',
                                 post: 'CEO'
@@ -528,7 +830,7 @@ module.exports = {
                             mods: { mw: 4 },
                             content: {
                                 block: 'people',
-                                image: 'image',
+                                image: 'i/people/yaroshevich.png',
                                 name: 'Alexej Yaroshevich',
                                 nickname: 'yaroshevich',
                                 post: 'VP Engineering'
@@ -539,7 +841,7 @@ module.exports = {
                             mods: { mw: 4 },
                             content: {
                                 block: 'people',
-                                image: 'image',
+                                image: 'i/people/voischev.png',
                                 name: 'Ivan Voischev',
                                 nickname: 'voischev',
                                 post: 'VP Frontend Development'
@@ -552,10 +854,15 @@ module.exports = {
                     content: [
                         {
                             elem: 'col',
-                            mods: { mw: 6 },
+                            mods: { m: true },
+                            content: ''
+                        },
+                        {
+                            elem: 'col',
+                            mods: { m: true },
                             content: {
                                 block: 'people',
-                                image: 'image',
+                                image: 'i/people/mursya.png',
                                 name: 'Elena Jetpyspaeva',
                                 nickname: 'mursya',
                                 post: 'VP Business Development'
@@ -563,14 +870,19 @@ module.exports = {
                         },
                         {
                             elem: 'col',
-                            mods: { mw: 6 },
+                            mods: { m: true },
                             content: {
                                 block: 'people',
-                                image: 'image',
+                                image: 'i/people/squorax.png',
                                 name: 'Vladimir Stegantsov',
                                 nickname: 'squorax',
                                 post: 'Lead Designer'
                             }
+                        },
+                        {
+                            elem: 'col',
+                            mods: { m: true },
+                            content: ''
                         }
                     ]
                 }

@@ -1,4 +1,6 @@
-.quote {
+.quote_theme_green {
+    padding: 200px 0;
+    background: #64C800;
     font-weight: bold;
     font-size: 24px;
     line-height: 40px;
@@ -6,3 +8,12 @@
     color: #FFF;
 }
 
+
+.quote_theme_blue {
+    padding: 200px 0;
+    background-color: #008CDC;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFF;
+}

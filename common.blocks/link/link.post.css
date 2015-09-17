@@ -1,0 +1,23 @@
+.link {
+}
+
+.link_theme_on-white {
+    font-weight: bold;
+    color: #32A032;
+    text-decoration: none;
+
+    &.link_hovered {
+        text-decoration: underline;
+    }
+}
+
+
+.link_theme_on-color {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+    &.link_hovered {
+        text-decoration: underline;
+    }
+}

@@ -16,6 +16,7 @@ block('footer')(
                         { tag: 'br' },
                         {
                             block: 'link',
+                            mods: { theme: 'on-color' },
                             url: 'mailto:ask@theprotein.io',
                             content: 'ask@theprotein.io'
                         }
@@ -26,24 +27,25 @@ block('footer')(
                     mix: { block: this.block, elem: 'menu' },
                     content: [
                         {
-                            block: 'menu-item',
-                            mods: { type: 'link' },
-                            content: {
-                                block: 'link',
-                                url: '#',
-                                content: 'Privacy'
-                            }
+                            url: '#',
+                            text: 'Privacy'
                         },
                         {
+                            url: '#',
+                            text: 'Terms of use'
+                        }
+                    ].map(function(item) {
+                        return {
                             block: 'menu-item',
                             mods: { type: 'link' },
                             content: {
                                 block: 'link',
-                                url: '#',
-                                content: 'Terms of use'
+                                mods: { theme: 'on-color' },
+                                url: item.url,
+                                content: item.text
                             }
-                        }
-                    ]
+                        };
+                    })
                 },
                 {
                     elem: 'copy',

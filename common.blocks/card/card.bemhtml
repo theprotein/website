@@ -1,10 +1,8 @@
 block('card')(
     content()(function() {
+        this.ctx.image && (this.ctx.image.mix = { block: 'card', elem: 'image' });
         return [
-            this.ctx.image && {
-                block: 'image',
-                url: this.ctx.image
-            },
+            this.ctx.image,
             this.ctx.title && {
                 elem: 'title',
                 content: this.ctx.title

@@ -122,7 +122,7 @@ module.exports = function(node, opts) {
 
     node.mode('production', function() {
         node.addTechs([
-            [techs.borschik, { source: '.tmp.css', target: '?.min.css', tech: 'cleancss' }],
+            [techs.borschik, { source: '.tmp.css', target: '?.min.css', minify: true }],
             [techs.borschik, { source: '.tmp.js', target: '?.min.js' }]
         ]);
     });

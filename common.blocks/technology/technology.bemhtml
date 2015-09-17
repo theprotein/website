@@ -1,10 +1,8 @@
 block('technology')(
     content()(function() {
+        this.ctx.icon && (this.ctx.icon.mix = { block: this.block, elem: 'icon' });
         return [
-            {
-                elem: 'icon',
-                content: this.ctx.icon
-            },
+            this.ctx.icon,
             {
                 elem: 'text',
                 content: this.ctx.text
