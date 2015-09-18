@@ -12,21 +12,22 @@
     margin: 0;
     font-weight: bold;
     font-size: 36px;
-    line-height: 42px;
-    color: #008CDC;
+    line-height: 1.4;
+    color: #3B4572;
     text-align: center;
+    font-family: 'Quicksand';
 }
 
 .section__desc {
     padding-bottom: 75px;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 1.8;
     text-align: center;
-    color: #010101;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .section_view_header {
-    background: rgba(60, 174, 13, 1);
+    background: #262D4C;
 }
 
 .section_view_diet {

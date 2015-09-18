@@ -11,7 +11,7 @@ block('price')(
             },
             {
                 elem: 'footer',
-                content: '/year'
+                content: 'per year'
             }
         ];
     })

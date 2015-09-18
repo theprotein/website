@@ -1,21 +1,20 @@
 .button {
+    display: inline-block;
+    padding: 0 20px;
+    height: 44px;
+
     cursor: pointer;
     display: inline-block;
     box-sizing: border-box;
-}
+    font-family: 'Quicksand';
 
-.button_theme_bagel-in-color {
-    display: inline-block;
-    padding: 0 20px;
-    height: 36px;
-
-    line-height: 34px;
+    line-height: 38px;
     font-size: 18px;
     color: #FFF;
     font-weight: bold;
 
     border: 2px solid;
-    border-radius: 18px;
+    border-radius: 44px;
     text-decoration: none;
     transition: 200ms;
 
@@ -25,25 +24,22 @@
     }
 }
 
-.button_theme_fill {
-    padding: 0 70px;
-    height: 40px;
-    display: inline-block;
+.button_size_m {
+    padding: 0 20px;
+    height: 44px;
 
-    background: #64C800;
+    line-height: 38px;
+    font-size: 18px;
 
-    border-radius: 40px;
+    border-radius: 44px;
+}
 
-    font-weight: bold;
-    font-size: 21px;
-    color: #FFFFFF;
-    line-height: 40px;
-    text-align: center;
+.button_size_l {
+    padding: 0 40px;
+    height: 70px;
 
-    transition: 200ms;
-    text-decoration: none;
+    line-height: 64px;
+    font-size: 28px;
 
-    &.button_hovered {
-        background: #60C000;
-    }
+    border-radius: 70px;
 }

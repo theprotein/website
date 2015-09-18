@@ -10,8 +10,7 @@
             mods: { pseudo: true }
         },
         {
-            block: 'button',
-            mods: { type: 'link', theme: 'bagel-in-color' }
+            block: 'button'
         },
         'logo'
     ]

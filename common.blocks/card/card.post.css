@@ -4,16 +4,15 @@
 }
 
 .card__title {
-    font-size: 24px;
-    color: #357EC3;
+    font-size: 28px;
+    color: #3B4572;
+    font-family: 'Quicksand';
     font-weight: bold;
-    line-height: 28px;
-    padding-bottom: 20px;
+    line-height: 1.4;
 }
 
 .card__desc {
-    font-size: 14px;
-    line-height: 24px;
-    color: #010101;
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.7);
 }
-

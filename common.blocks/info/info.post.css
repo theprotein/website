@@ -9,9 +9,8 @@
     left: 0;
 }
 .info__text {
+    color: rgba(0, 0, 0, .7);
     padding-left: 70px;
-    color: #D0021B;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
 }
-

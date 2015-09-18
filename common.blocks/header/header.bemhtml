@@ -44,7 +44,7 @@ block('header')(
                             mods: { type: 'button' },
                             content: {
                                 block: 'button',
-                                mods: { type: 'link', theme: 'bagel-in-color' },
+                                mods: { type: 'link', size: 'm' },
                                 url: 'http://eepurl.com/boJcIH',
                                 text: 'Subscribe'
                             }

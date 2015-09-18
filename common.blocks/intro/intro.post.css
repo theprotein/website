@@ -3,16 +3,17 @@
 }
 
 .intro__scheme {
-    margin:  0 auto 100px;
+    margin:  auto;
     width: 425px;
     height: 171px;
 }
 
 .intro__content {
-    font-size: 24px;
-    font-weight: bold;
+    margin-bottom: 60px;
+    font-size: 30px;
+    font-weight: 400;
     color: #FFF;
+    font-family: 'Quicksand';
     text-align: center;
-    line-height: 40px;
+    line-height: 1.4;
 }
-

@@ -1,16 +1,16 @@
 block('intro').content()(function() {
     return [
         {
+            elem: 'content',
+            content: applyNext()
+        },
+        {
             elem: 'scheme',
             content: {
                 block: 'icon',
                 mods: { inline: true },
                 path: 'scheme'
             }
-        },
-        {
-            elem: 'content',
-            content: applyNext()
         }
     ];
 });

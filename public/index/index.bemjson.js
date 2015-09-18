@@ -18,11 +18,9 @@ module.exports = {
             content: {
                 block: 'intro',
                 content: [
-                    'Your everyday working process and tools ',
+                    'Your everyday working process and tools do not change ',
                     { tag: 'br' },
-                    'do not change but the profit you get ',
-                    { tag: 'br' },
-                    'change everything'
+                    'but the profit you get change everything'
                 ]
             }
         },
@@ -50,13 +48,9 @@ module.exports = {
                                 },
                                 title: 'Workflow',
                                 desc: [
-                                    'Once the changes to a project were made, your ',
-                                    'design or development team simply syncs them ',
-                                    'with Protein by pressing the button. Once ',
-                                    'pressed Protein pushes them as a new pull ',
-                                    'request into a repository of the project, and they ',
-                                    'appear in your ordinary working tool as a code or ',
-                                    'a design sketch'
+                                    'Simple. Once changes are made you press [cmd] + P ',
+                                    'to sync it, and they appear in your working tool ',
+                                    ' as a code or a design sketch.'
                                 ]
                             }
                         },
@@ -72,13 +66,9 @@ module.exports = {
                                 },
                                 title: 'Team',
                                 desc: [
-                                    'Protein is a team product. It’s scientifically ',
-                                    'proven that everyday use of Protein turns your ',
-                                    'team’s working routine into incredible ',
-                                    'productivity with no time waste on additional ',
-                                    'synchronisations. It is great for designers, ',
+                                    'As a team product it is great for designers, ',
                                     'frontend developers, testing engineers, UI/UX ',
-                                    'engineers, managers'
+                                    'engineers, managers.'
                                 ]
                             }
                         }
@@ -100,9 +90,8 @@ module.exports = {
             mix: { block: 'starter-kit' },
             title: 'Starter Kit',
             desc: [
-                'We launch Protein as a Starter Kit ',
-                'releasing integrations with other products you may use ',
-                'as new features later on '
+                'We launch Protein as a Starter Kit releasing integrations with other products ',
+                'you may use as new features later on'
             ],
             content: [
                 {
@@ -124,10 +113,10 @@ module.exports = {
                                 title: 'Converting',
                                 desc: [
                                     'Protein Starter Kit converts ',
-                                    'UI components that a designer ',
-                                    'creates into a source code ',
-                                    'to be used by a developer ',
-                                    'and vice versa '
+                                    'UI components\' designs ',
+                                    'into a source code ',
+                                    'and vice versa',
+                                    'regardless of the platform '
                                 ]
                             }
                         },
@@ -180,48 +169,10 @@ module.exports = {
                 {
                     block: 'technologies',
                     mix: { block: 'starter-kit', elem: 'technologies' },
-                    title: 'Goes along well with',
                     content: [
                         {
                             block: 'row',
                             content: [
-                                {
-                                    elem: 'col',
-                                    elemMods: {
-                                        m: true
-                                    },
-                                    content: ''
-                                },
-                                {
-                                    elem: 'col',
-                                    elemMods: {
-                                        m: true
-                                    },
-                                    content: {
-                                        block: 'technologies',
-                                        elem: 'item',
-                                        content: {
-                                            block: 'technology',
-                                            icon: { block: 'icon', mods: { technology: 'html' }},
-                                            text: 'HTML + CSS'
-                                        }
-                                    }
-                                },
-                                {
-                                    elem: 'col',
-                                    elemMods: {
-                                        m: true
-                                    },
-                                    content: {
-                                        block: 'technologies',
-                                        elem: 'item',
-                                        content: {
-                                            block: 'technology',
-                                            icon: { block: 'icon', mods: { technology: 'osx' }},
-                                            text: 'OS X'
-                                        }
-                                    }
-                                },
                                 {
                                     elem: 'col',
                                     elemMods: {
@@ -248,17 +199,20 @@ module.exports = {
                                     elemMods: {
                                         m: true
                                     },
-                                    content: ''
-                                }
-                            ]
-                        },
-                        {
-                            block: 'row',
-                            content: [
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            icon: { block: 'icon', mods: { technology: 'sketch' }},
+                                            text: 'Illustrator'
+                                        }
+                                    }
+                                },
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        mw: '3'
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -273,7 +227,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        mw: '3'
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -288,22 +242,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        mw: '3'
-                                    },
-                                    content: {
-                                        block: 'technologies',
-                                        elem: 'item',
-                                        content: {
-                                            block: 'technology',
-                                            icon: { block: 'icon', mods: { technology: 'backbone' }},
-                                            text: 'Backbone'
-                                        }
-                                    }
-                                },
-                                {
-                                    elem: 'col',
-                                    elemMods: {
-                                        mw: '3'
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -314,6 +253,13 @@ module.exports = {
                                             text: 'BEM'
                                         }
                                     }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        m: true
+                                    },
+                                    content: ''
                                 }
                             ]
                         }
@@ -322,22 +268,28 @@ module.exports = {
             ]
         },
         {
-            block: 'sep'
+            block: 'section',
+            mix: { block: 'quote', mods: { theme: 'green' } },
+            content: [
+                'It’s scientifically proven that everyday use of Protein turns ',
+                { tag: 'br' },
+                'your team’s working routine into incredible productivity ',
+                { tag: 'br' },
+                'with no time waste on additional synchronisations'
+            ]
         },
         {
             block: 'section',
             mix: { block: 'integrations' },
             title: 'Integrations',
             desc: [
-                'We plan on extending Protein to any service you might use as integration',
-                'and will be releasing them soon after Starter Kit release. It will work through the cloud ',
-                'storage with a web access to team management and integrations’ settings'
+                'We extend Protein to any service you might use as integration',
+                'available after Starter Kit release'
             ],
             content: [
                 {
                     block: 'technologies',
                     mix: { block: 'integrations', elem: 'technologies' },
-                    title: 'Integrations available',
                     content: [
                         {
                             block: 'row',
@@ -345,7 +297,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        mw: 3
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -360,7 +312,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        mw: 3
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -375,7 +327,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        mw: 3
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -390,7 +342,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        mw: 3
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -401,23 +353,11 @@ module.exports = {
                                             text: 'Google Form'
                                         }
                                     }
-                                }
-                            ]
-                        },
-                        {
-                            block: 'row',
-                            content: [
-                                {
-                                    elem: 'col',
-                                    elemMods: {
-                                        mw: '3'
-                                    },
-                                    content: ''
                                 },
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        mw: '3'
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -432,7 +372,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        mw: '3'
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -443,17 +383,9 @@ module.exports = {
                                             text: 'Marvel'
                                         }
                                     }
-                                },
-                                {
-                                    elem: 'col',
-                                    elemMods: {
-                                        mw: '3'
-                                    },
-                                    content: ''
                                 }
                             ]
-                        }
-                    ]
+                        }                    ]
                 },
                 {
                     block: 'hint',
@@ -473,7 +405,11 @@ module.exports = {
             ]
         },
         {
-            block: 'sep'
+            block: 'section',
+            mix: { block: 'quote', mods: { theme: 'green' } },
+            content: [
+                'Protein helps your team speak one language and use one library instead of multiple copies and designs',
+            ]
         },
         {
             block: 'section',
@@ -555,9 +491,6 @@ module.exports = {
             ]
         },
         {
-            block: 'sep'
-        },
-        {
             block: 'section',
             title: 'Workflow',
             desc: [
@@ -578,18 +511,7 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'green' } },
             content: [
-                'Protein helps your team speak one language and use one library instead of multiple copies and designs. ',
-                { tag: 'br' },
                 'With Protein your team develops the core product faster with no efforts wasted on the go'
-            ]
-        },
-        {
-            block: 'section',
-            mix: { block: 'quote', mods: { theme: 'green' } },
-            content: [
-                'Protein helps your team speak one language and use one library instead of multiple copies and designs ',
-                { tag: 'br' },
-                'and develop the core product faster with no efforts wasted on the go '
             ]
         },
         {
@@ -692,7 +614,7 @@ module.exports = {
             mods: { view: 'dates' },
             title: 'Delivery Dates',
             desc: [
-                'Protein will go live on Easter 2016 as a Starter Kit version ',
+                'Protein will go live on Spring 2016 as a Starter Kit version ',
                 'with integrations’ releases as fast as possible'
             ],
             content: [
@@ -708,9 +630,9 @@ module.exports = {
             block: 'section',
             title: 'Pricing',
             desc: [
-                'We scheduled Protein Starter Kit launch for May 2016. ',
-                'However, you can support the team and the product ',
-                'and pre-order some Protein for Christmas with a festive reduction'
+                'Protein Starter Kit will be launched in Spring 2016 on an annual subscription basis.',
+                'All released integrations and features after the Starter Kit release',
+                'will be shipped as updates of the core product.'
             ],
             content: [
                 {
@@ -753,13 +675,7 @@ module.exports = {
                             block: 'hint',
                             mix: { block: 'pricing', elem: 'hint' },
                             content: [
-                                'Pre-order price (Early bird) includes a full version of Protein Starter Kit with features available at release date'
-                            ]
-                        },
-                        {
-                            elem: 'text',
-                            content: [
-                                'If you are interested in custom settings or an enterprise version  of the product, ',
+                                'If you are interested in custom settings or an enterprise version  of the product, <br>',
                                 'please, drop us a line at ',
                                 {
                                     block: 'link',
@@ -776,11 +692,10 @@ module.exports = {
         {
             block: 'section',
             mix: { block: 'pre-order' },
-            title: 'Protein Pre-order',
+            title: 'Pre-order',
             desc: [
-                'Protein Pre-order starts on Christmas 2015 as an early bird mode ',
-                'where you can buy Protein Starter Kit with a Christmas price reduction ',
-                'and show the community support during the development process'
+                'Pre-order starts on Christmas in an early bird mode with a limited number of licenses ',
+                'which you get discounted if you subscribe to pre-order\'s start ',
             ],
             content: [
                 {
@@ -790,18 +705,9 @@ module.exports = {
                         {
                             block: 'button',
                             mix: { block: 'pre-order', elem: 'button' },
-                            mods: { type: 'link', theme: 'fill' },
+                            mods: { type: 'link', size: 'l' },
                             url: 'http://eepurl.com/boJcIH',
                             text: 'Subscribe'
-                        },
-                        {
-                            block: 'hint',
-                            mix: { block: 'pre-order', elem: 'hint' },
-                            content: [
-                                '<b>Important!</b> Since we launch a limited number of pre-ordered licenses which you get discounted, ',
-                                'we advise you to hit Subscribe button to subscribe to the pre-order start. ',
-                                'If you do so, we will email you a link to get your Christmas Protein  even cheaper!'
-                            ]
                         }
                     ]
                 }
