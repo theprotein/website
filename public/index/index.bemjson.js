@@ -501,7 +501,6 @@ module.exports = {
             content: [
                 {
                     block: 'icon',
-                    attrs: { style: 'margin:auto;width:228px;display:block;'},
                     mods: { inline: true },
                     path: 'pw'
                 }
