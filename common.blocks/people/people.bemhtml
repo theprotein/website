@@ -1,4 +1,9 @@
 block('people')(
+    js()(true),
+    tag()('a'),
+    attrs()(function() {
+        return { href: 'http://twitter.com/' + this.ctx.nickname };
+    }),
     content()(function() {
         return [
             {
@@ -11,9 +16,7 @@ block('people')(
                 content: this.ctx.name
             },
             {
-                block: 'link',
-                mix: { block: this.block, elem: 'nickname' },
-                url: 'http://twitter.com/' + this.ctx.nickname,
+                elem: 'nickname',
                 content: '@' + this.ctx.nickname
             },
             {
@@ -21,5 +24,8 @@ block('people')(
                 content: this.ctx.post
             }
         ];
-    })
+    }),
+    elem('name').tag()('span'),
+    elem('nickname').tag()('span'),
+    elem('post').tag()('span')
 );

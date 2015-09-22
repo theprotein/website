@@ -187,6 +187,7 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
+                                            url: 'http://bohemiancoding.com/sketch/',
                                             icon: { block: 'icon', mods: { technology: 'sketch' }},
                                             text: [
                                                 'Sketch',
@@ -208,6 +209,7 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
+                                            url: 'http://www.adobe.com/ru/products/illustrator.html',
                                             icon: { block: 'icon', mods: { technology: 'illustrator' }},
                                             text: 'Illustrator'
                                         }
@@ -223,6 +225,7 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
+                                            url: 'http://facebook.github.io/react/',
                                             icon: { block: 'icon', mods: { technology: 'react' }},
                                             text: 'React'
                                         }
@@ -238,6 +241,7 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
+                                            url: 'https://angularjs.org',
                                             icon: { block: 'icon', mods: { technology: 'angular' }},
                                             text: 'Angular'
                                         }
@@ -253,6 +257,7 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
+                                            url: 'http://bem.info',
                                             icon: { block: 'icon', mods: { technology: 'bem' }},
                                             text: 'BEM'
                                         }
@@ -299,6 +304,7 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
+                                            url: 'https://www.parse.com',
                                             icon: { block: 'icon', mods: { technology: 'parse' }},
                                             text: 'Parse'
                                         }
@@ -314,6 +320,7 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
+                                            url: 'http://www.invisionapp.com',
                                             icon: { block: 'icon', mods: { technology: 'invision' }},
                                             text: 'Invision'
                                         }
@@ -329,6 +336,7 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
+                                            url: 'http://framerjs.com',
                                             icon: { block: 'icon', mods: { technology: 'framerjs' }},
                                             text: 'FramerJS'
                                         }
@@ -344,6 +352,7 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
+                                            url: 'http://www.google.com/intl/ru/forms/about/',
                                             icon: { block: 'icon', mods: { technology: 'google-form' }},
                                             text: 'Google Form'
                                         }
@@ -359,6 +368,7 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
+                                            url: 'http://www.pixate.com',
                                             icon: { block: 'icon', mods: { technology: 'pixate' }},
                                             text: 'Pixate'
                                         }
@@ -374,6 +384,7 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
+                                            url: 'https://marvelapp.com',
                                             icon: { block: 'icon', mods: { technology: 'marvel' }},
                                             text: 'Marvel'
                                         }

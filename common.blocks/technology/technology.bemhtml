@@ -1,4 +1,11 @@
 block('technology')(
+    js()(true),
+    tag()('a'),
+    attrs()(function() {
+       return {
+            href: this.ctx.url || ''
+       };
+    }),
     content()(function() {
         this.ctx.icon && (this.ctx.icon.mix = { block: this.block, elem: 'icon' });
         return [
@@ -9,5 +16,6 @@ block('technology')(
             }
         ];
     }),
-    elem('sup').tag()('sup')
+    elem('sup').tag()('sup'),
+    elem('text').tag()('span')
 );

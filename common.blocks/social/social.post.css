@@ -7,10 +7,23 @@
 
     .icon {
         circle {
-            stroke: red;
+            stroke: #008CDC;
+            transition: 200ms;
         }
         path {
-            fill: red;
+            fill: #008CDC;
+            transition: 200ms;
+        }
+    }
+
+    .link_hovered {
+        .icon {
+            circle {
+                stroke: #167AB3;
+            }
+            path {
+                fill: #167AB3;
+            }
         }
     }
 }

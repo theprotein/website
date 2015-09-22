@@ -4,20 +4,6 @@
     background-position: center;
 }
 
-.icon_social_facebook:hover,
-.icon_social_github:hover,
-.icon_social_medium:hover,
-.icon_social_twitter:hover {
-    circle {
-        transition: 200ms;
-        stroke: red !important;
-    }
-    path {
-        transition: 200ms;
-        fill: red !important;
-    }
-}
-
 .icon_technology_angular,
 .icon_technology_backbone,
 .icon_technology_bem,

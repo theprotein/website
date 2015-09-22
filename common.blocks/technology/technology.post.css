@@ -1,6 +1,8 @@
 .technology {
     text-align: center;
     display: inline-block;
+    text-decoration: none;
+    outline: none;
 }
 
 .technology__icon {
@@ -10,7 +12,7 @@
 .technology__text {
     font-weight: bold;
     font-size: 14px;
-    color: #3264B4;
+    color: #008CDC;
     line-height: 37px;
     display: block;
     text-align: center;
@@ -21,6 +23,10 @@
     color: #E44D26;
     font-size: 12px;
     line-height: 1;
+}
+
+.technology_hovered .technology__text{
+    color: #167AB3;
 }
 
 @media (--small-only) {
