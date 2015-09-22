@@ -1,6 +1,7 @@
 .technologies {
     margin: auto;
-    width: 760px;
+    max-width: 760px;
+
     display: block;
 }
 

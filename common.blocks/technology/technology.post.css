@@ -22,3 +22,33 @@
     font-size: 12px;
     line-height: 1;
 }
+
+@media (--small-only) {
+    .technology {
+        font-size: 45px;
+    }
+
+    .technology__icon {
+        height: 40px;
+        background-size: 100% 40px;
+
+        &.icon_technology_angular { width: 31.5px; }
+        &.icon_technology_backbone { width: 26px; }
+        &.icon_technology_bem { width: 49.5px; }
+        &.icon_technology_framerjs { width: 29.5px; }
+        &.icon_technology_google-form { width: 32px; }
+        &.icon_technology_html { width: 25.5px; }
+        &.icon_technology_invision { width: 32px; }
+        &.icon_technology_marvel { width: 32.5px; }
+        &.icon_technology_osx { width: 33px; }
+        &.icon_technology_parse { width: 45px; }
+        &.icon_technology_pixate { width: 32px; }
+        &.icon_technology_react { width: 36px; }
+        &.icon_technology_sketch { width: 37px; }
+    }
+
+    .technology__text {
+        font-size: 12px;
+        line-height: 28px;
+    }
+}

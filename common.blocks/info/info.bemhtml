@@ -17,7 +17,7 @@ block('info')(
         return content.map(function(text, index) {
             return [
                 text,
-                len - 1 > index && { tag: 'br' }
+                len - 1 > index && { block: 'br' }
             ];
         });
     })

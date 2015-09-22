@@ -10,19 +10,6 @@ block('footer')(
                     mods: { theme: 'on-color' }
                 },
                 {
-                    elem: 'text',
-                    content: [
-                        'If you have any questions or suggestions ',
-                        { tag: 'br' },
-                        {
-                            block: 'link',
-                            mods: { theme: 'on-color' },
-                            url: 'mailto:ask@theprotein.io',
-                            content: 'ask@theprotein.io'
-                        }
-                    ]
-                },
-                {
                     block: 'menu',
                     mix: { block: this.block, elem: 'menu' },
                     content: [
@@ -33,6 +20,10 @@ block('footer')(
                         {
                             url: '#',
                             text: 'Terms of use'
+                        },
+                        {
+                            url: 'mailto:ask@theprotein.io',
+                            text: 'Email as'
                         }
                     ].map(function(item) {
                         return {
@@ -40,7 +31,7 @@ block('footer')(
                             mods: { type: 'link' },
                             content: {
                                 block: 'link',
-                                mods: { theme: 'on-color' },
+                                mods: { theme: 'on-white' },
                                 url: item.url,
                                 content: item.text
                             }

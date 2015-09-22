@@ -1,6 +1,10 @@
 .link {
 }
 
+.link_focused {
+    outline: none;
+}
+
 .link_theme_on-white {
     font-weight: bold;
     color: #32A032;
@@ -10,7 +14,6 @@
         text-decoration: underline;
     }
 }
-
 
 .link_theme_on-color {
     font-weight: bold;

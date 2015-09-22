@@ -1,3 +1,3 @@
 ({
-    shouldDeps: ['clearfix']
+    shouldDeps: ['clearfix', 'br']
 });

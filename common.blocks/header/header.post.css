@@ -1,5 +1,5 @@
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -12,17 +12,16 @@
 
 .header__content {
     margin: auto;
-    padding-top: 25px;
-    max-width: 1176px;
-    min-width: 846px;
+    padding-top: 50px;
+    max-width: 1000px;
 }
 
 .header__logo {
-    float: left;
+    width: 173px;
 }
 
 .header__menu {
-    float: right;
+    display: none;
 
     .menu-item {
         display: inline-block;
@@ -41,5 +40,29 @@
 
     .menu-item_type_button {
         margin-left: 20px;
+    }
+}
+
+@media (--small) {
+    .header__logo {
+        margin: auto;
+    }
+}
+
+@media (--large) {
+    .header {
+        position: fixed;
+    }
+    .header__logo {
+        float: left;
+    }
+    .header__menu {
+        display: block;
+        float: right;
+    }
+
+    .header__content {
+        padding-top: 25px;
+        min-width: 846px;
     }
 }

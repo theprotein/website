@@ -19,7 +19,7 @@ module.exports = {
                 block: 'intro',
                 content: [
                     'Your everyday working process and tools do not change ',
-                    { tag: 'br' },
+                    { block: 'br' },
                     'but the profit you get change everything'
                 ]
             }
@@ -38,7 +38,7 @@ module.exports = {
                     content: [
                         {
                             elem: 'col',
-                            mods: { mw: 6 },
+                            mods: { sw: 12, mw: 6 },
                             content: {
                                 block: 'card',
                                 image: {
@@ -56,7 +56,7 @@ module.exports = {
                         },
                         {
                             elem: 'col',
-                            mods: { mw: 6 },
+                            mods: { sw: 12, mw: 6 },
                             content: {
                                 block: 'card',
                                 image: {
@@ -80,9 +80,9 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'blue' } },
             content: [
-                'We are inspired here at Protein and think that every tool the developer team uses ',
-                { tag: 'br' },
-                'should be compatible with Protein to empower the magic of one another'
+                'Protein requires no additional knowledge or change ',
+                { block: 'br' },
+                'of tools the team already use'
             ]
         },
         {
@@ -101,6 +101,7 @@ module.exports = {
                         {
                             elem: 'col',
                             mods: {
+                                sw:12,
                                 mw: 4
                             },
                             content: {
@@ -123,6 +124,7 @@ module.exports = {
                         {
                             elem: 'col',
                             mods: {
+                                sw:12,
                                 mw: 4
                             },
                             content: {
@@ -145,6 +147,7 @@ module.exports = {
                         {
                             elem: 'col',
                             mods: {
+                                sw:12,
                                 mw: 4
                             },
                             content: {
@@ -176,7 +179,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        m: true
+                                        s: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -197,7 +200,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        m: true
+                                        s: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -212,7 +215,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        m: true
+                                        s: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -227,7 +230,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        m: true
+                                        s: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -242,7 +245,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        m: true
+                                        s: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -253,13 +256,6 @@ module.exports = {
                                             text: 'BEM'
                                         }
                                     }
-                                },
-                                {
-                                    elem: 'col',
-                                    elemMods: {
-                                        m: true
-                                    },
-                                    content: ''
                                 }
                             ]
                         }
@@ -271,11 +267,9 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'green' } },
             content: [
-                'It’s scientifically proven that everyday use of Protein turns ',
-                { tag: 'br' },
-                'your team’s working routine into incredible productivity ',
-                { tag: 'br' },
-                'with no time waste on additional synchronisations'
+                'We are inspired here at Protein and think that every tool the developer team uses ',
+                { block: 'br' },
+                'should be compatible with Protein to empower the magic of one another'
             ]
         },
         {
@@ -297,7 +291,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        m: true
+                                        s: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -312,7 +306,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        m: true
+                                        s: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -327,7 +321,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        m: true
+                                        s: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -342,7 +336,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        m: true
+                                        s: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -357,7 +351,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        m: true
+                                        s: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -372,7 +366,7 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        m: true
+                                        s: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -385,7 +379,8 @@ module.exports = {
                                     }
                                 }
                             ]
-                        }                    ]
+                        }
+                    ]
                 },
                 {
                     block: 'hint',
@@ -398,7 +393,7 @@ module.exports = {
                             url: 'mailto:ask@theprotein.io',
                             content: 'ask@theprotein.io'
                         },
-                        { tag: 'br' },
+                        { block: 'br' },
                         'and we try our best to release it as integration'
                     ]
                 }
@@ -408,7 +403,11 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'green' } },
             content: [
-                'Protein helps your team speak one language and use one library instead of multiple copies and designs',
+                'It’s scientifically proven that everyday use of Protein turns ',
+                { block: 'br' },
+                'your team’s working routine into incredible productivity ',
+                { block: 'br' },
+                'with no time waste on additional synchronisations'
             ]
         },
         {
@@ -425,7 +424,10 @@ module.exports = {
                     content: [
                         {
                             elem: 'col',
-                            mods: { mw: 4 },
+                            mods: {
+                                sw: 12,
+                                mw: 4
+                            },
                             content: {
                                 block: 'card',
                                 image: {
@@ -446,7 +448,10 @@ module.exports = {
                         },
                         {
                             elem: 'col',
-                            mods: { mw: 4 },
+                            mods: {
+                                sw: 12,
+                                mw: 4
+                            },
                             content: {
                                 block: 'card',
                                 image: {
@@ -467,7 +472,10 @@ module.exports = {
                         },
                         {
                             elem: 'col',
-                            mods: { mw: 4 },
+                            mods: {
+                                sw: 12,
+                                mw: 4
+                            },
                             content: {
                                 block: 'card',
                                 image: {
@@ -492,6 +500,15 @@ module.exports = {
         },
         {
             block: 'section',
+            mix: { block: 'quote', mods: { theme: 'green' } },
+            content: [
+                'Protein helps your team speak one language and use one library ',
+                { block: 'br' },
+                'instead of multiple copies and designs'
+            ]
+        },
+        {
+            block: 'section',
             title: 'Workflow',
             desc: [
                 'Protein is easily installed into existing design and development workflow as a communication tool ',
@@ -511,7 +528,9 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'green' } },
             content: [
-                'With Protein your team develops the core product faster with no efforts wasted on the go'
+                'With Protein your team develops the core product faster ',
+                { tag : 'br' },
+                'with no efforts wasted on the go'
             ]
         },
         {
@@ -524,7 +543,10 @@ module.exports = {
                     content: [
                         {
                             elem: 'col',
-                            elemMods: { mw: 6 },
+                            elemMods: {
+                                sw: 12,
+                                mw: 6
+                            },
                             content: {
                                 block: 'info',
                                 icon: { block: 'image', url: 'i/helps/1.svg'},
@@ -536,7 +558,10 @@ module.exports = {
                         },
                         {
                             elem: 'col',
-                            elemMods: { mw: 6 },
+                            elemMods: {
+                                sw: 12,
+                                mw: 6
+                            },
                             content: {
                                 block: 'info',
                                 icon: { block: 'image', url: 'i/helps/2.svg'},
@@ -545,15 +570,13 @@ module.exports = {
                                     'with other designers'
                                 ]
                             }
-                        }
-                    ]
-                },
-                {
-                    block: 'row',
-                    content: [
+                        },
                         {
                             elem: 'col',
-                            elemMods: { mw: 6 },
+                            elemMods: {
+                                sw: 12,
+                                mw: 6
+                            },
                             content: {
                                 block: 'info',
                                 icon: { block: 'image', url: 'i/helps/3.svg'},
@@ -565,7 +588,10 @@ module.exports = {
                         },
                         {
                             elem: 'col',
-                            elemMods: { mw: 6 },
+                            elemMods: {
+                                sw: 12,
+                                mw: 6
+                            },
                             content: {
                                 block: 'info',
                                 icon: { block: 'image', url: 'i/helps/4.svg'},
@@ -574,15 +600,13 @@ module.exports = {
                                     'layouts you have'
                                 ]
                             }
-                        }
-                    ]
-                },
-                {
-                    block: 'row',
-                    content: [
+                        },
                         {
                             elem: 'col',
-                            elemMods: { mw: 6 },
+                            elemMods: {
+                                sw: 12,
+                                mw: 6
+                            },
                             content: {
                                 block: 'info',
                                 icon: { block: 'image', url: 'i/helps/5.svg'},
@@ -594,7 +618,10 @@ module.exports = {
                         },
                         {
                             elem: 'col',
-                            elemMods: { mw: 6 },
+                            elemMods: {
+                                sw: 12,
+                                mw: 6
+                            },
                             content: {
                                 block: 'info',
                                 icon: { block: 'image', url: 'i/helps/6.svg'},
@@ -611,7 +638,7 @@ module.exports = {
         },
         {
             block: 'section',
-            mods: { view: 'dates' },
+            mix: { block: 'dates' },
             title: 'Delivery Dates',
             desc: [
                 'Protein will go live on Spring 2016 as a Starter Kit version ',
@@ -620,7 +647,7 @@ module.exports = {
             content: [
                 {
                     block: 'icon',
-                    attrs: { style: 'width:1000px'},
+                    mix: { block: 'dates', elem: 'image' },
                     mods: { inline: true },
                     path: 'dates'
                 }
@@ -644,11 +671,19 @@ module.exports = {
                             content: [
                                 {
                                     elem: 'col',
-                                    mods: { mw: 2 }
+                                    mods: {
+                                        sw: 0,
+                                        mw: 0,
+                                        lw: 2
+                                    }
                                 },
                                 {
                                     elem: 'col',
-                                    mods: { mw: 4 },
+                                    mods: {
+                                        sw: 6,
+                                        mw: 6,
+                                        lw: 4
+                                    },
                                     content: {
                                         block: 'price',
                                         mods: { theme: 'early' },
@@ -658,7 +693,11 @@ module.exports = {
                                 },
                                 {
                                     elem: 'col',
-                                    mods: { mw: 4 },
+                                    mods: {
+                                        sw: 6,
+                                        mw: 6,
+                                        lw: 4
+                                    },
                                     content: {
                                         block: 'price',
                                         title: 'After release price',
@@ -667,7 +706,11 @@ module.exports = {
                                 },
                                 {
                                     elem: 'col',
-                                    mods: { mw: 2 }
+                                    mods: {
+                                        sw: 0,
+                                        mw: 0,
+                                        lw: 2
+                                    }
                                 }
                             ]
                         },
@@ -722,7 +765,10 @@ module.exports = {
                     content: [
                         {
                             elem: 'col',
-                            mods: { mw: 4 },
+                            mods: {
+                                sw: 6,
+                                mw: 4
+                            },
                             content: {
                                 block: 'people',
                                 image: 'i/people/awinogradov.png',
@@ -733,7 +779,10 @@ module.exports = {
                         },
                         {
                             elem: 'col',
-                            mods: { mw: 4 },
+                            mods: {
+                                sw: 6,
+                                mw: 4
+                            },
                             content: {
                                 block: 'people',
                                 image: 'i/people/yaroshevich.png',
@@ -744,7 +793,10 @@ module.exports = {
                         },
                         {
                             elem: 'col',
-                            mods: { mw: 4 },
+                            mods: {
+                                sw: 12,
+                                mw: 4
+                            },
                             content: {
                                 block: 'people',
                                 image: 'i/people/voischev.png',
@@ -760,12 +812,18 @@ module.exports = {
                     content: [
                         {
                             elem: 'col',
-                            mods: { m: true },
+                            mods: {
+                                mw: 0,
+                                l: true
+                            },
                             content: ''
                         },
                         {
                             elem: 'col',
-                            mods: { m: true },
+                            mods: {
+                                sw: 6,
+                                m: true
+                            },
                             content: {
                                 block: 'people',
                                 image: 'i/people/mursya.png',
@@ -776,7 +834,10 @@ module.exports = {
                         },
                         {
                             elem: 'col',
-                            mods: { m: true },
+                            mods: {
+                                sw: 6,
+                                m: true
+                            },
                             content: {
                                 block: 'people',
                                 image: 'i/people/squorax.png',
@@ -787,7 +848,10 @@ module.exports = {
                         },
                         {
                             elem: 'col',
-                            mods: { m: true },
+                            mods: {
+                                mw: 0,
+                                l: true
+                            },
                             content: ''
                         }
                     ]

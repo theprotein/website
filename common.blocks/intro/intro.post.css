@@ -1,9 +1,10 @@
 .intro {
     padding-top: 35px;
+    text-align: center;
 }
 
 .intro__scheme {
-    margin:  auto;
+    margin: 0 auto 60px;
     width: 425px;
     height: 171px;
 }
@@ -14,6 +15,14 @@
     font-weight: 400;
     color: #FFF;
     font-family: 'Quicksand';
-    text-align: center;
     line-height: 1.4;
+}
+
+@media (--large) {
+    .intro__scheme {
+        margin-bottom: 0;
+    }
+    .intro__buttom {
+        display: none;
+    }
 }

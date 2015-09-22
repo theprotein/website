@@ -1,0 +1,15 @@
+.dates {
+    background: rgb(240, 244, 245);
+}
+
+.dates__image {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+.dates__image svg {
+    width: 100%;
+}
+

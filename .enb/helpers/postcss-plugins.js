@@ -16,10 +16,5 @@ module.exports = [
         url: 'rebase'
     }),
     require('postcss-font-magician')({ /* options */ }),
-    require('autoprefixer')({
-        browsers: [
-            'last 2 versions',
-            'ie 10'
-        ]
-    })
+    require('autoprefixer')()
 ];

@@ -1,10 +1,7 @@
 .footer {
-    padding-top: 85px;
+    padding-top: 60px;
     padding-bottom: 30px;
-
-    background: rgba(60, 174, 13, 1);
-
-    color: #FFF;
+    background: rgba(255, 255, 255, 1);
 }
 
 .footer__content {
@@ -14,7 +11,7 @@
 }
 
 .footer__social {
-    margin-bottom: 85px;
+    margin-bottom: 30px;
 }
 
 .footer__text {
@@ -23,7 +20,7 @@
 
     .link {
         text-decoration: none;
-        color: #FFF;
+        /*color: #FFF;*/
     }
 }
 
@@ -39,7 +36,7 @@
         text-decoration: none;
         font-size: 16px;
         font-weight: normal;
-        color: #FFF;
+        /*color: #FFF;*/
     }
 }
 
