@@ -87,6 +87,7 @@ module.exports = {
         },
         {
             block: 'section',
+            attrs: { id: 'starter-kit' },
             mix: { block: 'starter-kit' },
             title: 'Starter Kit',
             desc: [
@@ -207,7 +208,7 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
-                                            icon: { block: 'icon', mods: { technology: 'sketch' }},
+                                            icon: { block: 'icon', mods: { technology: 'illustrator' }},
                                             text: 'Illustrator'
                                         }
                                     }
@@ -393,6 +394,7 @@ module.exports = {
                             url: 'mailto:ask@theprotein.io',
                             content: 'ask@theprotein.io'
                         },
+                        ' ',
                         { block: 'br' },
                         'and we try our best to release it as integration'
                     ]
@@ -412,6 +414,8 @@ module.exports = {
         },
         {
             block: 'section',
+            attrs: { id: 'features' },
+            mix: { block: 'features' },
             title: 'Features',
             desc: [
                 'Apart from a Starter Kit version and integrations with other services ',
@@ -509,6 +513,7 @@ module.exports = {
         },
         {
             block: 'section',
+            mix: { block: 'workflow' },
             title: 'Workflow',
             desc: [
                 'Protein is easily installed into existing design and development workflow as a communication tool ',
@@ -517,10 +522,8 @@ module.exports = {
             ],
             content: [
                 {
-                    block: 'icon',
-                    attrs: { style: 'margin:auto;width:228px;display:block;'},
-                    mods: { inline: true },
-                    path: 'pw'
+                    block: 'workflow-scheme',
+                    mix: { block: 'workflow', elem: 'scheme' }
                 }
             ]
         },
@@ -529,7 +532,7 @@ module.exports = {
             mix: { block: 'quote', mods: { theme: 'green' } },
             content: [
                 'With Protein your team develops the core product faster ',
-                { tag : 'br' },
+                { block: 'br' },
                 'with no efforts wasted on the go'
             ]
         },
@@ -638,6 +641,7 @@ module.exports = {
         },
         {
             block: 'section',
+            attrs: { id: 'dates' },
             mix: { block: 'dates' },
             title: 'Delivery Dates',
             desc: [
@@ -655,6 +659,8 @@ module.exports = {
         },
         {
             block: 'section',
+            attrs: { id: 'pricing' },
+            mix: { block: 'pricing' },
             title: 'Pricing',
             desc: [
                 'Protein Starter Kit will be launched in Spring 2016 on an annual subscription basis.',
@@ -663,70 +669,66 @@ module.exports = {
             ],
             content: [
                 {
-                    block: 'pricing',
+                    block: 'row',
+                    mix: { block: 'pricing', elem: 'list' },
                     content: [
                         {
-                            block: 'row',
-                            mix: { block: 'pricing', elem: 'list' },
-                            content: [
-                                {
-                                    elem: 'col',
-                                    mods: {
-                                        sw: 0,
-                                        mw: 0,
-                                        lw: 2
-                                    }
-                                },
-                                {
-                                    elem: 'col',
-                                    mods: {
-                                        sw: 6,
-                                        mw: 6,
-                                        lw: 4
-                                    },
-                                    content: {
-                                        block: 'price',
-                                        mods: { theme: 'early' },
-                                        title: 'Early bird price',
-                                        val: '99'
-                                    }
-                                },
-                                {
-                                    elem: 'col',
-                                    mods: {
-                                        sw: 6,
-                                        mw: 6,
-                                        lw: 4
-                                    },
-                                    content: {
-                                        block: 'price',
-                                        title: 'After release price',
-                                        val: '149'
-                                    }
-                                },
-                                {
-                                    elem: 'col',
-                                    mods: {
-                                        sw: 0,
-                                        mw: 0,
-                                        lw: 2
-                                    }
-                                }
-                            ]
+                            elem: 'col',
+                            mods: {
+                                sw: 0,
+                                mw: 0,
+                                lw: 2
+                            }
                         },
                         {
-                            block: 'hint',
-                            mix: { block: 'pricing', elem: 'hint' },
-                            content: [
-                                'If you are interested in custom settings or an enterprise version  of the product, <br>',
-                                'please, drop us a line at ',
-                                {
-                                    block: 'link',
-                                    mods: { theme: 'on-white' },
-                                    url: 'mailto: ask@theprotein.io',
-                                    content: 'ask@theprotein.io'
-                                }
-                            ]
+                            elem: 'col',
+                            mods: {
+                                sw: 6,
+                                mw: 6,
+                                lw: 4
+                            },
+                            content: {
+                                block: 'price',
+                                mods: { theme: 'early' },
+                                title: 'Early bird price',
+                                val: '99'
+                            }
+                        },
+                        {
+                            elem: 'col',
+                            mods: {
+                                sw: 6,
+                                mw: 6,
+                                lw: 4
+                            },
+                            content: {
+                                block: 'price',
+                                title: 'After release price',
+                                val: '149'
+                            }
+                        },
+                        {
+                            elem: 'col',
+                            mods: {
+                                sw: 0,
+                                mw: 0,
+                                lw: 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    block: 'hint',
+                    mix: { block: 'pricing', elem: 'hint' },
+                    content: [
+                        'If you are interested in custom settings or an enterprise version  of the product, ',
+                        { block: 'br' },
+                        'please, drop us a line at ',
+                        {
+                            block: 'link',
+                            mods: { theme: 'on-white' },
+                            url: 'mailto: ask@theprotein.io',
+                            content: 'ask@theprotein.io'
                         }
                     ]
                 }

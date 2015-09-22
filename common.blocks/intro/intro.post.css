@@ -5,8 +5,11 @@
 
 .intro__scheme {
     margin: 0 auto 60px;
-    width: 425px;
-    height: 171px;
+    max-width: 500px;
+
+    svg {
+        max-width: 100%;
+    }
 }
 
 .intro__content {
@@ -22,7 +25,7 @@
     .intro__scheme {
         margin-bottom: 0;
     }
-    .intro__buttom {
+    .intro__button {
         display: none;
     }
 }

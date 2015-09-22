@@ -1,6 +1,6 @@
 .card {
     text-align: center;
-    padding-bottom: 60px;
+    padding: 0 10px 60px;
 }
 
 .card__title {
@@ -15,4 +15,15 @@
     font-size: 16px;
     line-height: 1.8;
     color: rgba(0, 0, 0, 0.7);
+}
+
+.card__image {
+    width: 200px;
+}
+
+@media (--large) {
+    .card {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

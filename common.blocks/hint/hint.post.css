@@ -2,5 +2,9 @@
     font-size: 14px;
     line-height: 28px;
     text-align: center;
+
+    .link {
+        font-weight: bold;
+    }
 }
 

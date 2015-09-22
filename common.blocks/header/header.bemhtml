@@ -1,4 +1,5 @@
 block('header')(
+    js()(true),
     tag()('header'),
     content()(function() {
         return {
@@ -21,19 +22,19 @@ block('header')(
                             text: 'Features'
                         },
                         {
-                            url: '#pricing',
-                            text: 'Pricing'
+                            url: '#dates',
+                            text: 'Release dates'
                         },
                         {
-                            url: '#release-dates',
-                            text: 'Release dates'
+                            url: '#pricing',
+                            text: 'Pricing'
                         }].map(function(item) {
                             return {
                                 block: 'menu-item',
-                                mods: { type: 'link' },
+                                mods: { type: 'link', 'scroll-to': true },
                                 content: {
                                     block: 'link',
-                                    mods: { pseudo: true, theme: 'on-white' },
+                                    mods: { pseudo: true, theme: 'on-color' },
                                     url: item.url,
                                     content: item.text
                                 }

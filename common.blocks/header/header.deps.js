@@ -3,7 +3,7 @@
         'menu',
         {
             block: 'menu-item',
-            mods: { type: ['link', 'button']}
+            mods: { type: ['link', 'button'], 'scroll-to': true }
         },
         {
             block: 'link',
