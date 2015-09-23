@@ -32,6 +32,7 @@
     "jscs-bem": "^0.2.0",
     "jshint": "^2.8.0",
     "jshint-groups": "^0.8.0",
+    "localtunnel": "^1.7.0",
     "lost": "^6.6.1",
     "postcss-custom-properties": "^5.0.0",
     "postcss-each": "^0.7.0",
@@ -51,7 +52,8 @@
     "watch": "watch-run -p 'src/*.blocks/**' enb make",
     "lint": "jshint-groups && jscs .",
     "clean": "rm -rf public/_index.js public/_index.css .enb/tmp && enb make clean",
-    "build": "NODE_ENV=production enb make"
+    "build": "NODE_ENV=production enb make",
+    "tunnel": "lt --port 3000"
   },
   "private": true
 }

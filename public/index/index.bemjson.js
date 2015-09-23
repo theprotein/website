@@ -1,14 +1,25 @@
 module.exports = {
-    block : 'page',
-    title : 'Title of the page',
-    favicon : '/favicon@2x.png',
-    head : [
-        { elem : 'meta', attrs : { name : 'description', content : '' } },
-        { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } },
-        { elem : 'css', url : 'index.min.css' }
+    block: 'page',
+    title: 'Protein - Front-end development workflow',
+    favicon: '/favicon@2x.png',
+    head: [
+        { elem: 'meta', attrs: { name: 'description', content: '' } },
+        { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
+
+        {
+            block: 'social-meta',
+            title: 'Protein - Front-end development workflow',
+            description: 'Protein - Front-end development workflow',
+            type: 'product',
+            url: 'http://theprotein.io',
+            image: 'http://theprotein.io/favicon@2x.png',
+            twitter: '@protein_io'
+        },
+
+        { elem: 'css', url: 'index.min.css' }
     ],
-    scripts: [{ elem : 'js', url : 'index.min.js' }],
-    content : [
+    scripts: [{ elem: 'js', url: 'index.min.js' }],
+    content: [
         {
             block: 'header'
         },
