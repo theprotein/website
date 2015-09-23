@@ -6,8 +6,7 @@ block('footer')(
             content: [
                 {
                     block: 'social',
-                    mix: { block: this.block, elem: 'social' },
-                    mods: { theme: 'on-color' }
+                    mix: { block: this.block, elem: 'social' }
                 },
                 {
                     block: 'menu',
@@ -23,7 +22,7 @@ block('footer')(
                         },
                         {
                             url: 'mailto:ask@theprotein.io',
-                            text: 'Email as'
+                            text: 'Email us'
                         }
                     ].map(function(item) {
                         return {
@@ -31,7 +30,7 @@ block('footer')(
                             mods: { type: 'link' },
                             content: {
                                 block: 'link',
-                                mods: { theme: 'on-white' },
+                                mods: { theme: 'on-color' },
                                 url: item.url,
                                 content: item.text
                             }
@@ -41,7 +40,7 @@ block('footer')(
                 {
                     elem: 'copy',
                     content: [
-                        'All you need is Protein © The Protein Corp. All rights reserved.'
+                        'All you need is&nbsp;Protein &copy;&nbsp;The Protein Corp. All rights reserved.'
                     ]
                 }
             ]

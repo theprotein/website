@@ -7,11 +7,11 @@
 }
 
 .link_theme_on-white {
-    color: #32A032;
+    color: #008CDC;
     text-decoration: none;
 
     &.link_hovered {
-        color: #53E153;
+        color: #167AB3;
     }
 }
 

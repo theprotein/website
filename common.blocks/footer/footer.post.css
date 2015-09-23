@@ -1,7 +1,8 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 30px;
-    background: rgba(255, 255, 255, 1);
+    background: #262D4C;
+    color: rgba(255, 255, 255, .8);
 }
 
 .footer__content {
@@ -11,7 +12,7 @@
 }
 
 .footer__social {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .footer__text {
@@ -20,12 +21,11 @@
 
     .link {
         text-decoration: none;
-        /*color: #FFF;*/
     }
 }
 
 .footer__menu {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
     .menu-item {
         margin: 0 10px;
@@ -36,10 +36,9 @@
         text-decoration: none;
         font-size: 16px;
         font-weight: normal;
-        /*color: #FFF;*/
     }
 }
 
 .footer__copy {
-    font-family: 13px;
+    font-size: 11px;
 }

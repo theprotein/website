@@ -29,9 +29,9 @@ module.exports = {
             content: {
                 block: 'intro',
                 content: [
-                    'Your everyday working process and tools do not change ',
+                    'Your everyday working process and <b>tools do&nbsp;not change</b> ',
                     { block: 'br' },
-                    'but the profit you get change everything'
+                    'but the profit you get <b>change everything</b>'
                 ]
             }
         },
@@ -40,8 +40,8 @@ module.exports = {
             mods: { view: 'diet' },
             title: 'Protein Diet',
             desc: [
-                'Protein is a simple but powerful SaaS service that is easily added ',
-                'to your development diet'
+                'Protein is&nbsp;a&nbsp;simple but powerful SaaS service that is&nbsp;easily added ',
+                'to&nbsp;your development diet'
             ],
             content: [
                 {
@@ -59,9 +59,16 @@ module.exports = {
                                 },
                                 title: 'Workflow',
                                 desc: [
-                                    'Simple. Once changes are made you press [cmd] + P ',
-                                    'to sync it, and they appear in your working tool ',
-                                    ' as a code or a design sketch.'
+                                    [
+                                        'Simple. Once changes are made you press ' ,
+                                        {
+                                            block: 'command',
+                                            content: '&#8984;&nbsp;+&nbsp;P'
+                                        },
+                                        ' '
+                                    ],
+                                    'to&nbsp;sync&nbsp;it, and they appear in&nbsp;your working tool ',
+                                    'as&nbsp;a&nbsp;code or&nbsp;a&nbsp;design sketch.'
                                 ]
                             }
                         },
@@ -77,7 +84,7 @@ module.exports = {
                                 },
                                 title: 'Team',
                                 desc: [
-                                    'As a team product it is great for designers, ',
+                                    'As&nbsp;a&nbsp;team product it&nbsp;is&nbsp;great for designers, ',
                                     'frontend developers, testing engineers, UI/UX ',
                                     'engineers, managers.'
                                 ]
@@ -91,19 +98,19 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'blue' } },
             content: [
-                'Protein requires no additional knowledge or change ',
+                'Protein requires no&nbsp;additional knowledge or&nbsp;change ',
                 { block: 'br' },
-                'of tools the team already use'
+                'of&nbsp;tools the team already use'
             ]
         },
         {
             block: 'section',
             attrs: { id: 'starter-kit' },
             mix: { block: 'starter-kit' },
-            title: 'Starter Kit',
+            title: 'Starter&nbsp;Kit',
             desc: [
-                'We launch Protein as a Starter Kit releasing integrations with other products ',
-                'you may use as new features later on'
+                'We&nbsp;launch Protein as&nbsp;a&nbsp;Starter&nbsp;Kit releasing integrations with other products ',
+                'you may use as&nbsp;new features later&nbsp;on'
             ],
             content: [
                 {
@@ -125,11 +132,11 @@ module.exports = {
                                 },
                                 title: 'Converting',
                                 desc: [
-                                    'Protein Starter Kit converts ',
-                                    'UI components\' designs ',
-                                    'into a source code ',
-                                    'and vice versa',
-                                    'regardless of the platform '
+                                    'Protein&nbsp;Starter&nbsp;Kit converts ',
+                                    'UI&nbsp;components&rsquo; designs ',
+                                    'into a&nbsp;source code ',
+                                    'and vice versa ',
+                                    'regardless of&nbsp;the platform'
                                 ]
                             }
                         },
@@ -148,10 +155,10 @@ module.exports = {
                                 },
                                 title: 'Syncing',
                                 desc: [
-                                    'Protein Starter Kit allows ',
-                                    'syncing work a team ',
-                                    'has done on the development ',
-                                    'of the interfaces in the ',
+                                    'Protein&nbsp;Starter&nbsp;Kit allows ',
+                                    'syncing work a&nbsp;team ',
+                                    'has done on&nbsp;the development ',
+                                    'of&nbsp;the interfaces in&nbsp;the ',
                                     'background mode'
                                 ]
                             }
@@ -171,11 +178,11 @@ module.exports = {
                                 },
                                 title: 'Working',
                                 desc: [
-                                    'Protein Starter Kit works ',
+                                    'Protein&nbsp;Starter&nbsp;Kit works ',
                                     'through the cloud storage ',
-                                    'with a web access to ',
+                                    'with a&nbsp;web access to ',
                                     'the team management and ',
-                                    'integrations’ settings'
+                                    'integrations&rsquo; settings'
                                 ]
                             }
                         }
@@ -191,7 +198,8 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        s: true
+                                        sw: 4,
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -213,7 +221,8 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        s: true
+                                        sw: 4,
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -229,7 +238,8 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        s: true
+                                        sw: 4,
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -245,7 +255,8 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        s: true
+                                        sw: 4,
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -261,7 +272,25 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        s: true
+                                        sw: 4,
+                                        m: true
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            url: 'http://bem.info',
+                                            icon: { block: 'icon', mods: { technology: 'bem' }},
+                                            text: 'BEM'
+                                        }
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        sw: 4,
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -284,9 +313,9 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'green' } },
             content: [
-                'We are inspired here at Protein and think that every tool the developer team uses ',
+                'We&nbsp;are inspired here at&nbsp;Protein and think that every tool the developer team uses ',
                 { block: 'br' },
-                'should be compatible with Protein to empower the magic of one another'
+                'should be&nbsp;compatible with Protein to&nbsp;empower the magic of&nbsp;one another'
             ]
         },
         {
@@ -294,8 +323,8 @@ module.exports = {
             mix: { block: 'integrations' },
             title: 'Integrations',
             desc: [
-                'We extend Protein to any service you might use as integration',
-                'available after Starter Kit release'
+                'We&nbsp;extend Protein to&nbsp;any service you might use as&nbsp;integration ',
+                'available after Starter&nbsp;Kit release'
             ],
             content: [
                 {
@@ -308,7 +337,8 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        s: true
+                                        sw: 4,
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -324,7 +354,8 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        s: true
+                                        sw: 4,
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -340,7 +371,8 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        s: true
+                                        sw: 4,
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -356,7 +388,8 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        s: true
+                                        sw: 4,
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -372,7 +405,8 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        s: true
+                                        sw: 4,
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -388,7 +422,8 @@ module.exports = {
                                 {
                                     elem: 'col',
                                     elemMods: {
-                                        s: true
+                                        sw: 4,
+                                        m: true
                                     },
                                     content: {
                                         block: 'technologies',
@@ -409,7 +444,7 @@ module.exports = {
                     block: 'hint',
                     mix: { block: 'integrations', elem: 'hint' },
                     content: [
-                        'If you use any other tool than listed above, email it to us at ',
+                        'If&nbsp;you use any other tool than listed above, email it&nbsp;to&nbsp;us at ',
                         {
                             block: 'link',
                             mods: { theme: 'on-white' },
@@ -417,8 +452,8 @@ module.exports = {
                             content: 'ask@theprotein.io'
                         },
                         ' ',
-                        { block: 'br' },
-                        'and we try our best to release it as integration'
+                        { tag: 'br' },
+                        'and we&nbsp;try our best to&nbsp;release it&nbsp;as&nbsp;integration'
                     ]
                 }
             ]
@@ -427,11 +462,11 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'green' } },
             content: [
-                'It’s scientifically proven that everyday use of Protein turns ',
+                'It&rsquo;s scientifically proven that everyday use of&nbsp;Protein turns ',
                 { block: 'br' },
-                'your team’s working routine into incredible productivity ',
+                'your team&rsquo;s working routine into incredible productivity ',
                 { block: 'br' },
-                'with no time waste on additional synchronisations'
+                'with no&nbsp;time waste on&nbsp;additional synchronisations'
             ]
         },
         {
@@ -440,9 +475,9 @@ module.exports = {
             mix: { block: 'features' },
             title: 'Features',
             desc: [
-                'Apart from a Starter Kit version and integrations with other services ',
-                'we plan on developing our core product with features ',
-                'that soon will be available inside a Starter Kit'
+                'Apart from a&nbsp;Starter&nbsp;Kit version and integrations with other services ',
+                'we&nbsp;plan on&nbsp;developing our core product with features ',
+                'that soon will be&nbsp;available inside a&nbsp;Starter&nbsp;Kit'
             ],
             content: [
                 {
@@ -464,11 +499,11 @@ module.exports = {
                                 title: 'Platforms',
                                 desc: [
                                     'Compatibility with ',
-                                    'Windows OS, iOS end Android OS ',
-                                    'platforms to give your team ',
-                                    'an option to provide layouts ',
-                                    'as ready-to-go xml-schemas ',
-                                    'of the interface and more'
+                                    'Windows&nbsp;OS, iOS end Android OS ',
+                                    'platforms to&nbsp;give your team ',
+                                    'an&nbsp;option to&nbsp;provide layouts ',
+                                    'as&nbsp;ready-to-go xml-schemas ',
+                                    'of&nbsp;the interface and more'
                                 ]
                             }
                         },
@@ -487,11 +522,11 @@ module.exports = {
                                 },
                                 title: 'Live preview',
                                 desc: [
-                                    'Ability to live preview ',
-                                    'your components to help ',
+                                    'Ability to&nbsp;live preview ',
+                                    'your components to&nbsp;help ',
                                     'the team understand how ',
-                                    'it works while they work on ',
-                                    'it’s creation. Available across ',
+                                    'it&nbsp;works while they work on ',
+                                    'it&rsquo;s creation. Available across ',
                                     'browsers and devices'
                                 ]
                             }
@@ -511,12 +546,12 @@ module.exports = {
                                 },
                                 title: 'Conversions',
                                 desc: [
-                                    'Possibility to convert ',
+                                    'Possibility to&nbsp;convert ',
                                     'not only separate components ',
-                                    'your team is working on ',
-                                    'but full screens to help ',
-                                    'a layout become ',
-                                    'an application right awa'
+                                    'your team is&nbsp;working on ',
+                                    'but full screens to&nbsp;help ',
+                                    'a&nbsp;layout become ',
+                                    'an&nbsp;application right&nbsp;away'
                                 ]
                             }
                         }
@@ -530,7 +565,7 @@ module.exports = {
             content: [
                 'Protein helps your team speak one language and use one library ',
                 { block: 'br' },
-                'instead of multiple copies and designs'
+                'instead of&nbsp;multiple copies and designs'
             ]
         },
         {
@@ -538,9 +573,8 @@ module.exports = {
             mix: { block: 'workflow' },
             title: 'Workflow',
             desc: [
-                'Protein is easily installed into existing design and development workflow as a communication tool ',
-                'that team uses to exchange their designs and UI components. ',
-                'It requires no additional knowledge or change of tools the team already use '
+                'Protein is&nbsp;easily installed into existing design and development workflow as&nbsp;a&nbsp;communication tool ',
+                'that team uses to&nbsp;exchange their designs and&nbsp;UI components. '
             ],
             content: [
                 {
@@ -555,7 +589,7 @@ module.exports = {
             content: [
                 'With Protein your team develops the core product faster ',
                 { block: 'br' },
-                'with no efforts wasted on the go'
+                'with no&nbsp;efforts wasted on&nbsp;the&nbsp;go'
             ]
         },
         {
@@ -576,8 +610,8 @@ module.exports = {
                                 block: 'info',
                                 icon: { block: 'image', url: 'i/helps/1.svg'},
                                 text: [
-                                    'Edit live UI components in an editor',
-                                    'of your choice'
+                                    'Edit live&nbsp;UI components in&nbsp;an&nbsp;editor ',
+                                    'of&nbsp;your choice'
                                 ]
                             }
                         },
@@ -606,7 +640,7 @@ module.exports = {
                                 block: 'info',
                                 icon: { block: 'image', url: 'i/helps/3.svg'},
                                 text: [
-                                    'Build and structurie them',
+                                    'Build and structure them ',
                                     'with live preview'
                                 ]
                             }
@@ -621,7 +655,7 @@ module.exports = {
                                 block: 'info',
                                 icon: { block: 'image', url: 'i/helps/4.svg'},
                                 text: [
-                                    'Link live UI components to the all project ',
+                                    'Link live&nbsp;UI components to&nbsp;the all project ',
                                     'layouts you have'
                                 ]
                             }
@@ -636,8 +670,8 @@ module.exports = {
                                 block: 'info',
                                 icon: { block: 'image', url: 'i/helps/5.svg'},
                                 text: [
-                                    'Sync them with code implementation',
-                                    'in the background'
+                                    'Sync them with code implementation ',
+                                    'in&nbsp;the background'
                                 ]
                             }
                         },
@@ -651,9 +685,8 @@ module.exports = {
                                 block: 'info',
                                 icon: { block: 'image', url: 'i/helps/6.svg'},
                                 text: [
-                                    'Get design changes by pull requests by ',
-                                    'just pressing a hotkey not as layouts but ',
-                                    'as code you can work with'
+                                    'Get design changes by&nbsp;pull requests to&nbsp;VCS ',
+                                    'not as&nbsp;layouts but as&nbsp;code you can work with'
                                 ]
                             }
                         }
@@ -667,8 +700,8 @@ module.exports = {
             mix: { block: 'dates' },
             title: 'Delivery Dates',
             desc: [
-                'Protein will go live on Spring 2016 as a Starter Kit version ',
-                'with integrations’ releases as fast as possible'
+                'Protein will go&nbsp;live on&nbsp;Spring 2016&nbsp;as a&nbsp;Starter&nbsp;Kit version ',
+                'with integrations&rsquo; releases as&nbsp;fast as&nbsp;possible'
             ],
             content: [
                 {
@@ -685,9 +718,9 @@ module.exports = {
             mix: { block: 'pricing' },
             title: 'Pricing',
             desc: [
-                'Protein Starter Kit will be launched in Spring 2016 on an annual subscription basis.',
-                'All released integrations and features after the Starter Kit release',
-                'will be shipped as updates of the core product.'
+                'Protein&nbsp;Starter&nbsp;Kit will be&nbsp;launched in&nbsp;Spring 2016&nbsp;on an&nbsp;annual subscription basis. ',
+                'All released integrations and features after the Starter&nbsp;Kit release ',
+                'will be&nbsp;shipped as&nbsp;updates of&nbsp;the core product.'
             ],
             content: [
                 {
@@ -698,7 +731,7 @@ module.exports = {
                             elem: 'col',
                             mods: {
                                 sw: 0,
-                                mw: 0,
+                                mw: 1,
                                 lw: 2
                             }
                         },
@@ -706,7 +739,7 @@ module.exports = {
                             elem: 'col',
                             mods: {
                                 sw: 6,
-                                mw: 6,
+                                m: true,
                                 lw: 4
                             },
                             content: {
@@ -720,7 +753,7 @@ module.exports = {
                             elem: 'col',
                             mods: {
                                 sw: 6,
-                                mw: 6,
+                                m: true,
                                 lw: 4
                             },
                             content: {
@@ -733,7 +766,7 @@ module.exports = {
                             elem: 'col',
                             mods: {
                                 sw: 0,
-                                mw: 0,
+                                mw: 1,
                                 lw: 2
                             }
                         }
@@ -743,9 +776,9 @@ module.exports = {
                     block: 'hint',
                     mix: { block: 'pricing', elem: 'hint' },
                     content: [
-                        'If you are interested in custom settings or an enterprise version  of the product, ',
+                        'If&nbsp;you are interested in&nbsp;custom settings or&nbsp;an&nbsp;enterprise version of&nbsp;the product, ',
                         { block: 'br' },
-                        'please, drop us a line at ',
+                        'please, drop&nbsp;us a&nbsp;line&nbsp;at ',
                         {
                             block: 'link',
                             mods: { theme: 'on-white' },
@@ -761,8 +794,8 @@ module.exports = {
             mix: { block: 'pre-order' },
             title: 'Pre-order',
             desc: [
-                'Pre-order starts on Christmas in an early bird mode with a limited number of licenses ',
-                'which you get discounted if you subscribe to pre-order\'s start ',
+                'Pre-order starts on&nbsp;Christmas in&nbsp;an&nbsp;early bird mode with a&nbsp;limited number of&nbsp;licenses',
+                'which you get discounted if&nbsp;you subscribe to&nbsp;pre-order&rsquo;s start ',
             ],
             content: [
                 {
@@ -818,7 +851,7 @@ module.exports = {
                         {
                             elem: 'col',
                             mods: {
-                                sw: 12,
+                                sw: 6,
                                 mw: 4
                             },
                             content: {
@@ -828,39 +861,26 @@ module.exports = {
                                 nickname: 'voischev',
                                 post: 'VP Frontend Development'
                             }
-                        }
-                    ]
-                },
-                {
-                    block: 'row',
-                    content: [
-                        {
-                            elem: 'col',
-                            mods: {
-                                mw: 0,
-                                l: true
-                            },
-                            content: ''
                         },
                         {
                             elem: 'col',
                             mods: {
                                 sw: 6,
-                                m: true
+                                mw: 4
                             },
                             content: {
                                 block: 'people',
                                 image: 'i/people/mursya.png',
                                 name: 'Elena Jetpyspaeva',
                                 nickname: 'mursya',
-                                post: 'VP Business Development'
+                                post: 'VP Marketing'
                             }
                         },
                         {
                             elem: 'col',
                             mods: {
                                 sw: 6,
-                                m: true
+                                mw: 4
                             },
                             content: {
                                 block: 'people',
@@ -873,10 +893,16 @@ module.exports = {
                         {
                             elem: 'col',
                             mods: {
-                                mw: 0,
-                                l: true
+                                sw: 6,
+                                mw: 4
                             },
-                            content: ''
+                            content: {
+                                block: 'people',
+                                image: 'i/people/squorax.png',
+                                name: 'Vladimir Stegantsov',
+                                nickname: 'squorax',
+                                post: 'Lead Designer'
+                            }
                         }
                     ]
                 }

@@ -16,6 +16,7 @@
     line-height: 37px;
     display: block;
     text-align: center;
+    transition: color 200ms;
 }
 
 .technology__sup {
@@ -35,10 +36,10 @@
     }
 
     .technology__icon {
-        height: 40px;
-        background-size: 100% 40px;
+        height: 60px;
+        background-size: 100% 100%;
 
-        &.icon_technology_angular { width: 31.5px; }
+        /*&.icon_technology_angular { width: 31.5px; }
         &.icon_technology_backbone { width: 26px; }
         &.icon_technology_bem { width: 49.5px; }
         &.icon_technology_framerjs { width: 29.5px; }
@@ -51,11 +52,34 @@
         &.icon_technology_parse { width: 45px; }
         &.icon_technology_pixate { width: 32px; }
         &.icon_technology_react { width: 36px; }
-        &.icon_technology_sketch { width: 37px; }
+        &.icon_technology_sketch { width: 37px; }*/
+
+
+        &.icon_technology_angular { width: 47px; }
+        &.icon_technology_backbone { width: 39px; }
+        &.icon_technology_bem { width: 61px; }
+        &.icon_technology_framerjs { width: 44px; }
+
+        &.icon_technology_google-form { width: 49px; }
+        &.icon_technology_html { width: 38px; }
+
+        &.icon_technology_invision { width: 49px; }
+
+        &.icon_technology_illustrator { width: 49px; }
+
+        &.icon_technology_marvel { width: 49px; }
+        &.icon_technology_osx { width: 50px; }
+        &.icon_technology_parse { width: 68px; }
+
+        &.icon_technology_pixate { width: 49px; }
+
+        &.icon_technology_react { width: 54px; }
+        &.icon_technology_sketch { width: 56px; }
+
     }
 
     .technology__text {
         font-size: 12px;
-        line-height: 28px;
+        line-height: 20px;
     }
 }

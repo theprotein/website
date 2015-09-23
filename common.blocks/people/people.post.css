@@ -21,7 +21,7 @@
     font-size: 18px;
     font-weight: bold;
     color: #010101;
-    line-height: 1;
+    line-height: 1.4;
     display: block;
 }
 
@@ -32,8 +32,8 @@
     text-decoration: none;
     color: #008CDC;
     line-height: 1;
-    transition: 200ms;
     display: block;
+    transition: color 200ms;
 }
 
 .people__post {
@@ -45,5 +45,16 @@
 .people_hovered {
     .people__nickname {
         color: #167AB3;
+    }
+}
+
+@media (--small-only) {
+    .people__image {
+        margin-bottom: 10px;
+    }
+
+    .people__name {
+        width: 100px;
+        margin: auto;
     }
 }

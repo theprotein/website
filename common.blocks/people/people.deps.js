@@ -3,7 +3,8 @@
         {
             block: 'i-bem',
             elem: 'dom'
-        }
+        },
+        'mq'
     ],
     shouldDeps: [
         'image',

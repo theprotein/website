@@ -1,8 +1,9 @@
 .price {
     position: relative;
+    margin: auto;
     width: 218px;
     height: 168px;
-    display: inline-block;
+    display: block;
 
     border: 2px solid rgba(107, 133, 159, .40);
     border-radius: 20px;
@@ -65,5 +66,31 @@
 
         background-image: url(price_theme_early.svg);
     }
+}
+
+@media (--small-only) {
+    .price {
+        width: 130px;
+        height: 130px;
+        border: none;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .price__title,
+    .price__footer
+    {
+        font-size: 14px;
+        line-height: 50px;
+    }
+
+    .price__val,
+    .price_theme_early .price__val {
+        font-size: 40px;
+        line-height: 130px;
+    }
+
 }
 
