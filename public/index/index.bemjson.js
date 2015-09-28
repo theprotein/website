@@ -398,7 +398,7 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
-                                            url: 'http://www.google.com/intl/ru/forms/about/',
+                                            url: 'http://www.relativewave.com/form/',
                                             icon: { block: 'icon', mods: { technology: 'google-form' }},
                                             text: 'Google Form'
                                         }
