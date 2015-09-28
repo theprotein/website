@@ -36,5 +36,4 @@ public/index/*.*
 .enb/tmp/
 
 ### PROJECT ###
-public/freeze
 logs/*
