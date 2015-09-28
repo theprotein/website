@@ -30,6 +30,9 @@ npm-debug.log
 libs/*
 public/index/*.*
 !public/index/*.bemjson.js
+!public/index/*.html
+!public/index/*.min.css
+!public/index/*.min.js
 .enb/tmp/
 
 ### PROJECT ###
