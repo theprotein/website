@@ -44,7 +44,7 @@
 
 .people_hovered {
     .people__nickname {
-        color: #167AB3;
+        color: rgba(100, 200, 0, 1);
     }
 }
 
