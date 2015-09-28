@@ -1,0 +1,25 @@
+.link {
+    transition: color 200ms;
+}
+
+.link_focused {
+    outline: none;
+}
+
+.link_theme_on-white {
+    color: #008CDC;
+    text-decoration: none;
+
+    &.link_hovered {
+        color: rgba(100, 200, 0, 1);
+    }
+}
+
+.link_theme_on-color {
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+
+    &.link_hovered {
+        color: #BCFF77;
+    }
+}

@@ -1,0 +1,31 @@
+.intro {
+    padding-top: 35px;
+    text-align: center;
+}
+
+.intro__scheme {
+    margin: 0 auto 60px;
+    max-width: 500px;
+
+    svg {
+        max-width: 100%;
+    }
+}
+
+.intro__content {
+    margin-bottom: 60px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #FFF;
+    font-family: 'Quicksand';
+    line-height: 1.4;
+}
+
+@media (--large) {
+    .intro__scheme {
+        margin-bottom: 0;
+    }
+    .intro__button {
+        display: none;
+    }
+}

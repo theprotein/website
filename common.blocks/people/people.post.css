@@ -1,0 +1,60 @@
+.people {
+    max-width: 220px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    outline: none;
+    color: rgba(0, 0, 0, .9);
+}
+
+.people__image {
+    margin: 0 auto 30px;
+    height: 110px;
+    display: block;
+}
+
+.people__name {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #010101;
+    line-height: 1.4;
+    display: block;
+}
+
+.people__nickname {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #008CDC;
+    line-height: 1;
+    display: block;
+    transition: color 200ms;
+}
+
+.people__post {
+    padding-top: 10px;
+    font-size: 14px;
+    display: block;
+}
+
+.people_hovered {
+    .people__nickname {
+        color: #167AB3;
+    }
+}
+
+@media (--small-only) {
+    .people__image {
+        margin-bottom: 10px;
+    }
+
+    .people__name {
+        width: 100px;
+        margin: auto;
+    }
+}

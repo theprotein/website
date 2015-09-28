@@ -1,0 +1,42 @@
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon_technology_angular,
+.icon_technology_backbone,
+.icon_technology_bem,
+.icon_technology_framerjs,
+.icon_technology_google-form,
+.icon_technology_html,
+.icon_technology_invision,
+.icon_technology_illustrator,
+.icon_technology_marvel,
+.icon_technology_osx,
+.icon_technology_parse,
+.icon_technology_pixate,
+.icon_technology_react,
+.icon_technology_other,
+.icon_technology_sketch {
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 80px;
+}
+
+.icon_technology_angular { width: 63px; background-image: url('_technology/icon_technology_angular.png'); }
+.icon_technology_backbone { width: 52px; background-image: url('_technology/icon_technology_backbone.png'); }
+.icon_technology_bem { width: 81px; background-image: url('_technology/icon_technology_bem.png'); }
+.icon_technology_framerjs { width: 59px; background-image: url('_technology/icon_technology_framerjs.png'); }
+.icon_technology_google-form { width: 64px; background-image: url('_technology/icon_technology_google-form.png'); }
+.icon_technology_html { width: 51px; background-image: url('_technology/icon_technology_html.png'); }
+.icon_technology_invision { width: 64px; background-image: url('_technology/icon_technology_invision.png'); }
+.icon_technology_illustrator { width: 64px; background-image: url('_technology/icon_technology_illustrator.png'); }
+.icon_technology_marvel { width: 65px; background-image: url('_technology/icon_technology_marvel.png'); }
+.icon_technology_osx { width: 66px; background-image: url('_technology/icon_technology_osx.png'); }
+.icon_technology_parse { width: 90px; background-image: url('_technology/icon_technology_parse.png'); }
+.icon_technology_pixate { width: 64px; background-image: url('_technology/icon_technology_pixate.png'); }
+.icon_technology_react { width: 72px; background-image: url('_technology/icon_technology_react.png'); }
+.icon_technology_other { width: 47px; background-image: url('_technology/icon_technology_other.png'); }
+.icon_technology_sketch { width: 74px; background-image: url('_technology/icon_technology_sketch.png'); }

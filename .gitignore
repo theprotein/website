@@ -1,33 +1,37 @@
-.idea
-node_modules
-.tmp
-.enb/tmp
-.sass-cache
-
-libs
-test/libs
+### OSX ###
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+### Node ###
+node_modules
+
+### NPM ###
+npm-debug.log
+
+### SublimeText ###
+# workspace files are user-specific
+*.sublime-workspace
+*.sublime-project
+
+### PhpStorm ###
+### RubyMine ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+
+## Directory-based project format
+.idea/
 .project
-.libs-*/
-*.log
+.svn
 
+### BEM ###
+libs/*
+public/index/*.*
+!public/index/*.bemjson.js
+.enb/tmp/
 
-*.bundles/*/*
-!assets.bundles/*/*
-!*.bundles/*/index.bemjson.js
-!*.bundles/*/_index.js
-!*.bundles/*/_index.css
-!*.bundles/*/index.html
-!*.bundles/*/index.node.js
-
-/coverage
-/coverage.json
-/gemini-report/
-
-/dist
-/*.docs
-/*.examples
-/*.specs
-/*.tests
-/*.sets
-/*.tmpl-specs
+### PROJECT ###
+public/freeze
+logs/*

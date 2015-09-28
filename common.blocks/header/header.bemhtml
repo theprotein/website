@@ -1,0 +1,60 @@
+block('header')(
+    js()(true),
+    tag()('header'),
+    content()(function() {
+        return {
+            elem: 'content',
+            content: [
+                {
+                    elem: 'logo',
+                    content: {
+                        block: 'logo'
+                    }
+                },
+                {
+                    block: 'menu',
+                    mix: { block: this.block, elem: 'menu' },
+                    content: [
+                        [{
+                            url: '#starter-kit',
+                            text: 'Starter kit'
+                        },
+                        {
+                            url: '#features',
+                            text: 'Features'
+                        },
+                        {
+                            url: '#dates',
+                            text: 'Release dates'
+                        },
+                        {
+                            url: '#pricing',
+                            text: 'Pricing'
+                        }].map(function(item) {
+                            return {
+                                block: 'menu-item',
+                                mods: { type: 'link', 'scroll-to': true },
+                                content: {
+                                    block: 'link',
+                                    mods: { pseudo: true, theme: 'on-color' },
+                                    url: item.url,
+                                    content: item.text
+                                }
+                            };
+                        }),
+                        {
+                            block: 'menu-item',
+                            mods: { type: 'button' },
+                            content: {
+                                block: 'button',
+                                mods: { type: 'link', size: 'm' },
+                                url: 'http://eepurl.com/boJcIH',
+                                text: 'Subscribe'
+                            }
+                        }
+                    ]
+                }
+            ]
+        };
+    })
+);

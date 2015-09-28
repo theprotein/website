@@ -1,0 +1,30 @@
+.social {
+
+    .link {
+        margin: 0 15px;
+        text-decoration: none;
+    }
+
+    .icon {
+        circle {
+            stroke: #fff;
+            transition: 200ms;
+        }
+        path {
+            fill: #fff;
+            transition: 200ms;
+        }
+    }
+
+    .link_hovered {
+        .icon {
+            circle {
+                stroke: #53E153;
+            }
+            path {
+                fill: #53E153;
+            }
+        }
+    }
+}
+

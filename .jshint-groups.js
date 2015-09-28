@@ -15,7 +15,6 @@ module.exports = {
         quotmark : 'single',
         sub : true,
         supernew : true,
-        trailing : true,
         undef : true,
         unused : true
     },
@@ -26,7 +25,7 @@ module.exports = {
                 browser : true,
                 predef : ['modules']
             },
-            includes : ['blocks/*.blocks/**/*.js'],
+            includes : ['*.blocks/**/*.browser.js'],
             excludes : [
                 '**/*.i18n/*.js',
                 '**/*.bem/*.js',
@@ -52,7 +51,7 @@ module.exports = {
                     'afterEach'
                 ]
             },
-            includes : ['blocks/*.blocks/**/*.spec.js']
+            includes : ['*.blocks/**/*.spec.js']
         },
 
         bemhtml : {
@@ -77,39 +76,7 @@ module.exports = {
                     'tag'
                 ]
             },
-            includes : ['blocks/*.blocks/**/*.bemhtml']
-        },
-
-        bhjs : {
-            options : {
-                node : true
-            },
-            includes : [
-                'blocks/*.blocks/**/*.bh.js',
-                'design/*.blocks/**/*.bh.js'
-            ]
-        },
-
-        bemjsonjs : {
-            options : {
-                asi : true
-            },
-            includes : ['bundles/*.bundles/**/*.bemjson.js']
-        },
-
-        nodejs : {
-            options : {
-                node : true
-            },
-            includes : ['**/.bem/**/*.js'],
-            excludes : [
-                '.bem/cache/**',
-                'libs/**',
-                ".libs-cache/**",
-                ".libs-registry/**",
-                ".libs-tmp/**",
-                'node_modules/**'
-            ]
+            includes : ['*.blocks/**/*.bemhtml']
         }
     }
 };

@@ -1,0 +1,11 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        facebook
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(2 2)">
+            <circle cx="18" cy="18" r="18"/>
+            <path d="M19.076 28.636h-3.99v-9.41H13.09v-3.242h1.995v-1.947c0-2.645 1.125-4.22 4.325-4.22h2.663v3.245h-1.665c-1.245 0-1.327.453-1.327 1.3l-.005 1.622h3.016l-.352 3.242h-2.663v9.41z"/>
+        </g>
+    </g>
+</svg>

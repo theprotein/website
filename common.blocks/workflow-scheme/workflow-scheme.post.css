@@ -1,0 +1,9 @@
+.workflow-scheme {
+    max-width: 900px;
+    margin: auto;
+
+    svg {
+        max-width: 100% !important;
+    }
+}
+

@@ -1,0 +1,23 @@
+block('intro').content()(function() {
+    return [
+        {
+            elem: 'content',
+            content: applyNext()
+        },
+        {
+            elem: 'scheme',
+            content: {
+                block: 'icon',
+                mods: { inline: true },
+                path: 'scheme'
+            }
+        },
+        {
+            block: 'button',
+            mix: { block: this.block, elem: 'button' },
+            mods: { type: 'link', size: 'l' },
+            url: 'http://eepurl.com/boJcIH',
+            text: 'Subscribe'
+        }
+    ];
+});

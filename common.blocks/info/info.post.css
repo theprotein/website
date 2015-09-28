@@ -1,0 +1,28 @@
+.info {
+    position: relative;
+    padding: 0 20px 50px;
+    box-sizing: border-box;
+}
+
+.info__icon {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.info__text {
+    color: rgba(0, 0, 0, .7);
+    padding-left: 70px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media (--large) {
+    .info {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .info__icon {
+        left: 0;
+    }
+}

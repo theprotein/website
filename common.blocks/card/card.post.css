@@ -1,0 +1,29 @@
+.card {
+    text-align: center;
+    padding: 0 10px 60px;
+}
+
+.card__title {
+    font-size: 28px;
+    color: #3B4572;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.card__desc {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.card__image {
+    width: 200px;
+}
+
+@media (--large) {
+    .card {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
