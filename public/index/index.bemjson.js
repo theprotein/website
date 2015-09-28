@@ -29,9 +29,12 @@ module.exports = {
             content: {
                 block: 'intro',
                 content: [
-                    'Your everyday working process and <b>tools do&nbsp;not change</b> ',
+                    'Your everyday working process and ',
+                    { block: 'mark', mods: { theme: 'g' }, content: 'tools do&nbsp;not change' },
+                    ' ',
                     { block: 'br' },
-                    'but the profit you get <b>change everything</b>'
+                    'but the profit you get ',
+                    { block: 'mark', mods: { theme: 'o' }, content: 'change everything' },
                 ]
             }
         },
@@ -297,9 +300,8 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
-                                            url: 'http://bem.info',
-                                            icon: { block: 'icon', mods: { technology: 'bem' }},
-                                            text: 'BEM'
+                                            icon: { block: 'icon', mods: { technology: 'other' }},
+                                            text: 'And other frameworks'
                                         }
                                     }
                                 }
@@ -460,7 +462,7 @@ module.exports = {
         },
         {
             block: 'section',
-            mix: { block: 'quote', mods: { theme: 'green' } },
+            mix: { block: 'quote', mods: { theme: 'blue' } },
             content: [
                 'It&rsquo;s scientifically proven that everyday use of&nbsp;Protein turns ',
                 { block: 'br' },
@@ -585,7 +587,7 @@ module.exports = {
         },
         {
             block: 'section',
-            mix: { block: 'quote', mods: { theme: 'green' } },
+            mix: { block: 'quote', mods: { theme: 'blue' } },
             content: [
                 'With Protein your team develops the core product faster ',
                 { block: 'br' },
@@ -705,10 +707,8 @@ module.exports = {
             ],
             content: [
                 {
-                    block: 'icon',
-                    mix: { block: 'dates', elem: 'image' },
-                    mods: { inline: true },
-                    path: 'dates'
+                    block: 'dates',
+                    elem: 'image'
                 }
             ]
         },
@@ -791,7 +791,7 @@ module.exports = {
         },
         {
             block: 'section',
-            mix: { block: 'pre-order' },
+            mix: [{ block: 'pre-order' }, { block: 'quote', mods: { theme: 'green' }}],
             title: 'Pre-order',
             desc: [
                 'Pre-order starts on&nbsp;Christmas in&nbsp;an&nbsp;early bird mode with a&nbsp;limited number of&nbsp;licenses',
@@ -865,8 +865,15 @@ module.exports = {
                         {
                             elem: 'col',
                             mods: {
+                                sw: '0',
+                                mw: '2'
+                            }
+                        },
+                        {
+                            elem: 'col',
+                            mods: {
                                 sw: 6,
-                                mw: 4
+                                m: true
                             },
                             content: {
                                 block: 'people',
@@ -880,7 +887,7 @@ module.exports = {
                             elem: 'col',
                             mods: {
                                 sw: 6,
-                                mw: 4
+                                m: true
                             },
                             content: {
                                 block: 'people',
@@ -893,15 +900,24 @@ module.exports = {
                         {
                             elem: 'col',
                             mods: {
+                                sw: '0',
+                                mw: '2'
+                            }
+                        },
+                        {
+                            elem: 'col',
+                            mods: {
                                 sw: 6,
-                                mw: 4
+                                mw: 12
                             },
                             content: {
                                 block: 'people',
-                                image: 'i/people/squorax.png',
-                                name: 'Vladimir Stegantsov',
-                                nickname: 'squorax',
-                                post: 'Lead Designer'
+                                image: 'i/people/people.png',
+                                name: [
+                                    'We&nbsp;are looking ',
+                                    { block: 'br' },
+                                    'for new team members!'
+                                ]
                             }
                         }
                     ]

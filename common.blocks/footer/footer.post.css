@@ -15,12 +15,23 @@
     margin-bottom: 60px;
 }
 
-.footer__text {
-    margin-bottom: 150px;
-    font-size: 36px;
+.footer__logo {
+    margin: 0 auto 20px;
 
-    .link {
-        text-decoration: none;
+    .logo {
+        width: 120px !important;
+    }
+}
+
+.footer__text {
+    margin-bottom: 80px;
+    font-size: 22px;
+    line-height: 1.4;
+    font-family: 'Quicksand';
+
+    .mark {
+        display: inline-block;
+        padding: 0 3px;
     }
 }
 
@@ -41,4 +52,11 @@
 
 .footer__copy {
     font-size: 11px;
+}
+
+
+@media (--large) {
+    .footer__text {
+        font-size: 42px;
+    }
 }

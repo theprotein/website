@@ -1,8 +1,10 @@
 block('people')(
     js()(true),
-    tag()('a'),
+    tag()(function() {
+        return this.ctx.nickname ? 'a' : 'span';
+    }),
     attrs()(function() {
-        return { href: 'http://twitter.com/' + this.ctx.nickname };
+        return this.ctx.nickname && { href: 'http://twitter.com/' + this.ctx.nickname };
     }),
     content()(function() {
         return [
@@ -15,11 +17,11 @@ block('people')(
                 elem: 'name',
                 content: this.ctx.name
             },
-            {
+            this.ctx.nickname && {
                 elem: 'nickname',
                 content: '@' + this.ctx.nickname
             },
-            {
+            this.ctx.post && {
                 elem: 'post',
                 content: this.ctx.post
             }

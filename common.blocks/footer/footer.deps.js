@@ -1,6 +1,9 @@
 ({
     shouldDeps: [
+        'mq',
         'social',
-        'link'
+        'link',
+        'logo',
+        'mark'
     ]
 });

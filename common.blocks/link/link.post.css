@@ -11,7 +11,7 @@
     text-decoration: none;
 
     &.link_hovered {
-        color: #167AB3;
+        color: rgba(100, 200, 0, 1);
     }
 }
 

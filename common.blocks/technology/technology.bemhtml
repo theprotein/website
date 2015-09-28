@@ -1,9 +1,11 @@
 block('technology')(
     js()(true),
-    tag()('a'),
+    tag()(function() {
+        return this.ctx.url ? 'a' : 'span';
+    }),
     attrs()(function() {
-       return {
-            href: this.ctx.url || ''
+       return this.ctx.url && {
+            href: this.ctx.url
        };
     }),
     content()(function() {

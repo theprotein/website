@@ -9,6 +9,34 @@ block('footer')(
                     mix: { block: this.block, elem: 'social' }
                 },
                 {
+                    elem: 'logo',
+                    content: {
+                        block: 'logo'
+                    }
+                },
+                {
+                    elem: 'text',
+                    content: [
+                        {
+                            block: 'mark',
+                            mods: { theme: 'o' },
+                            content: 'Create.'
+                        },
+                        ' ',
+                        {
+                            block: 'mark',
+                            mods: { theme: 'g' },
+                            content: 'Implement.'
+                        },
+                        ' ',
+                        {
+                            block: 'mark',
+                            mods: { theme: 'b' },
+                            content: 'Sync.'
+                        }
+                    ]
+                },
+                {
                     block: 'menu',
                     mix: { block: this.block, elem: 'menu' },
                     content: [

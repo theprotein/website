@@ -7,16 +7,21 @@
 
 .technology__icon {
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 .technology__text {
-    font-weight: bold;
     font-size: 14px;
-    color: #008CDC;
-    line-height: 37px;
+    line-height: 1.2;
     display: block;
+    color: rgba(0,0,0,.7);
     text-align: center;
     transition: color 200ms;
+}
+
+a.technology .technology__text {
+    font-weight: bold;
+    color: #008CDC;
 }
 
 .technology__sup {
@@ -26,8 +31,8 @@
     line-height: 1;
 }
 
-.technology_hovered .technology__text{
-    color: #167AB3;
+a.technology_hovered .technology__text{
+    color: rgba(100, 200, 0, 1);
 }
 
 @media (--small-only) {
@@ -59,21 +64,16 @@
         &.icon_technology_backbone { width: 39px; }
         &.icon_technology_bem { width: 61px; }
         &.icon_technology_framerjs { width: 44px; }
-
         &.icon_technology_google-form { width: 49px; }
         &.icon_technology_html { width: 38px; }
-
         &.icon_technology_invision { width: 49px; }
-
         &.icon_technology_illustrator { width: 49px; }
-
         &.icon_technology_marvel { width: 49px; }
         &.icon_technology_osx { width: 50px; }
         &.icon_technology_parse { width: 68px; }
-
         &.icon_technology_pixate { width: 49px; }
-
         &.icon_technology_react { width: 54px; }
+        &.icon_technology_other { width: 33px; }
         &.icon_technology_sketch { width: 56px; }
 
     }

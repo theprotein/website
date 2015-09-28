@@ -6,8 +6,10 @@ block('header')(
             elem: 'content',
             content: [
                 {
-                    block: 'logo',
-                    mix: { block: this.block, elem: 'logo' }
+                    elem: 'logo',
+                    content: {
+                        block: 'logo'
+                    }
                 },
                 {
                     block: 'menu',
