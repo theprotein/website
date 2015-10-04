@@ -1,6 +1,6 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background: #262D4C;
     color: rgba(255, 255, 255, .8);
 }
@@ -16,7 +16,7 @@
 }
 
 .footer__logo {
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
 
     .logo {
         width: 120px !important;
@@ -45,7 +45,7 @@
 
     .link {
         text-decoration: none;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: normal;
     }
 }

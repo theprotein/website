@@ -20,19 +20,7 @@ block('footer')(
                         {
                             block: 'mark',
                             mods: { theme: 'o' },
-                            content: 'Create.'
-                        },
-                        ' ',
-                        {
-                            block: 'mark',
-                            mods: { theme: 'g' },
-                            content: 'Implement.'
-                        },
-                        ' ',
-                        {
-                            block: 'mark',
-                            mods: { theme: 'b' },
-                            content: 'Sync.'
+                            content: 'Your team gonna love it!'
                         }
                     ]
                 },

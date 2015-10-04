@@ -12,7 +12,8 @@ module.exports = {
             description: 'Protein - Front-end development workflow',
             type: 'product',
             url: 'http://theprotein.io',
-            image: 'http://theprotein.io/favicon@2x.png',
+            image: 'http://theprotein.io/p_share_square.png',
+            twitterImage: 'http://theprotein.io/p_share_twitter.png',
             twitter: '@protein_io'
         },
 
@@ -21,7 +22,8 @@ module.exports = {
     scripts: [{ elem: 'js', url: 'index.min.js' }],
     content: [
         {
-            block: 'header'
+            block: 'header',
+            mods: { visible: true }
         },
         {
             block: 'section',
