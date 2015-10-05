@@ -29,17 +29,17 @@ block('footer')(
                     block: 'menu',
                     mix: { block: this.block, elem: 'menu' },
                     content: [
-                        {
-                            url: '#',
-                            text: 'Privacy'
-                        },
-                        {
-                            url: '#',
-                            text: 'Terms of use'
-                        },
+                        // {
+                        //     url: '#',
+                        //     text: 'Privacy'
+                        // },
+                        // {
+                        //     url: '#',
+                        //     text: 'Terms of use'
+                        // },
                         {
                             url: 'mailto:ask@theprotein.io',
-                            text: 'Email us'
+                            text: 'ask@theprotein.io'
                         }
                     ].map(function(item) {
                         return {
