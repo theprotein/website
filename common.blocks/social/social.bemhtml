@@ -5,7 +5,7 @@ block('social')(
         return [
             {
                 block: 'link',
-                url: '#',
+                url: 'https://medium.com/@theprotein',
                 content: {
                     block: 'icon',
                     mods: { inline: true, social: 'medium' },
