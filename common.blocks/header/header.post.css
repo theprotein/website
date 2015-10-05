@@ -8,12 +8,16 @@
     background: #262D4C;
 
     z-index: 9999;
+
+    visibility: hidden;
 }
 
 .header__content {
     margin: auto;
     padding-top: 50px;
     max-width: 1000px;
+    opacity: 0;
+    transition: opacity .2s;
 }
 
 .header__logo {
@@ -41,16 +45,35 @@
     }
 }
 
+.header_visible {
+    visibility: visible;
+
+    .header__content {
+        opacity: 1;
+    }
+}
+
+.header_fixed {
+    position: fixed;
+}
+
 @media (--small) {
+
+    .header_fixed {
+        display: none;
+    }
+
     .header__logo {
         margin: auto;
     }
 }
 
 @media (--large) {
-    .header {
-        position: fixed;
+
+    .header_fixed {
+        display: block;
     }
+
     .header__logo {
         float: left;
     }

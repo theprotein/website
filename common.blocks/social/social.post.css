@@ -19,10 +19,10 @@
     .link_hovered {
         .icon {
             circle {
-                stroke: #53E153;
+                stroke: #BCFF77
             }
             path {
-                fill: #53E153;
+                fill: #BCFF77;
             }
         }
     }

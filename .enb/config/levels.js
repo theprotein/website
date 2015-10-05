@@ -25,6 +25,7 @@ module.exports = function(platform, opts) {
         { path: path.join('libs', 'bem-components', 'common.blocks'), check: false },
         { path: path.join('libs', 'bem-components', 'desktop.blocks'), check: false },
         { path: path.join('libs', 'bem-grid', 'common.blocks'), check: false },
+        { path: path.join('libs', 'bem-stat-counters', 'common.blocks'), check: false },
         { path: 'common.blocks', check: true }
     ];
 
