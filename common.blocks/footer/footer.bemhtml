@@ -11,7 +11,8 @@ block('footer')(
                 {
                     elem: 'logo',
                     content: {
-                        block: 'logo'
+                        block: 'logo',
+                        mods: { view: 'square' }
                     }
                 },
                 {
@@ -19,20 +20,8 @@ block('footer')(
                     content: [
                         {
                             block: 'mark',
-                            mods: { theme: 'o' },
-                            content: 'Create.'
-                        },
-                        ' ',
-                        {
-                            block: 'mark',
-                            mods: { theme: 'g' },
-                            content: 'Implement.'
-                        },
-                        ' ',
-                        {
-                            block: 'mark',
                             mods: { theme: 'b' },
-                            content: 'Sync.'
+                            content: 'UI syncing platform'
                         }
                     ]
                 },

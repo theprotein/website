@@ -9,7 +9,8 @@
   ],
   "dependencies": {
     "bem-components": "2.3.0",
-    "bem-grid": "~2.0.0"
+    "bem-grid": "~2.0.0",
+    "bem-stat-counters": "~1.1.0"
   },
   "resolutions": {
     "bem-core": "2.7.0"

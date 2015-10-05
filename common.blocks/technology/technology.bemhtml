@@ -5,7 +5,8 @@ block('technology')(
     }),
     attrs()(function() {
        return this.ctx.url && {
-            href: this.ctx.url
+            href: this.ctx.url,
+            target: '_blank'
        };
     }),
     content()(function() {
