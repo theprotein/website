@@ -11,7 +11,8 @@ block('footer')(
                 {
                     elem: 'logo',
                     content: {
-                        block: 'logo'
+                        block: 'logo',
+                        mods: { view: 'square' }
                     }
                 },
                 {
@@ -19,8 +20,8 @@ block('footer')(
                     content: [
                         {
                             block: 'mark',
-                            mods: { theme: 'o' },
-                            content: 'Your team gonna love it!'
+                            mods: { theme: 'b' },
+                            content: 'UI syncing platform'
                         }
                     ]
                 },

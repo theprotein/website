@@ -1,15 +1,19 @@
 module.exports = {
     block: 'page',
-    title: 'Protein - Front-end development workflow',
+    title: 'Protein - UI syncing platform',
     favicon: '/favicon@2x.png',
+    doctype: [
+        '<!DOCTYPE html>',
+        '<!-- © The Protein Corp. All rights reserved. | http://theprotein.io -->'
+    ],
     head: [
         { elem: 'meta', attrs: { name: 'description', content: '' } },
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
 
         {
             block: 'social-meta',
-            title: 'Protein - Front-end development workflow',
-            description: 'Protein - Front-end development workflow',
+            title: 'Protein - UI syncing platform',
+            description: 'Protein – service to sync UI between technologies in your team. Seamless integration into the workflow of any technology stack and a set of tools. Instant delivery changes from design tools to the source code and vice versa. A revolutionary approach to the design and development of interfaces.',
             type: 'product',
             url: 'http://theprotein.io',
             image: 'http://theprotein.io/p_share_square.png',
@@ -928,6 +932,23 @@ module.exports = {
         },
         {
             block: 'footer'
+        },
+        {
+            block: 'google-analytics',
+            params: {
+                id: 'UA-63201396-1'
+            }
+        },
+        {
+            block: 'yandex-metrica',
+            params: {
+                id: 32852202,
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true,
+                trackHash:true
+            }
         }
     ]
 };

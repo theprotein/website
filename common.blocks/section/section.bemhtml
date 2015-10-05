@@ -1,6 +1,5 @@
 block('section')(
     tag()('section'),
-    mix()({ block: 'clearfix' }),
     content()(function() {
         return {
             elem: 'content',

@@ -17,10 +17,6 @@
 
 .footer__logo {
     margin: 0 auto 40px;
-
-    .logo {
-        width: 120px !important;
-    }
 }
 
 .footer__text {

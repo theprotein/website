@@ -33,6 +33,8 @@ provide(BEMDOM.decl(this.name, {
                     if (t > brp) this.setMod('visible');
 
                 });
+
+                console.log('Are you interested in how it works? Want extraordinary tasks and one of the most innovative teams in the world? Do you want to work on advanced technologies every day to build the future today? Write us ask@theprotein.io');
             }
         }
     }
