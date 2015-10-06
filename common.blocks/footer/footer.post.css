@@ -12,7 +12,7 @@
 }
 
 .footer__social {
-    margin-bottom: 60px;
+    margin-bottom: 140px;
 }
 
 .footer__logo {
@@ -20,15 +20,10 @@
 }
 
 .footer__text {
-    margin-bottom: 80px;
+    margin-bottom: 150px;
     font-size: 22px;
     line-height: 1.4;
     font-family: 'Quicksand';
-
-    .mark {
-        display: inline-block;
-        padding: 0 3px;
-    }
 }
 
 .footer__menu {
@@ -47,7 +42,9 @@
 }
 
 .footer__copy {
+    opacity: .7;
     font-size: 11px;
+    color: rgba(255, 255, 255, .4);
 }
 
 

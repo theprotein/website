@@ -143,8 +143,7 @@ module.exports = {
                                 desc: [
                                     'Protein&nbsp;Starter&nbsp;Kit converts ',
                                     'UI&nbsp;components&rsquo; designs ',
-                                    'into a&nbsp;source code ',
-                                    'and vice versa ',
+                                    'into a&nbsp;source code and vice versa ',
                                     'regardless of&nbsp;the platform'
                                 ]
                             }
@@ -165,10 +164,9 @@ module.exports = {
                                 title: 'Syncing',
                                 desc: [
                                     'Protein&nbsp;Starter&nbsp;Kit allows ',
-                                    'syncing work a&nbsp;team ',
-                                    'has done on&nbsp;the development ',
-                                    'of&nbsp;the interfaces in&nbsp;the ',
-                                    'background mode'
+                                    'syncing work a&nbsp;team has done ',
+                                    'on&nbsp;the development of&nbsp;the interfaces ',
+                                    'in&nbsp;the background mode'
                                 ]
                             }
                         },
@@ -188,10 +186,9 @@ module.exports = {
                                 title: 'Working',
                                 desc: [
                                     'Protein&nbsp;Starter&nbsp;Kit works ',
-                                    'through the cloud storage ',
-                                    'with a&nbsp;web access to ',
-                                    'the team management and ',
-                                    'integrations&rsquo; settings'
+                                    'through the cloud storage with ',
+                                    'a&nbsp;web access to the team management ',
+                                    'and integrations&rsquo; settings'
                                 ]
                             }
                         }
@@ -507,7 +504,7 @@ module.exports = {
                                 title: 'Platforms',
                                 desc: [
                                     'Compatibility with ',
-                                    'Windows&nbsp;OS, iOS end Android OS ',
+                                    'Windows&nbsp;OS, iOS and Android OS ',
                                     'platforms to&nbsp;give your team ',
                                     'an&nbsp;option to&nbsp;provide layouts ',
                                     'as&nbsp;ready-to-go xml-schemas ',

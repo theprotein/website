@@ -20,8 +20,19 @@ block('footer')(
                     content: [
                         {
                             block: 'mark',
-                            mods: { theme: 'b' },
-                            content: 'UI syncing platform'
+                            mods: { theme: 'g' },
+                            // content: 'UI syncing platform'
+                            content: 'Your team '
+                        },
+                        {
+                            block: 'mark',
+                            mods: { theme: 'o' },
+                            content: ' gonna '
+                        },
+                        {
+                            block: 'mark',
+                            mods: { theme: 'r' },
+                            content: 'love it!'
                         }
                     ]
                 },

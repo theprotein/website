@@ -50,3 +50,9 @@
         padding: 0;
     }
 }
+
+@media (--xlarge) {
+    .section {
+        padding: 200px 0 160px;
+    }
+}
