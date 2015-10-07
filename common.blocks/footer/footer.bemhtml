@@ -21,7 +21,6 @@ block('footer')(
                         {
                             block: 'mark',
                             mods: { theme: 'g' },
-                            // content: 'UI syncing platform'
                             content: 'Your team '
                         },
                         {
