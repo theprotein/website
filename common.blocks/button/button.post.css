@@ -17,6 +17,8 @@
     border-color: rgba(255, 255, 255, 1);
     text-decoration: none;
     transition: 200ms;
+
+    outline: none;
 }
 
 .button_hovered {
