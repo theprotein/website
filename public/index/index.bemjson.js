@@ -323,7 +323,7 @@ module.exports = {
                                 desc: [
                                     'It&nbsp;works through the cloud storage with ',
                                     'a&nbsp;web access to&nbsp;the team management ',
-                                    'and integrations&rsquo; settings'
+                                    'and integrations settings'
                                 ]
                             }
                         }
@@ -703,7 +703,7 @@ module.exports = {
             title: 'Delivery Dates',
             desc: [
                 'Protein will go&nbsp;live on&nbsp;Spring 2016&nbsp;as a&nbsp;Starter&nbsp;Kit version ',
-                'with integrations&rsquo; releases as&nbsp;fast as&nbsp;possible'
+                'with integrations releases as&nbsp;fast as&nbsp;possible'
             ],
             content: [
                 {
