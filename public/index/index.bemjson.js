@@ -1,6 +1,6 @@
 module.exports = {
     block: 'page',
-    title: 'Protein - UI syncing platform',
+    title: 'Protein - UI components syncing',
     favicon: '/favicon@2x.png',
     doctype: [
         '<!DOCTYPE html>',
@@ -12,8 +12,8 @@ module.exports = {
 
         {
             block: 'social-meta',
-            title: 'Protein - UI syncing platform',
-            description: 'Protein – service to sync UI between technologies in your team. Seamless integration into the workflow of any technology stack and a set of tools. Instant delivery changes from design tools to the source code and vice versa. A revolutionary approach to the design and development of interfaces.',
+            title: 'Protein - UI components syncing',
+            description: 'Service to sync UI between technologies in your team. Seamless integration into the workflow of any technology stack and a set of tools. Instant delivery changes from design tools to the source code and vice versa. A revolutionary approach to the design and development of interfaces.',
             type: 'product',
             url: 'http://theprotein.io',
             image: 'http://theprotein.io/p_share_square.png',
