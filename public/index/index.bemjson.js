@@ -36,8 +36,9 @@ module.exports = {
                 block: 'intro',
                 content: [
                     'Your everyday working ',
-                    { block: 'mark', mods: { theme: 'g' }, content: 'process and tools do&nbsp;not change' },
-                    ' ',
+                    { block: 'mark', mods: { theme: 'g' }, content: 'process' },
+                    ' and ',
+                    { block: 'mark', mods: { theme: 'g' }, content: 'tools do&nbsp;not change' },
                     { block: 'br' },
                     'but the profit you get ',
                     { block: 'mark', mods: { theme: 'o' }, content: 'change everything' },
@@ -229,8 +230,8 @@ module.exports = {
             mix: { block: 'workflow' },
             title: 'Workflow',
             desc: [
-                'Protein is&nbsp;easily installed into existing design and development ',
-                'workflow as&nbsp;a&nbsp;communication tool that team uses to&nbsp;exchange their designs and&nbsp;UI components '
+                'Protein is&nbsp;easily installed into existing design and development workflow ',
+                'as&nbsp;a&nbsp;communication tool that team uses to&nbsp;exchange their designs and&nbsp;UI components '
             ],
             content: [
                 {
@@ -243,11 +244,9 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'blue' } },
             content: [
-                'Everyday use of&nbsp;Protein turns ',
+                'Everyday use of&nbsp;Protein turns routine into incredible productivity ',
                 { block: 'br' },
-                'your team&rsquo;s working routine into incredible productivity ',
-                { block: 'br' },
-                'with no&nbsp;time waste on&nbsp;additional synchronisations'
+                'with no&nbsp;time waste on&nbsp;additional synchronizations'
             ]
         },
         {
@@ -268,7 +267,7 @@ module.exports = {
                             elem: 'col',
                             mods: {
                                 sw:12,
-                                mw: 4
+                                mw:4
                             },
                             content: {
                                 block: 'card',
