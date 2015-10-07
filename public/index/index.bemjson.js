@@ -48,9 +48,8 @@ module.exports = {
             mods: { view: 'diet' },
             title: 'Protein Diet',
             desc: [
-                'Protein is&nbsp;a&nbsp;simple but powerful SaaS service that could easily be&nbsp;added ',
-                'into any workflow in&nbsp;any team. It&nbsp;synchronises&nbsp;UI components between technologies ',
-                'and works across platforms&nbsp;&mdash; web, mobile and desktop.'
+                'Protein is&nbsp;a&nbsp;simple but powerful SaaS service that could easily be&nbsp;added into any workflow in&nbsp;any team.',
+                'It&nbsp;synchronises&nbsp;UI components between technologies and works across platforms&nbsp;&mdash; web, mobile and desktop.'
             ],
             content: [
                 {
@@ -242,7 +241,7 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'blue' } },
             content: [
-                'Everyday use of&nbsp;Protein turns routine into incredible productivity ',
+                'Everyday use of&nbsp;Protein turns working routine into incredible productivity ',
                 { block: 'br' },
                 'with no&nbsp;time waste on&nbsp;additional synchronizations'
             ]
