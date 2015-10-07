@@ -35,7 +35,7 @@ module.exports = {
             content: {
                 block: 'intro',
                 content: [
-                    'Your everyday working process and ',
+                    'Your everyday working process ',
                     { block: 'mark', mods: { theme: 'g' }, content: 'tools do&nbsp;not change' },
                     ' ',
                     { block: 'br' },
@@ -51,7 +51,7 @@ module.exports = {
             desc: [
                 'Protein is&nbsp;a&nbsp;simple but powerful SaaS service that could easily be&nbsp;added ',
                 'into any workflow in&nbsp;any team. It&nbsp;synchronises&nbsp;UI components between technologies ',
-                'and work across platforms&nbsp;&mdash; web, mobile and desktop.'
+                'and works across platforms&nbsp;&mdash; web, mobile and desktop.'
             ],
             content: [
                 {
@@ -229,8 +229,8 @@ module.exports = {
             mix: { block: 'workflow' },
             title: 'Workflow',
             desc: [
-                'Protein is&nbsp;easily installed into existing design and development workflow as&nbsp;a&nbsp;communication tool ',
-                'that team uses to&nbsp;exchange their designs and&nbsp;UI components '
+                'Protein is&nbsp;easily installed into existing design and development ',
+                'workflow as&nbsp;a&nbsp;communication tool that team uses to&nbsp;exchange their designs and&nbsp;UI components '
             ],
             content: [
                 {
@@ -243,7 +243,7 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'blue' } },
             content: [
-                'It&rsquo;s scientifically proven that everyday use of&nbsp;Protein turns ',
+                'Everyday use of&nbsp;Protein turns ',
                 { block: 'br' },
                 'your team&rsquo;s working routine into incredible productivity ',
                 { block: 'br' },
@@ -256,8 +256,8 @@ module.exports = {
             mix: { block: 'starter-kit' },
             title: 'Starter&nbsp;Kit',
             desc: [
-                'We&nbsp;launch Protein as&nbsp;a&nbsp;Starter&nbsp;Kit releasing integrations with other products ',
-                'you may use as&nbsp;new features later&nbsp;on'
+                'We&nbsp;launch Protein as&nbsp;a&nbsp;Starter&nbsp;Kit ',
+                'releasing integrations with other products you may use as&nbsp;new features later&nbsp;on'
             ],
             content: [
                 {
@@ -842,7 +842,7 @@ module.exports = {
                             content: {
                                 block: 'people',
                                 image: 'i/people/yaroshevich.png',
-                                name: 'Alexej Yaroshevich',
+                                name: 'Alexey Yaroshevich',
                                 nickname: 'yaroshevich',
                                 post: 'VP Engineering'
                             }
@@ -877,7 +877,7 @@ module.exports = {
                             content: {
                                 block: 'people',
                                 image: 'i/people/mursya.png',
-                                name: 'Elena Jetpyspaeva',
+                                name: 'Yelena Jetpyspayeva',
                                 nickname: 'mursya',
                                 post: 'VP Marketing'
                             }
