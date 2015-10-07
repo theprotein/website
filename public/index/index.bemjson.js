@@ -35,8 +35,8 @@ module.exports = {
             content: {
                 block: 'intro',
                 content: [
-                    'Your everyday working process ',
-                    { block: 'mark', mods: { theme: 'g' }, content: 'tools do&nbsp;not change' },
+                    'Your everyday working ',
+                    { block: 'mark', mods: { theme: 'g' }, content: 'process and tools do&nbsp;not change' },
                     ' ',
                     { block: 'br' },
                     'but the profit you get ',
