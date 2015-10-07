@@ -112,7 +112,7 @@
     </g>
 
     <line id="path-5" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:square;" x1="58.7" y1="402.2" x2="-14.3" y2="402.2"/>
-    <ellipse id="changes-5" style="fill:#262D4C;stroke:#F3D87F;stroke-width:3;stroke-linecap:square;" cx="6.2" cy="402.3" rx="6.5" ry="6.5"/>
+
 </g>
 
 <g id="designer-3">
@@ -122,7 +122,6 @@
         <path id="body-6" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:square;" d="M-24.9,477.2v-8c0-4.4-3.6-8-8-8h-14.3 c-4.4,0-8,3.6-8,8v8H-24.9z"/>
     </g>
     <path id="path-6" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:square;" d="M59,417c-40.2,0-41.2,49.2-75.2,49.2"/>
-    <ellipse id="changes-6" style="fill:#262D4C;stroke:#F3D87F;stroke-width:3;stroke-linecap:square;" cx="6.2" cy="457.1" rx="6.5" ry="6.5"/>
 </g>
 
 <g id="logo">

@@ -49,8 +49,9 @@ module.exports = {
             mods: { view: 'diet' },
             title: 'Protein Diet',
             desc: [
-                'Protein is&nbsp;a&nbsp;simple but powerful SaaS service that is&nbsp;easily added ',
-                'to&nbsp;your development diet'
+                'Protein is&nbsp;a&nbsp;simple but powerful SaaS service that could easily be&nbsp;added ',
+                'into any workflow in&nbsp;any team. It&nbsp;synchronises&nbsp;UI components between technologies ',
+                'and work across platforms&nbsp;&mdash; web, mobile and desktop.'
             ],
             content: [
                 {
@@ -69,14 +70,14 @@ module.exports = {
                                 title: 'Workflow',
                                 desc: [
                                     [
-                                        'Simple. Once changes are made you press ' ,
+                                        'Once changes are made you press ' ,
                                         {
                                             block: 'command',
                                             content: '&#8984;&nbsp;+&nbsp;P'
                                         },
                                         ' '
                                     ],
-                                    'to&nbsp;sync&nbsp;it, and they appear in&nbsp;your working tool ',
+                                    'to&nbsp;sync&nbsp;it and they appear in&nbsp;your working tool ',
                                     'as&nbsp;a&nbsp;code or&nbsp;a&nbsp;design sketch.'
                                 ]
                             }
@@ -107,9 +108,146 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'blue' } },
             content: [
-                'Protein requires no&nbsp;additional knowledge or&nbsp;change ',
+                'Protein requires no&nbsp;additional knowledge ',
                 { block: 'br' },
-                'of&nbsp;tools the team already use'
+                'or&nbsp;change of&nbsp;tools the team already use'
+            ]
+        },
+        {
+            block: 'section',
+            mods: { view: 'helps' },
+            title: 'Protein helps your Team',
+            content: [
+                {
+                    block: 'row',
+                    content: [
+                        {
+                            elem: 'col',
+                            elemMods: {
+                                sw: 12,
+                                mw: 6
+                            },
+                            content: {
+                                block: 'info',
+                                icon: { block: 'image', url: 'i/helps/1.svg'},
+                                text: [
+                                    'Edit live&nbsp;UI components in&nbsp;an&nbsp;editor ',
+                                    'of&nbsp;your choice'
+                                ]
+                            }
+                        },
+                        {
+                            elem: 'col',
+                            elemMods: {
+                                sw: 12,
+                                mw: 6
+                            },
+                            content: {
+                                block: 'info',
+                                icon: { block: 'image', url: 'i/helps/2.svg'},
+                                text: [
+                                    'Share libraries and layouts you create ',
+                                    'with other designers'
+                                ]
+                            }
+                        },
+                        {
+                            elem: 'col',
+                            elemMods: {
+                                sw: 12,
+                                mw: 6
+                            },
+                            content: {
+                                block: 'info',
+                                icon: { block: 'image', url: 'i/helps/3.svg'},
+                                text: [
+                                    'Build and structure them ',
+                                    'with live preview'
+                                ]
+                            }
+                        },
+                        {
+                            elem: 'col',
+                            elemMods: {
+                                sw: 12,
+                                mw: 6
+                            },
+                            content: {
+                                block: 'info',
+                                icon: { block: 'image', url: 'i/helps/4.svg'},
+                                text: [
+                                    'Link live&nbsp;UI components to&nbsp;the all project ',
+                                    'layouts you have'
+                                ]
+                            }
+                        },
+                        {
+                            elem: 'col',
+                            elemMods: {
+                                sw: 12,
+                                mw: 6
+                            },
+                            content: {
+                                block: 'info',
+                                icon: { block: 'image', url: 'i/helps/5.svg'},
+                                text: [
+                                    'Sync them with code implementation ',
+                                    'in&nbsp;the background'
+                                ]
+                            }
+                        },
+                        {
+                            elem: 'col',
+                            elemMods: {
+                                sw: 12,
+                                mw: 6
+                            },
+                            content: {
+                                block: 'info',
+                                icon: { block: 'image', url: 'i/helps/6.svg'},
+                                text: [
+                                    'Get design changes by&nbsp;pull requests to&nbsp;VCS ',
+                                    'not as&nbsp;layouts but as&nbsp;code you can work with'
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            block: 'section',
+            mix: { block: 'quote', mods: { theme: 'green' } },
+            content: [
+                'We&nbsp;are inspired here at&nbsp;Protein and think that every tool the developer team uses ',
+                { block: 'br' },
+                'should be&nbsp;compatible with Protein to&nbsp;empower the magic of&nbsp;one another'
+            ]
+        },
+        {
+            block: 'section',
+            mix: { block: 'workflow' },
+            title: 'Workflow',
+            desc: [
+                'Protein is&nbsp;easily installed into existing design and development workflow as&nbsp;a&nbsp;communication tool ',
+                'that team uses to&nbsp;exchange their designs and&nbsp;UI components '
+            ],
+            content: [
+                {
+                    block: 'workflow-scheme',
+                    mix: { block: 'workflow', elem: 'scheme' }
+                }
+            ]
+        },
+        {
+            block: 'section',
+            mix: { block: 'quote', mods: { theme: 'blue' } },
+            content: [
+                'It&rsquo;s scientifically proven that everyday use of&nbsp;Protein turns ',
+                { block: 'br' },
+                'your team&rsquo;s working routine into incredible productivity ',
+                { block: 'br' },
+                'with no&nbsp;time waste on&nbsp;additional synchronisations'
             ]
         },
         {
@@ -141,8 +279,7 @@ module.exports = {
                                 },
                                 title: 'Converting',
                                 desc: [
-                                    'Protein&nbsp;Starter&nbsp;Kit converts ',
-                                    'UI&nbsp;components&rsquo; designs ',
+                                    'It&nbsp;converts UI&nbsp;components designs ',
                                     'into a&nbsp;source code and vice versa ',
                                     'regardless of&nbsp;the platform'
                                 ]
@@ -163,9 +300,8 @@ module.exports = {
                                 },
                                 title: 'Syncing',
                                 desc: [
-                                    'Protein&nbsp;Starter&nbsp;Kit allows ',
-                                    'syncing work a&nbsp;team has done ',
-                                    'on&nbsp;the development of&nbsp;the interfaces ',
+                                    'It&nbsp;synchronises ',
+                                    'work on&nbsp;the interface development ',
                                     'in&nbsp;the background mode'
                                 ]
                             }
@@ -185,9 +321,8 @@ module.exports = {
                                 },
                                 title: 'Working',
                                 desc: [
-                                    'Protein&nbsp;Starter&nbsp;Kit works ',
-                                    'through the cloud storage with ',
-                                    'a&nbsp;web access to the team management ',
+                                    'It&nbsp;works through the cloud storage with ',
+                                    'a&nbsp;web access to&nbsp;the team management ',
                                     'and integrations&rsquo; settings'
                                 ]
                             }
@@ -318,9 +453,9 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'green' } },
             content: [
-                'We&nbsp;are inspired here at&nbsp;Protein and think that every tool the developer team uses ',
+                'Protein helps your team speak one language and use one library ',
                 { block: 'br' },
-                'should be&nbsp;compatible with Protein to&nbsp;empower the magic of&nbsp;one another'
+                'instead of&nbsp;multiple copies and designs'
             ]
         },
         {
@@ -467,11 +602,9 @@ module.exports = {
             block: 'section',
             mix: { block: 'quote', mods: { theme: 'blue' } },
             content: [
-                'It&rsquo;s scientifically proven that everyday use of&nbsp;Protein turns ',
+                'With Protein your team develops the core product faster ',
                 { block: 'br' },
-                'your team&rsquo;s working routine into incredible productivity ',
-                { block: 'br' },
-                'with no&nbsp;time waste on&nbsp;additional synchronisations'
+                'with no&nbsp;efforts wasted on&nbsp;the&nbsp;go'
             ]
         },
         {
@@ -480,8 +613,7 @@ module.exports = {
             mix: { block: 'features' },
             title: 'Features',
             desc: [
-                'Apart from a&nbsp;Starter&nbsp;Kit version and integrations with other services ',
-                'we&nbsp;plan on&nbsp;developing our core product with features ',
+                'We&nbsp;plan on&nbsp;extending our core product with features ',
                 'that soon will be&nbsp;available inside a&nbsp;Starter&nbsp;Kit'
             ],
             content: [
@@ -552,146 +684,11 @@ module.exports = {
                                 title: 'Conversions',
                                 desc: [
                                     'Possibility to&nbsp;convert ',
-                                    'not only separate components ',
-                                    'your team is&nbsp;working on ',
-                                    'but full screens to&nbsp;help ',
+                                    'separate components your team ',
+                                    'is&nbsp;working on&nbsp;as&nbsp;well ',
+                                    'as&nbsp;full screens to&nbsp;help ',
                                     'a&nbsp;layout become ',
-                                    'an&nbsp;application right&nbsp;away'
-                                ]
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            block: 'section',
-            mix: { block: 'quote', mods: { theme: 'green' } },
-            content: [
-                'Protein helps your team speak one language and use one library ',
-                { block: 'br' },
-                'instead of&nbsp;multiple copies and designs'
-            ]
-        },
-        {
-            block: 'section',
-            mix: { block: 'workflow' },
-            title: 'Workflow',
-            desc: [
-                'Protein is&nbsp;easily installed into existing design and development workflow as&nbsp;a&nbsp;communication tool ',
-                'that team uses to&nbsp;exchange their designs and&nbsp;UI components. '
-            ],
-            content: [
-                {
-                    block: 'workflow-scheme',
-                    mix: { block: 'workflow', elem: 'scheme' }
-                }
-            ]
-        },
-        {
-            block: 'section',
-            mix: { block: 'quote', mods: { theme: 'blue' } },
-            content: [
-                'With Protein your team develops the core product faster ',
-                { block: 'br' },
-                'with no&nbsp;efforts wasted on&nbsp;the&nbsp;go'
-            ]
-        },
-        {
-            block: 'section',
-            mods: { view: 'helps' },
-            title: 'Protein helps your team',
-            content: [
-                {
-                    block: 'row',
-                    content: [
-                        {
-                            elem: 'col',
-                            elemMods: {
-                                sw: 12,
-                                mw: 6
-                            },
-                            content: {
-                                block: 'info',
-                                icon: { block: 'image', url: 'i/helps/1.svg'},
-                                text: [
-                                    'Edit live&nbsp;UI components in&nbsp;an&nbsp;editor ',
-                                    'of&nbsp;your choice'
-                                ]
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            elemMods: {
-                                sw: 12,
-                                mw: 6
-                            },
-                            content: {
-                                block: 'info',
-                                icon: { block: 'image', url: 'i/helps/2.svg'},
-                                text: [
-                                    'Share libraries and layouts you create ',
-                                    'with other designers'
-                                ]
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            elemMods: {
-                                sw: 12,
-                                mw: 6
-                            },
-                            content: {
-                                block: 'info',
-                                icon: { block: 'image', url: 'i/helps/3.svg'},
-                                text: [
-                                    'Build and structure them ',
-                                    'with live preview'
-                                ]
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            elemMods: {
-                                sw: 12,
-                                mw: 6
-                            },
-                            content: {
-                                block: 'info',
-                                icon: { block: 'image', url: 'i/helps/4.svg'},
-                                text: [
-                                    'Link live&nbsp;UI components to&nbsp;the all project ',
-                                    'layouts you have'
-                                ]
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            elemMods: {
-                                sw: 12,
-                                mw: 6
-                            },
-                            content: {
-                                block: 'info',
-                                icon: { block: 'image', url: 'i/helps/5.svg'},
-                                text: [
-                                    'Sync them with code implementation ',
-                                    'in&nbsp;the background'
-                                ]
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            elemMods: {
-                                sw: 12,
-                                mw: 6
-                            },
-                            content: {
-                                block: 'info',
-                                icon: { block: 'image', url: 'i/helps/6.svg'},
-                                text: [
-                                    'Get design changes by&nbsp;pull requests to&nbsp;VCS ',
-                                    'not as&nbsp;layouts but as&nbsp;code you can work with'
+                                    'an&nbsp;application right away'
                                 ]
                             }
                         }
@@ -721,9 +718,8 @@ module.exports = {
             mix: { block: 'pricing' },
             title: 'Pricing',
             desc: [
-                'Protein&nbsp;Starter&nbsp;Kit will be&nbsp;launched in&nbsp;Spring 2016&nbsp;on an&nbsp;annual subscription basis. ',
-                'All released integrations and features after the Starter&nbsp;Kit release ',
-                'will be&nbsp;shipped as&nbsp;updates of&nbsp;the core product.'
+                'Protein Starter Kit will be&nbsp;launched in&nbsp;Spring 2016&nbsp;on an&nbsp;annual subscription basis.',
+                'All released integrations and features will be&nbsp;shipped as&nbsp;updates of&nbsp;the core product.'
             ],
             content: [
                 {
@@ -797,8 +793,8 @@ module.exports = {
             mix: [{ block: 'pre-order' }, { block: 'quote', mods: { theme: 'green' }}],
             title: 'Pre-order',
             desc: [
-                'Pre-order starts on&nbsp;Christmas in&nbsp;an&nbsp;early bird mode with a&nbsp;limited number of&nbsp;licenses',
-                'which you get discounted if&nbsp;you subscribe to&nbsp;pre-order&rsquo;s start ',
+                'Pre-order starts on&nbsp;Christmas in&nbsp;an&nbsp;early bird mode with a&nbsp;limited number of&nbsp;licenses ',
+                'you get discounted if&nbsp;subscribe'
             ],
             content: [
                 {
