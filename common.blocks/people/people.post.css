@@ -44,16 +44,15 @@
 }
 
 .people_hovered {
+    .people__image {
+        filter: grayscale(0)
+    }
     .people__nickname {
         color: rgba(100, 200, 0, 1);
     }
 }
 
 @media (--small-only) {
-    .people__image {
-        margin-bottom: 10px;
-    }
-
     .people__name {
         width: 100px;
         margin: auto;
