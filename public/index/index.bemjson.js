@@ -754,7 +754,7 @@ module.exports = {
                             content: {
                                 block: 'price',
                                 title: 'After release price',
-                                val: '149'
+                                val: '199'
                             }
                         },
                         {
