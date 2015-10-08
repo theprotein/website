@@ -22,7 +22,7 @@ provide(BEMDOM.decl({ block: this.name, modName: 'scroll-to', modVal: true }, {
 
                 this.findBlockInside('link')
                     .bindTo('click', function() {
-                        $('body', 'html')
+                        $('html, body')
                             .stop()
                             .animate({ scrollTop: $(this._url).offset().top }, '500', 'swing');
                     });
