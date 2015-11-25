@@ -49,7 +49,7 @@ block('header')(
                                 block: 'button',
                                 mods: { type: 'link', size: 'm' },
                                 url: 'http://eepurl.com/boJcIH',
-                                text: 'Subscribe'
+                                text: 'Subscribe to News'
                             }
                         }
                     ]

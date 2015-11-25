@@ -3,9 +3,9 @@
     text-align: center;
 }
 
-.intro__scheme {
+.intro__video {
     margin: 0 auto 60px;
-    max-width: 500px;
+    max-width: 960px;
 
     svg {
         max-width: 100%;

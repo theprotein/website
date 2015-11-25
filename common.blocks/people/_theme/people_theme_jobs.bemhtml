@@ -1,0 +1,19 @@
+block('people').mod('theme','jobs')(
+    tag()('a'),
+    attrs()(function() {
+        return { href: 'mailto:jobs@theprotein.io' };
+    }),
+    content()(function() {
+        return [
+            {
+                block: 'image',
+                mix: { block: this.block, elem: 'image'},
+                url: this.ctx.image
+            },
+            {
+                elem: 'title',
+                content: this.ctx.title
+            }
+        ];
+    })
+);

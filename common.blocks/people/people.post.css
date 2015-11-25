@@ -45,7 +45,7 @@
 
 .people_hovered {
     .people__image {
-        filter: grayscale(0)
+        filter: brightness(1.2)
     }
     .people__nickname {
         color: rgba(100, 200, 0, 1);

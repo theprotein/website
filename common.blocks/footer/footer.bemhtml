@@ -26,7 +26,7 @@ block('footer')(
                         {
                             block: 'mark',
                             mods: { theme: 'o' },
-                            content: ' gonna '
+                            content: ' is going to '
                         },
                         {
                             block: 'mark',

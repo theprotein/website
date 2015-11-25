@@ -36,7 +36,7 @@ module.exports = {
                 block: 'intro',
                 content: [
                     'Your everyday working ',
-                    { block: 'mark', mods: { theme: 'g' }, content: 'process and tools do&nbsp;not change' },
+                    { block: 'mark', mods: { theme: 'g' }, content: 'process and tools do&nbsp;not change ' },
                     { block: 'br' },
                     'but the profit you get ',
                     { block: 'mark', mods: { theme: 'o' }, content: 'change everything' },
@@ -45,10 +45,10 @@ module.exports = {
         },
         {
             block: 'section',
-            mods: { view: 'diet' },
+            mods: { view: 'diet', theme: 'gray' },
             title: 'Protein Diet',
             desc: [
-                'Protein is&nbsp;a&nbsp;simple but powerful SaaS service that could easily be&nbsp;added into any workflow in&nbsp;any team.',
+                'Protein is&nbsp;a&nbsp;simple but powerful SaaS that could easily be&nbsp;added into any workflow in&nbsp;any team.',
                 'It&nbsp;synchronises&nbsp;UI components between technologies and works across platforms&nbsp;&mdash; web, mobile and desktop.'
             ],
             content: [
@@ -68,7 +68,7 @@ module.exports = {
                                 title: 'Workflow',
                                 desc: [
                                     [
-                                        'Once changes are made you press ' ,
+                                        'Once changes are made, press ' ,
                                         {
                                             block: 'command',
                                             content: '&#8984;&nbsp;+&nbsp;P'
@@ -92,9 +92,9 @@ module.exports = {
                                 },
                                 title: 'Team',
                                 desc: [
-                                    'As&nbsp;a&nbsp;team product it&nbsp;is&nbsp;great for designers, ',
+                                    'As&nbsp;a&nbsp;team product, it&nbsp;is&nbsp;great for designers, ',
                                     'frontend developers, testing engineers, UI/UX ',
-                                    'engineers, managers.'
+                                    'engineers and managers.'
                                 ]
                             }
                         }
@@ -102,15 +102,15 @@ module.exports = {
                 }
             ]
         },
-        {
-            block: 'section',
-            mix: { block: 'quote', mods: { theme: 'blue' } },
-            content: [
-                'Protein requires no&nbsp;additional knowledge ',
-                { block: 'br' },
-                'or&nbsp;change of&nbsp;tools the team already use'
-            ]
-        },
+        // {
+        //     block: 'section',
+        //     mix: { block: 'quote', mods: { theme: 'blue' } },
+        //     content: [
+        //         'Protein requires no&nbsp;additional knowledge ',
+        //         { block: 'br' },
+        //         'or&nbsp;change of&nbsp;tools the team already use'
+        //     ]
+        // },
         {
             block: 'section',
             mods: { view: 'helps' },
@@ -144,7 +144,7 @@ module.exports = {
                                 block: 'info',
                                 icon: { block: 'image', url: 'i/helps/2.svg'},
                                 text: [
-                                    'Share libraries and layouts you create ',
+                                    'Share the libraries and layouts you create ',
                                     'with other designers'
                                 ]
                             }
@@ -159,7 +159,7 @@ module.exports = {
                                 block: 'info',
                                 icon: { block: 'image', url: 'i/helps/3.svg'},
                                 text: [
-                                    'Build and structure them ',
+                                    'Build and structure components ',
                                     'with live preview'
                                 ]
                             }
@@ -213,21 +213,21 @@ module.exports = {
                 }
             ]
         },
-        {
-            block: 'section',
-            mix: { block: 'quote', mods: { theme: 'green' } },
-            content: [
-                'We&nbsp;are inspired here at&nbsp;Protein and think that every tool the developer team uses ',
-                { block: 'br' },
-                'should be&nbsp;compatible with Protein to&nbsp;empower the magic of&nbsp;one another'
-            ]
-        },
+        // {
+        //     block: 'section',
+        //     mix: { block: 'quote', mods: { theme: 'green' } },
+        //     content: [
+        //         'We think that every tool the developer team uses ',
+        //         { block: 'br' },
+        //         'should be&nbsp;compatible with Protein'
+        //     ]
+        // },
         {
             block: 'section',
             mix: { block: 'workflow' },
             title: 'Workflow',
             desc: [
-                'Protein is&nbsp;easily installed into existing design and development workflow ',
+                'Protein is&nbsp;easily installed into existing design and development workflows ',
                 'as&nbsp;a&nbsp;communication tool that team uses to&nbsp;exchange their designs and&nbsp;UI components '
             ],
             content: [
@@ -237,23 +237,23 @@ module.exports = {
                 }
             ]
         },
-        {
-            block: 'section',
-            mix: { block: 'quote', mods: { theme: 'blue' } },
-            content: [
-                'Everyday use of&nbsp;Protein turns working routine into incredible productivity ',
-                { block: 'br' },
-                'with no&nbsp;time waste on&nbsp;additional synchronizations'
-            ]
-        },
+        // {
+        //     block: 'section',
+        //     mix: { block: 'quote', mods: { theme: 'blue' } },
+        //     content: [
+        //         'Everyday use of&nbsp;Protein improves productivity ',
+        //         { block: 'br' },
+        //         'with no&nbsp;time wasted on&nbsp;additional synchronizations'
+        //     ]
+        // },
         {
             block: 'section',
             attrs: { id: 'starter-kit' },
             mix: { block: 'starter-kit' },
             title: 'Starter&nbsp;Kit',
             desc: [
-                'We&nbsp;launch Protein as&nbsp;a&nbsp;Starter&nbsp;Kit ',
-                'releasing integrations with other products you may use as&nbsp;new features later&nbsp;on'
+                'We&nbsp;will launch Protein as&nbsp;a&nbsp;Starter&nbsp;Kit ',
+                'releasing integrations with other products and new features later&nbsp;on'
             ],
             content: [
                 {
@@ -445,15 +445,15 @@ module.exports = {
                 }
             ]
         },
-        {
-            block: 'section',
-            mix: { block: 'quote', mods: { theme: 'green' } },
-            content: [
-                'Protein helps your team speak one language and use one library ',
-                { block: 'br' },
-                'instead of&nbsp;multiple copies and designs'
-            ]
-        },
+        // {
+        //     block: 'section',
+        //     mix: { block: 'quote', mods: { theme: 'green' } },
+        //     content: [
+        //         'Protein helps your team speak one language and use one library ',
+        //         { block: 'br' },
+        //         'instead of&nbsp;multiple copies and designs'
+        //     ]
+        // },
         {
             block: 'section',
             mix: { block: 'integrations' },
@@ -594,15 +594,15 @@ module.exports = {
                 }
             ]
         },
-        {
-            block: 'section',
-            mix: { block: 'quote', mods: { theme: 'blue' } },
-            content: [
-                'With Protein your team develops the core product faster ',
-                { block: 'br' },
-                'with no&nbsp;efforts wasted on&nbsp;the&nbsp;go'
-            ]
-        },
+        // {
+        //     block: 'section',
+        //     mix: { block: 'quote', mods: { theme: 'blue' } },
+        //     content: [
+        //         'With Protein your team develops the core product faster ',
+        //         { block: 'br' },
+        //         'with no&nbsp;efforts wasted on&nbsp;the&nbsp;go'
+        //     ]
+        // },
         {
             block: 'section',
             attrs: { id: 'features' },
@@ -659,7 +659,7 @@ module.exports = {
                                     'your components to&nbsp;help ',
                                     'the team understand how ',
                                     'it&nbsp;works while they work on ',
-                                    'it&rsquo;s creation. Available across ',
+                                    'its creation. Available across ',
                                     'browsers and devices'
                                 ]
                             }
@@ -790,7 +790,7 @@ module.exports = {
             title: 'Pre-order',
             desc: [
                 'Pre-order starts on&nbsp;Christmas in&nbsp;an&nbsp;early bird mode with a&nbsp;limited number of&nbsp;licenses ',
-                'you get discounted if&nbsp;subscribe'
+                'you get discounted if you subscribe'
             ],
             content: [
                 {
@@ -802,7 +802,7 @@ module.exports = {
                             mix: { block: 'pre-order', elem: 'button' },
                             mods: { type: 'link', size: 'l' },
                             url: 'http://eepurl.com/boJcIH',
-                            text: 'Subscribe'
+                            text: 'Subscribe to News'
                         }
                     ]
                 }
@@ -907,11 +907,12 @@ module.exports = {
                             },
                             content: {
                                 block: 'people',
+                                mods: { theme:'jobs' },
                                 image: 'i/people/people.png',
-                                name: [
-                                    'We&nbsp;are looking ',
-                                    { block: 'br' },
-                                    'for new team members!'
+                                title: [
+                                        'We&nbsp;are looking ',
+                                        { block: 'br' },
+                                        'for new team members!'
                                 ]
                             }
                         }
