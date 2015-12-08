@@ -48,7 +48,7 @@
     "postinstall": "npm run deps",
     "deps": "bower i",
     "start": "node server/app.js",
-    "prestart": "enb run build",
+    "prestart": "npm run build",
     "watch": "watch-run -p 'src/*.blocks/**' enb make",
     "lint": "jshint-groups && jscs .",
     "clean": "rm -rf public/_index.js public/_index.css .enb/tmp && enb make clean",

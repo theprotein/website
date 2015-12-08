@@ -6,26 +6,31 @@
 .intro__video {
     margin: 0 auto 60px;
     max-width: 960px;
-
-    svg {
-        max-width: 100%;
-    }
 }
 
-.intro__content {
-    margin-bottom: 60px;
-    font-size: 30px;
+.intro__title {
+    font-size: 36px;
+    font-weight: 400;
+    color: #FFF;
+    font-family: 'Quicksand';
+    line-height: 1.4;
+    padding-bottom: 30px;
+}
+
+.intro__desc {
+    font-size: 24px;
     font-weight: 400;
     color: #FFF;
     font-family: 'Quicksand';
     line-height: 1.4;
 }
 
+.intro__content {
+    margin-bottom: 60px;
+}
+
 @media (--large) {
     .intro__scheme {
         margin-bottom: 0;
-    }
-    .intro__button {
-        display: none;
     }
 }

@@ -6,31 +6,42 @@ block('header')(
             elem: 'content',
             content: [
                 {
-                    elem: 'logo',
-                    content: {
-                        block: 'logo'
-                    }
-                },
-                {
                     block: 'menu',
                     mix: { block: this.block, elem: 'menu' },
                     content: [
-                        [{
-                            url: '#starter-kit',
-                            text: 'Starter kit'
-                        },
                         {
-                            url: '#features',
-                            text: 'Features'
+                            block: 'menu-item',
+                            mods: { type: 'link', 'scroll-to': true },
+                            mix: {
+                                block: this.block,
+                                elem: 'logo'
+                            },
+                            content: {
+                                block: 'link',
+                                url: '#protein',
+                                content: {
+                                    block: 'logo'
+                                }
+                            }
                         },
-                        {
-                            url: '#dates',
-                            text: 'Delivery dates'
-                        },
-                        {
-                            url: '#pricing',
-                            text: 'Pricing'
-                        }].map(function(item) {
+                        [
+                            {
+                                url: '#features',
+                                text: 'Features'
+                            },
+                            {
+                                url: '#dates',
+                                text: 'Timeline'
+                            },
+                            {
+                                url: '#pricing',
+                                text: 'Pricing'
+                            },
+                            {
+                                url: '#pre-order',
+                                text: 'Sign Up'
+                            }
+                        ].map(function(item) {
                             return {
                                 block: 'menu-item',
                                 mods: { type: 'link', 'scroll-to': true },
@@ -41,17 +52,7 @@ block('header')(
                                     content: item.text
                                 }
                             };
-                        }),
-                        {
-                            block: 'menu-item',
-                            mods: { type: 'button' },
-                            content: {
-                                block: 'button',
-                                mods: { type: 'link', size: 'm' },
-                                url: 'http://eepurl.com/boJcIH',
-                                text: 'Subscribe to News'
-                            }
-                        }
+                        })
                     ]
                 }
             ]
