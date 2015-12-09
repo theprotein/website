@@ -43,7 +43,17 @@ module.exports = {
                     { block: 'br' },
                     ' in the background'
                 ],
-                video: '<iframe width="960" height="400" src="https://www.youtube.com/embed/r8-xgYCJOjw?rel=0&amp&autoplay=1&loop=1&modestbranding=1;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>'
+                // video: '<iframe width="960" height="400" src="https://www.youtube.com/embed/r8-xgYCJOjw?rel=0&amp&autoplay=1&loop=1&modestbranding=1;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>'
+                video: {
+                    block: 'video',
+                    poster: 'ctx.poster??????????????',
+                    preload: 'auto',
+                    autoplay: 'autoplay',
+                    loop: 'loop',
+                    source: [
+                        { url: 'intro.mp4' }
+                    ]
+                }
             }
         },
         {
