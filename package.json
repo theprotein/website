@@ -49,13 +49,13 @@
     "postinstall": "npm run deps",
     "deps": "bower i",
     "start": "node server/app.js",
-    "prestart": "YENV=production enb make",
+    "prestart": "enb run build",
     "watch": "watch-run -p 'src/*.blocks/**' enb make",
     "lint": "jshint-groups && jscs .",
     "clean": "rm -rf public/_index.js public/_index.css .enb/tmp && enb make clean",
-    "build": "NODE_ENV=production enb make",
-    "tunnel": "lt --port 3000",
-    "prod": "node server/app.js"
+    "build": "YENV=production enb make -n",
+    "gh-pages": "./update-gh-pages.sh",
+    "tunnel": "lt --port 3000"
   },
   "private": true
 }
