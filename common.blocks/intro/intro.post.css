@@ -5,23 +5,25 @@
 
 .intro__video {
     margin: 0 auto 60px;
-    max-width: 960px;
+    width: 958px;
+    height: 398px;
+    overflow: hidden;
 }
 
 .intro__title {
     font-size: 36px;
     font-weight: 400;
     color: #FFF;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     line-height: 1.4;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .intro__desc {
     font-size: 24px;
     font-weight: 400;
     color: #FFF;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     line-height: 1.4;
 }
 

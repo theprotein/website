@@ -7,9 +7,16 @@ module.exports = {
         '<!-- © The Protein Corp. All rights reserved. | http://theprotein.io -->'
     ],
     head: [
-        { elem: 'meta', attrs: { name: 'description', content: '“Protein” updates the source code with latest changes in design tools made on different platforms and vice versa. It therefore guarantees collaborative work on UI, increasing the team’s productivity drastically.' } },
+        { elem: 'meta',
+            attrs: {
+                name: 'description',
+                content: [
+                    '“Protein” updates the source code with latest changes in design tools made on different platforms and vice versa. ' +
+                    'It therefore guarantees collaborative work on UI, increasing the team’s productivity drastically.'
+                ]
+            }
+        },
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
-
         {
             block: 'social-meta',
             title: 'The long-awaited solution that is a revolution in product creation',
@@ -20,7 +27,6 @@ module.exports = {
             twitterImage: 'http://theprotein.io/p_share_twitter.png',
             twitter: '@protein_io'
         },
-
         { elem: 'css', url: 'index.min.css' }
     ],
     scripts: [{ elem: 'js', url: 'index.min.js' }],
@@ -40,19 +46,15 @@ module.exports = {
                     { block: 'mark', mods: { theme: 'g' }, content: 'UI design' },
                     ' and its ',
                     { block: 'mark', mods: { theme: 'o' }, content: 'source code' },
-                    { block: 'br' },
                     ' in the background'
                 ],
-                // video: '<iframe width="960" height="400" src="https://www.youtube.com/embed/r8-xgYCJOjw?rel=0&amp&autoplay=1&loop=1&modestbranding=1;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>'
                 video: {
                     block: 'video',
-                    poster: 'ctx.poster??????????????',
+                    poster: '../i/poster.png',
                     preload: 'auto',
                     autoplay: 'autoplay',
                     loop: 'loop',
-                    source: [
-                        { url: 'intro.mp4' }
-                    ]
+                    source: [{ url: '../intro__video.mp4' }]
                 }
             }
         },
@@ -118,7 +120,7 @@ module.exports = {
                                     mods: { inline: true },
                                     path: 'team'
                                 },
-                                title: 'Collobarate',
+                                title: 'Collaborate',
                                 // desc: [
                                 //     'Increase the team’s ',
                                 //     'productivity drastically'
@@ -136,8 +138,6 @@ module.exports = {
             title: 'Features',
             desc: [
                 'We&nbsp;will launch Protein as&nbsp;a&nbsp;Starter&nbsp;Kit as scalable syncing platform'
-                // 'We&nbsp;plan on&nbsp;extending our core product with features ',
-                // 'that soon will be&nbsp;available inside a&nbsp;Starter&nbsp;Kit'
             ],
             content: [
                 {
@@ -151,7 +151,7 @@ module.exports = {
                             },
                             content: {
                                 block: 'info',
-                                icon: { block: 'image', url: 'i/helps/1.svg'},
+                                icon: { block: 'image', url: '../i/helps/1.svg'},
                                 text: [
                                     'Edit live UI in Sketch  App ',
                                     'or Adobe Illustrator'
@@ -166,7 +166,7 @@ module.exports = {
                             },
                             content: {
                                 block: 'info',
-                                icon: { block: 'image', url: 'i/helps/2.svg'},
+                                icon: { block: 'image', url: '../i/helps/2.svg'},
                                 text: [
                                     'Share UI libraries and layouts ',
                                     'with other team members'
@@ -181,7 +181,7 @@ module.exports = {
                             },
                             content: {
                                 block: 'info',
-                                icon: { block: 'image', url: 'i/helps/3.svg'},
+                                icon: { block: 'image', url: '../i/helps/3.svg'},
                                 text: [
                                     'Live preview for UI which based ',
                                     'on your source code'
@@ -196,7 +196,7 @@ module.exports = {
                             },
                             content: {
                                 block: 'info',
-                                icon: { block: 'image', url: 'i/helps/4.svg'},
+                                icon: { block: 'image', url: '../i/helps/4.svg'},
                                 text: [
                                     'Use your  favorite Version Control ',
                                     'System for design'
@@ -211,7 +211,7 @@ module.exports = {
                             },
                             content: {
                                 block: 'info',
-                                icon: { block: 'image', url: 'i/helps/5.svg'},
+                                icon: { block: 'image', url: '../i/helps/5.svg'},
                                 text: [
                                     'Sync vector UI and source code ',
                                     'in the background'
@@ -226,7 +226,7 @@ module.exports = {
                             },
                             content: {
                                 block: 'info',
-                                icon: { block: 'image', url: 'i/helps/6.svg'},
+                                icon: { block: 'image', url: '../i/helps/6.svg'},
                                 text: [
                                     'Integrate UI with external services ',
                                     'for better productivity'
@@ -235,128 +235,11 @@ module.exports = {
                         }
                     ]
                 }
-                // {
-                //     block: 'technologies',
-                //     mix: { block: 'starter-kit', elem: 'technologies' },
-                //     content: [
-                //         {
-                //             block: 'row',
-                //             content: [
-                //                 {
-                //                     elem: 'col',
-                //                     elemMods: {
-                //                         sw: 4,
-                //                         m: true
-                //                     },
-                //                     content: {
-                //                         block: 'technologies',
-                //                         elem: 'item',
-                //                         content: {
-                //                             block: 'technology',
-                //                             url: 'http://bohemiancoding.com/sketch/',
-                //                             icon: { block: 'icon', mods: { technology: 'sketch' }},
-                //                             text: [
-                //                                 'Sketch',
-                //                                 {
-                //                                     elem: 'sup',
-                //                                     content: '3'
-                //                                 }
-                //                             ]
-                //                         }
-                //                     }
-                //                 },
-                //                 {
-                //                     elem: 'col',
-                //                     elemMods: {
-                //                         sw: 4,
-                //                         m: true
-                //                     },
-                //                     content: {
-                //                         block: 'technologies',
-                //                         elem: 'item',
-                //                         content: {
-                //                             block: 'technology',
-                //                             url: 'http://www.adobe.com/ru/products/illustrator.html',
-                //                             icon: { block: 'icon', mods: { technology: 'illustrator' }},
-                //                             text: 'Illustrator'
-                //                         }
-                //                     }
-                //                 },
-                //                 {
-                //                     elem: 'col',
-                //                     elemMods: {
-                //                         sw: 4,
-                //                         m: true
-                //                     },
-                //                     content: {
-                //                         block: 'technologies',
-                //                         elem: 'item',
-                //                         content: {
-                //                             block: 'technology',
-                //                             url: 'http://facebook.github.io/react/',
-                //                             icon: { block: 'icon', mods: { technology: 'react' }},
-                //                             text: 'React'
-                //                         }
-                //                     }
-                //                 },
-                //                 {
-                //                     elem: 'col',
-                //                     elemMods: {
-                //                         sw: 4,
-                //                         m: true
-                //                     },
-                //                     content: {
-                //                         block: 'technologies',
-                //                         elem: 'item',
-                //                         content: {
-                //                             block: 'technology',
-                //                             url: 'https://angularjs.org',
-                //                             icon: { block: 'icon', mods: { technology: 'angular' }},
-                //                             text: 'Angular'
-                //                         }
-                //                     }
-                //                 },
-                //                 {
-                //                     elem: 'col',
-                //                     elemMods: {
-                //                         sw: 4,
-                //                         m: true
-                //                     },
-                //                     content: {
-                //                         block: 'technologies',
-                //                         elem: 'item',
-                //                         content: {
-                //                             block: 'technology',
-                //                             url: 'http://bem.info',
-                //                             icon: { block: 'icon', mods: { technology: 'bem' }},
-                //                             text: 'BEM'
-                //                         }
-                //                     }
-                //                 },
-                //                 {
-                //                     elem: 'col',
-                //                     elemMods: {
-                //                         sw: 4,
-                //                         m: true
-                //                     },
-                //                     content: {
-                //                         block: 'technologies',
-                //                         elem: 'item',
-                //                         content: {
-                //                             block: 'technology',
-                //                             icon: { block: 'icon', mods: { technology: 'other' }},
-                //                             text: 'And other frameworks'
-                //                         }
-                //                     }
-                //                 }
-                //             ]
-                //         }
-                //     ]
-                // }
             ]
         },
         {
             block: 'section',
+            attrs: { id: 'integrations' },
             mix: { block: 'integrations' },
             title: 'Integrations',
             desc: [
@@ -498,6 +381,7 @@ module.exports = {
         {
             block: 'section',
             mods: { theme: 'gray' },
+            attrs: { id: 'workflow' },
             mix: { block: 'workflow' },
             title: 'Workflow',
             desc: [
@@ -511,38 +395,8 @@ module.exports = {
                 }
             ]
         },
-        // {
-        //     block: 'section',
-        //     attrs: { id: 'starter-kit' },
-        //     mix: { block: 'starter-kit' },
-        //     title: 'Starter Kit',
-        //     desc: [
-        //         'We&nbsp;will launch Protein as&nbsp;a&nbsp;Starter&nbsp;Kit ',
-        //         'releasing integrations with other products and new features later&nbsp;on'
-        //     ],
-        //     content: [
-
-        //     ]
-        // },
         {
             block: 'section',
-            attrs: { id: 'dates' },
-            mix: { block: 'dates' },
-            title: 'Delivery Dates',
-            desc: [
-                'Protein will go&nbsp;live on&nbsp;Spring 2016&nbsp;as a&nbsp;Starter&nbsp;Kit version ',
-                'with integrations releases as&nbsp;fast as&nbsp;possible'
-            ],
-            content: [
-                {
-                    block: 'dates',
-                    elem: 'image'
-                }
-            ]
-        },
-        {
-            block: 'section',
-            mods: { theme: 'gray' },
             attrs: { id: 'pricing' },
             mix: { block: 'pricing' },
             title: 'Pricing',
@@ -619,7 +473,9 @@ module.exports = {
         },
         {
             block: 'section',
-            title: 'Meet the Team',
+            mods: { theme: 'gray' },
+            attrs: { id: 'team' },
+            title: 'Team',
             content: [
                 {
                     block: 'row',
@@ -632,7 +488,7 @@ module.exports = {
                             },
                             content: {
                                 block: 'people',
-                                image: 'i/people/awinogradov.png',
+                                image: '../i/people/awinogradov.png',
                                 name: 'Anton Winogradov',
                                 nickname: 'awinogradov',
                                 post: 'CEO'
@@ -646,7 +502,7 @@ module.exports = {
                             },
                             content: {
                                 block: 'people',
-                                image: 'i/people/yaroshevich.png',
+                                image: '../i/people/yaroshevich.png',
                                 name: 'Alexey Yaroshevich',
                                 nickname: 'yaroshevich',
                                 post: 'VP Engineering'
@@ -660,7 +516,7 @@ module.exports = {
                             },
                             content: {
                                 block: 'people',
-                                image: 'i/people/voischev.png',
+                                image: '../i/people/voischev.png',
                                 name: 'Ivan Voischev',
                                 nickname: 'voischev',
                                 post: 'VP Frontend Development'
@@ -681,7 +537,7 @@ module.exports = {
                             },
                             content: {
                                 block: 'people',
-                                image: 'i/people/mursya.png',
+                                image: '../i/people/mursya.png',
                                 name: 'Yelena Jetpyspayeva',
                                 nickname: 'mursya',
                                 post: 'VP Marketing'
@@ -695,7 +551,7 @@ module.exports = {
                             },
                             content: {
                                 block: 'people',
-                                image: 'i/people/squorax.png',
+                                image: '../i/people/squorax.png',
                                 name: 'Vladimir Stegantsov',
                                 nickname: 'squorax',
                                 post: 'Lead Designer'
@@ -717,7 +573,7 @@ module.exports = {
                             content: {
                                 block: 'people',
                                 mods: { theme:'jobs' },
-                                image: 'i/people/people.png',
+                                image: '../i/people/people.png',
                                 title: [
                                         'We&nbsp;are looking ',
                                         { block: 'br' },
@@ -731,9 +587,8 @@ module.exports = {
         },
         {
             block: 'section',
-            mix: [{ block: 'pre-order' }, { block: 'quote', mods: { theme: 'green' }}],
-            attrs: { id: 'pre-order' },
-            title: 'Pre-order',
+            attrs: { id: 'signup' },
+            title: 'Sign up to Beta',
             desc: [
                 'Pre-order starts on&nbsp;Christmas in&nbsp;an&nbsp;early bird mode with a&nbsp;limited number of&nbsp;licenses ',
                 'you get discounted if you subscribe'
@@ -745,7 +600,6 @@ module.exports = {
                     content: [
                         {
                             block: 'button',
-                            mix: { block: 'pre-order', elem: 'button' },
                             mods: { type: 'link', size: 'l' },
                             url: 'http://eepurl.com/boJcIH',
                             text: 'Subscribe to News'

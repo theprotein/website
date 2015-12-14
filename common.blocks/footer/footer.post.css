@@ -23,7 +23,7 @@
     margin-bottom: 150px;
     font-size: 22px;
     line-height: 1.4;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
 }
 
 .footer__menu {

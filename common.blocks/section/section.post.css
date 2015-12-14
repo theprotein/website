@@ -19,7 +19,7 @@
     line-height: 1.4;
     color: #3B4572;
     text-align: center;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
 }
 
 .section__desc {
@@ -32,7 +32,8 @@
 }
 
 .section_view_header {
-    background: #262D4C;
+    background: #2d3253;
+    padding-bottom: 30px;
 }
 
 .section_theme_gray {

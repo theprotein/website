@@ -30,16 +30,28 @@ block('header')(
                                 text: 'Features'
                             },
                             {
-                                url: '#dates',
-                                text: 'Timeline'
+                                url: '#integrations',
+                                text: 'Integrations'
+                            },
+                            {
+                                url: '#workflow',
+                                text: 'Workflow'
                             },
                             {
                                 url: '#pricing',
                                 text: 'Pricing'
                             },
                             {
-                                url: '#pre-order',
-                                text: 'Sign Up'
+                                url: '#team',
+                                text: 'Team'
+                            },
+                            {
+                                url: '#signup',
+                                text: [{
+                                    block: 'mark',
+                                    mods: { theme: 'o' },
+                                    content: 'Sign Up'
+                                }]
                             }
                         ].map(function(item) {
                             return {

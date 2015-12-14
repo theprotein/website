@@ -11,5 +11,6 @@
         "public/**"
     ],
     "fileExtensions": [".js", ".bemtree", ".bemhtml"],
-    "requireMultipleVarDecl": false
+    "requireMultipleVarDecl": false,
+    "requireSpaceAfterObjectKeys" : false
 }
