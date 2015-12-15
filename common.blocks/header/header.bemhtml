@@ -2,6 +2,8 @@ block('header')(
     js()(true),
     tag()('header'),
     content()(function() {
+        var self = this;
+
         return {
             elem: 'content',
             content: [
@@ -35,17 +37,18 @@ block('header')(
                             },
                             {
                                 url: '#workflow',
-                                text: 'Workflow'
+                                text: 'How it works'
                             },
                             {
                                 url: '#pricing',
                                 text: 'Pricing'
                             },
+                            //{
+                            //    url: '#team',
+                            //    text: 'Team'
+                            //},
                             {
-                                url: '#team',
-                                text: 'Team'
-                            },
-                            {
+                                mods: { 'sign-up': true },
                                 url: '#signup',
                                 text: [{
                                     block: 'mark',
@@ -56,10 +59,10 @@ block('header')(
                         ].map(function(item) {
                             return {
                                 block: 'menu-item',
-                                mods: { type: 'link', 'scroll-to': true },
+                                mods:  { type: 'link', 'scroll-to': true },
                                 content: {
                                     block: 'link',
-                                    mods: { pseudo: true, theme: 'on-color' },
+                                    mods: self.extend(item.mods || {}, { pseudo: true, theme: 'on-color' }),
                                     url: item.url,
                                     content: item.text
                                 }

@@ -23,3 +23,16 @@
         color: #BCFF77;
     }
 }
+
+.link_sign-up::before {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    content: '';
+    width: 17px;
+    height: 30px;
+    transform: rotate(90deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../price/price_theme_early.svg);
+}

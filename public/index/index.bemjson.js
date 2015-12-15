@@ -1,7 +1,7 @@
 module.exports = {
     block: 'page',
     title: 'UI syncing service',
-    favicon: '/favicon@2x.png',
+    favicon: '../favicon@2x.png',
     doctype: [
         '<!DOCTYPE html>',
         '<!-- © The Protein Corp. All rights reserved. | http://theprotein.io -->'
@@ -61,6 +61,7 @@ module.exports = {
         {
             block: 'section',
             title: 'Protein',
+            mix: { block: 'protein' },
             attrs: { id: 'protein' },
             desc: [
                 'Protein updates the source code with latest changes in design tools made on different platforms ',
@@ -84,10 +85,10 @@ module.exports = {
                                     path: 'converting'
                                 },
                                 title: 'Convert',
-                                // desc: [
-                                //     'Convert UI design into source code ',
-                                //     'and vice versa by hotkey'
-                                // ]
+                                 desc: [
+                                     'Convert any UI design into',
+                                     'source code by hot keys'
+                                 ]
                             }
                         },
                         {
@@ -104,10 +105,10 @@ module.exports = {
                                     path: 'syncing'
                                 },
                                 title: 'Sync',
-                                // desc: [
-                                //     'Synchronise work on UI ',
-                                //     'in&nbsp;the background'
-                                // ]
+                                 desc: [
+                                     'Sync it with any famous tech, ',
+                                     'framework, and platform'
+                                 ]
                             }
                         },
                         {
@@ -121,10 +122,10 @@ module.exports = {
                                     path: 'team'
                                 },
                                 title: 'Collaborate',
-                                // desc: [
-                                //     'Increase the team’s ',
-                                //     'productivity drastically'
-                                // ]
+                                 desc: [
+                                     'Share your design changes',
+                                     'with team in seconds'
+                                 ]
                             }
                         }
                     ]
@@ -133,7 +134,7 @@ module.exports = {
         },
         {
             block: 'section',
-            mods: { theme: 'gray' },
+            //mods: { theme: 'gray' },
             attrs: { id: 'features' },
             title: 'Features',
             desc: [
@@ -243,8 +244,7 @@ module.exports = {
             mix: { block: 'integrations' },
             title: 'Integrations',
             desc: [
-                'We&nbsp;extend Protein to&nbsp;any service you might use as&nbsp;integration ',
-                'available after Starter&nbsp;Kit release'
+                'We&nbsp;extend Protein to&nbsp;any service you might use as&nbsp;integration'
             ],
             content: [
                 {
@@ -380,13 +380,13 @@ module.exports = {
         },
         {
             block: 'section',
-            mods: { theme: 'gray' },
+            //mods: { theme: 'gray' },
             attrs: { id: 'workflow' },
             mix: { block: 'workflow' },
-            title: 'Workflow',
+            title: 'How it works',
             desc: [
-                'Protein is&nbsp;easily installed into existing design and development workflows ',
-                'as&nbsp;a&nbsp;communication tool that team uses to&nbsp;exchange their designs and&nbsp;UI components '
+                'Protein is&nbsp;easily installed into existing design and development process ',
+                'as&nbsp;a&nbsp;communication tool that team uses to&nbsp;exchange their UI design'
             ],
             content: [
                 {
@@ -401,71 +401,93 @@ module.exports = {
             mix: { block: 'pricing' },
             title: 'Pricing',
             desc: [
-                'Protein Starter Kit will be&nbsp;launched in&nbsp;Spring 2016&nbsp;on an&nbsp;annual subscription basis.',
-                'All released integrations and features will be&nbsp;shipped as&nbsp;updates of&nbsp;the core product.'
+                'Protein will be&nbsp;launched in&nbsp;Spring 2016&nbsp; and all ',
+                'released integrations and features will be&nbsp;shipped as&nbsp;updates'
+            ],
+            //content: [
+            //    {
+            //        block: 'row',
+            //        mix: { block: 'pricing', elem: 'list' },
+            //        content: [
+            //            {
+            //                elem: 'col',
+            //                mods: {
+            //                    sw: 0,
+            //                    mw: 1,
+            //                    lw: 2
+            //                }
+            //            },
+            //            {
+            //                elem: 'col',
+            //                mods: {
+            //                    sw: 6,
+            //                    m: true,
+            //                    lw: 4
+            //                },
+            //                content: {
+            //                    block: 'price',
+            //                    mods: { theme: 'early' },
+            //                    title: 'Early bird price',
+            //                    val: '99'
+            //                }
+            //            },
+            //            {
+            //                elem: 'col',
+            //                mods: {
+            //                    sw: 6,
+            //                    m: true,
+            //                    lw: 4
+            //                },
+            //                content: {
+            //                    block: 'price',
+            //                    title: 'After release price',
+            //                    val: '199'
+            //                }
+            //            },
+            //            {
+            //                elem: 'col',
+            //                mods: {
+            //                    sw: 0,
+            //                    mw: 1,
+            //                    lw: 2
+            //                }
+            //            }
+            //        ]
+            //    },
+            //    {
+            //        block: 'hint',
+            //        mix: { block: 'pricing', elem: 'hint' },
+            //        content: [
+            //            'If&nbsp;you are interested in&nbsp;custom settings or&nbsp;an&nbsp;enterprise version of&nbsp;the product, ',
+            //            { block: 'br' },
+            //            'please, drop&nbsp;us a&nbsp;line&nbsp;at ',
+            //            {
+            //                block: 'link',
+            //                mods: { theme: 'on-white' },
+            //                url: 'mailto: ask@theprotein.io',
+            //                content: 'ask@theprotein.io'
+            //            }
+            //        ]
+            //    }
+            //]
+        },
+        {
+            block: 'section',
+            attrs: { id: 'signup' },
+            title: 'Beta',
+            desc: [
+                'Pre-order starts on&nbsp;Christmas in&nbsp;an&nbsp;early bird mode with a&nbsp;limited number of&nbsp;licenses ',
+                'you get discounted if you subscribe'
             ],
             content: [
                 {
-                    block: 'row',
-                    mix: { block: 'pricing', elem: 'list' },
+                    block: 'beta',
                     content: [
                         {
-                            elem: 'col',
-                            mods: {
-                                sw: 0,
-                                mw: 1,
-                                lw: 2
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            mods: {
-                                sw: 6,
-                                m: true,
-                                lw: 4
-                            },
-                            content: {
-                                block: 'price',
-                                mods: { theme: 'early' },
-                                title: 'Early bird price',
-                                val: '99'
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            mods: {
-                                sw: 6,
-                                m: true,
-                                lw: 4
-                            },
-                            content: {
-                                block: 'price',
-                                title: 'After release price',
-                                val: '199'
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            mods: {
-                                sw: 0,
-                                mw: 1,
-                                lw: 2
-                            }
-                        }
-                    ]
-                },
-                {
-                    block: 'hint',
-                    mix: { block: 'pricing', elem: 'hint' },
-                    content: [
-                        'If&nbsp;you are interested in&nbsp;custom settings or&nbsp;an&nbsp;enterprise version of&nbsp;the product, ',
-                        { block: 'br' },
-                        'please, drop&nbsp;us a&nbsp;line&nbsp;at ',
-                        {
-                            block: 'link',
-                            mods: { theme: 'on-white' },
-                            url: 'mailto: ask@theprotein.io',
-                            content: 'ask@theprotein.io'
+                            block: 'button',
+                            mods: { type: 'link', size: 'l', theme: 'p' },
+                            url: 'http://eepurl.com/boJcIH',
+                            text: 'Sign up'
                         }
                     ]
                 }
@@ -473,7 +495,7 @@ module.exports = {
         },
         {
             block: 'section',
-            mods: { theme: 'gray' },
+            //mods: { theme: 'gray' },
             attrs: { id: 'team' },
             title: 'Team',
             content: [
@@ -575,9 +597,9 @@ module.exports = {
                                 mods: { theme:'jobs' },
                                 image: '../i/people/people.png',
                                 title: [
-                                        'We&nbsp;are looking ',
-                                        { block: 'br' },
-                                        'for new team members!'
+                                    'We&nbsp;are looking ',
+                                    { block: 'br' },
+                                    'for new team members!'
                                 ]
                             }
                         }
@@ -587,25 +609,21 @@ module.exports = {
         },
         {
             block: 'section',
-            attrs: { id: 'signup' },
-            title: 'Sign up to Beta',
             desc: [
-                'Pre-order starts on&nbsp;Christmas in&nbsp;an&nbsp;early bird mode with a&nbsp;limited number of&nbsp;licenses ',
-                'you get discounted if you subscribe'
+                'Subscribe to get news and discounts',
             ],
             content: [
-                {
-                    block: 'pre-order',
-                    elem: 'content',
-                    content: [
-                        {
-                            block: 'button',
-                            mods: { type: 'link', size: 'l' },
-                            url: 'http://eepurl.com/boJcIH',
-                            text: 'Subscribe to News'
-                        }
-                    ]
-                }
+                //{
+                //    block: 'beta',
+                //    content: [
+                //        {
+                //            block: 'button',
+                //            mods: { type: 'link', size: 'l', theme: 'p' },
+                //            url: 'http://eepurl.com/boJcIH',
+                //            text: 'Sign up'
+                //        }
+                //    ]
+                //}
             ]
         },
         {

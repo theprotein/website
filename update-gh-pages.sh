@@ -12,7 +12,7 @@ cp ../public/index/index.html ./index/index.html
 cp ../public/index/index.min.js ./index/index.min.js
 cp ../public/index/index.min.css ./index/index.min.css
 
-cp -r ../public/freeze ./index
+cp -r ../public/index/freeze ./index
 cp -r ../public/i ./
 
 cp ../public/robots.txt index/robots.txt

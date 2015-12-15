@@ -43,7 +43,7 @@
     "postinstall": "npm run deps",
     "deps": "bower i",
     "lint": "jshint-groups && jscs .",
-    "build": "YENV=production enb make -no-cache",
+    "build": "YENV=production enb make --no-cache",
     "gh-pages": "./update-gh-pages.sh",
     "tunnel": "lt --port 3000"
   }

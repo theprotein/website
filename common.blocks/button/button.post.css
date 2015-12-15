@@ -52,3 +52,13 @@
         color: #2FBD2F;
     }
 }
+
+.button_theme_p {
+    color: #fff;
+    border-color: #2d3253;
+    background: #2d3253;
+
+    &.button_hovered {
+        color: #fff;
+    }
+}
