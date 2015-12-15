@@ -134,7 +134,6 @@ module.exports = {
         },
         {
             block: 'section',
-            //mods: { theme: 'gray' },
             attrs: { id: 'features' },
             title: 'Features',
             desc: [
@@ -380,7 +379,6 @@ module.exports = {
         },
         {
             block: 'section',
-            //mods: { theme: 'gray' },
             attrs: { id: 'workflow' },
             mix: { block: 'workflow' },
             title: 'How it works',
@@ -486,7 +484,8 @@ module.exports = {
                         {
                             block: 'button',
                             mods: { type: 'link', size: 'l', theme: 'p' },
-                            url: 'http://eepurl.com/boJcIH',
+                            attrs: { target: '_blank' },
+                            url: '//eepurl.com/bJQ12H',
                             text: 'Sign up'
                         }
                     ]
@@ -495,7 +494,6 @@ module.exports = {
         },
         {
             block: 'section',
-            //mods: { theme: 'gray' },
             attrs: { id: 'team' },
             title: 'Team',
             content: [
@@ -613,17 +611,7 @@ module.exports = {
                 'Subscribe to get news and discounts',
             ],
             content: [
-                //{
-                //    block: 'beta',
-                //    content: [
-                //        {
-                //            block: 'button',
-                //            mods: { type: 'link', size: 'l', theme: 'p' },
-                //            url: 'http://eepurl.com/boJcIH',
-                //            text: 'Sign up'
-                //        }
-                //    ]
-                //}
+                { block: 'mailchimp-subscribe' }
             ]
         },
         {
