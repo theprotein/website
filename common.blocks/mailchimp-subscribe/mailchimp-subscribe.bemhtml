@@ -1,5 +1,7 @@
 block('mailchimp-subscribe')(
     content()(function() {
+        var self = this;
+
         return [
             {
                 elem: 'form',
@@ -12,21 +14,25 @@ block('mailchimp-subscribe')(
                 },
                 content: [
                     {
+                        block: 'input',
+                        mix: { block: self.block, elem: 'input' },
+                        attrs: {
+                            type: 'email',
+                            required: 'required'
+                        },
+                        name: 'MERGE0',
+                        placeholder: 'email address'
+                    },
+                    {
                         tag: 'input',
                         attrs: {
-                            name: 'MERGE0',
-                            type: 'email',
-                            required: 'required',
-                            placeholder: 'email address'
+                            type: 'hidden',
+                            name: 'b_d1fd7d30d340277d1c75179a7_9d1b54e6b1'
                         }
                     },
                     {
-                        tag: 'input',
-                        attrs: { type: 'hidden' },
-                        name: 'b_d1fd7d30d340277d1c75179a7_9d1b54e6b1'
-                    },
-                    {
                         block: 'button',
+                        mix: { block: self.block, elem: 'button' },
                         mods: { type: 'sumbit' },
                         text: 'Subscribe'
                     }
