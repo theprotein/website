@@ -247,7 +247,6 @@ module.exports = {
             content: [
                 {
                     block: 'technologies',
-                    mix: { block: 'integrations', elem: 'technologies' },
                     content: [
                         {
                             block: 'row',
@@ -360,7 +359,6 @@ module.exports = {
                 },
                 {
                     block: 'hint',
-                    mix: { block: 'integrations', elem: 'hint' },
                     content: [
                         'If&nbsp;you use any other tool than listed above, email it&nbsp;to&nbsp;us at ',
                         {
@@ -553,10 +551,10 @@ module.exports = {
                             },
                             content: {
                                 block: 'people',
-                                image: '../i/people/mursya.png',
-                                name: 'Yelena Jetpyspayeva',
-                                nickname: 'mursya',
-                                post: 'VP Marketing'
+                                image: '../i/people/yetior.png',
+                                name: 'Vasiliy Loginevskiy',
+                                nickname: 'yeti_or',
+                                post: 'Software Engineer'
                             }
                         },
                         {
