@@ -24,15 +24,32 @@
     }
 }
 
-.link_sign-up::before {
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    content: '';
-    width: 17px;
-    height: 30px;
-    transform: rotate(90deg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(../price/price_theme_early.svg);
+.link_sign-up {
+
+    &::before {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        content: '';
+        width: 17px;
+        height: 30px;
+        transform: rotate(90deg);
+        background: url(_sign-up/link_sign-up.svg) no-repeat;
+        background-size: contain;
+    }
+
+    &.link_hovered {
+
+         &::before {
+            top: 18px;
+            right: 13px;
+            width: 18px;
+            height: 31px;
+            background-image: url(_sign-up/link_sign-up.link_hovered.svg);
+         }
+
+        .mark {
+            color: #BCFF77;
+        }
+    }
 }

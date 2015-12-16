@@ -36,17 +36,28 @@
     padding-bottom: 30px;
 }
 
-.section_theme_gray {
-    background-color: rgba(245, 249, 253, 1);
+.section_view_subscribe {
+
+    .section__desc {
+        padding-bottom: 30px;
+    }
 }
 
-.section_view_diet {
+.section_view_beta {
+    background-color: #008CDC;
 
-}
-
-.section_view_helps {
     .section__title {
-        padding-bottom: 80px;
+        font-size: 52px;
+        color: #fff;
+    }
+
+    .section__desc {
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .section__content {
+        text-align: center;
     }
 }
 
@@ -59,5 +70,13 @@
 @media (--xlarge) {
     .section {
         padding: 200px 0 160px;
+    }
+
+    .section_view_protein {
+        padding-top: 300px;
+    }
+
+    .section_view_subscribe {
+        padding-bottom: 300px;
     }
 }

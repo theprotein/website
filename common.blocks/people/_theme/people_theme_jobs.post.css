@@ -1,18 +1,15 @@
 .people_theme_jobs {
+
     .people__title {
-        display: inline-block;
         font-size: 18px;
         font-weight: bold;
         text-decoration: none;
         color: #008CDC;
         line-height: 1.4;
-        display: block;
         transition: color 200ms;
     }
+
     &.people_hovered {
-        .people__image {
-            filter: brightness(0.9);
-        }
         .people__title {
             color: rgba(100, 200, 0, 1);
         }

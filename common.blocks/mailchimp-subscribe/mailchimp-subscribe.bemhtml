@@ -15,13 +15,14 @@ block('mailchimp-subscribe')(
                 content: [
                     {
                         block: 'input',
+                        mods: { theme: 'p' },
                         mix: { block: self.block, elem: 'input' },
                         attrs: {
                             type: 'email',
                             required: 'required'
                         },
                         name: 'MERGE0',
-                        placeholder: 'email address'
+                        placeholder: 'Enter your email address'
                     },
                     {
                         tag: 'input',
@@ -33,7 +34,7 @@ block('mailchimp-subscribe')(
                     {
                         block: 'button',
                         mix: { block: self.block, elem: 'button' },
-                        mods: { type: 'sumbit' },
+                        mods: { type: 'sumbit', theme: 'p', size: 'm' },
                         text: 'Subscribe'
                     }
                 ]

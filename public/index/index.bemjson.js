@@ -61,7 +61,7 @@ module.exports = {
         {
             block: 'section',
             title: 'Protein',
-            mix: { block: 'protein' },
+            mods: { view: 'protein' },
             attrs: { id: 'protein' },
             desc: [
                 'Protein updates the source code with latest changes in design tools made on different platforms ',
@@ -240,7 +240,6 @@ module.exports = {
         {
             block: 'section',
             attrs: { id: 'integrations' },
-            mix: { block: 'integrations' },
             title: 'Integrations',
             desc: [
                 'We&nbsp;extend Protein to&nbsp;any service you might use as&nbsp;integration'
@@ -380,7 +379,6 @@ module.exports = {
         {
             block: 'section',
             attrs: { id: 'workflow' },
-            mix: { block: 'workflow' },
             title: 'How it works',
             desc: [
                 'Protein is&nbsp;easily installed into existing design and development process ',
@@ -388,15 +386,13 @@ module.exports = {
             ],
             content: [
                 {
-                    block: 'workflow-scheme',
-                    mix: { block: 'workflow', elem: 'scheme' }
+                    block: 'workflow-scheme'
                 }
             ]
         },
         {
             block: 'section',
             attrs: { id: 'pricing' },
-            mix: { block: 'pricing' },
             title: 'Pricing',
             desc: [
                 'Protein will be&nbsp;launched in&nbsp;Spring 2016&nbsp; and all ',
@@ -471,24 +467,20 @@ module.exports = {
         },
         {
             block: 'section',
-            attrs: { id: 'signup' },
+            mods: { view: 'beta' },
+            attrs: { id: 'beta' },
             title: 'Beta',
             desc: [
-                'Pre-order starts on&nbsp;Christmas in&nbsp;an&nbsp;early bird mode with a&nbsp;limited number of&nbsp;licenses ',
-                'you get discounted if you subscribe'
+                'Sign up to Protein Beta with your team and be first who can sync UI. ',
+                'Revolution is here and starts from you.'
             ],
             content: [
                 {
-                    block: 'beta',
-                    content: [
-                        {
-                            block: 'button',
-                            mods: { type: 'link', size: 'l', theme: 'p' },
-                            attrs: { target: '_blank' },
-                            url: '//eepurl.com/bJQ12H',
-                            text: 'Sign up'
-                        }
-                    ]
+                    block: 'button',
+                    mods: { type: 'link', size: 'l', theme: 'p' },
+                    attrs: { target: '_blank' },
+                    url: '//eepurl.com/bJQ12H',
+                    text: 'Sign up'
                 }
             ]
         },
@@ -496,6 +488,10 @@ module.exports = {
             block: 'section',
             attrs: { id: 'team' },
             title: 'Team',
+            desc: [
+                'A team of few professionals with hands-on experience in web design, development, ',
+                'and large scale IT projects management and years of working background'
+            ],
             content: [
                 {
                     block: 'row',
@@ -607,8 +603,9 @@ module.exports = {
         },
         {
             block: 'section',
+            mods: { view: 'subscribe' },
             desc: [
-                'Subscribe to get news and discounts',
+                'Subscribe to our newsletter to get news and exclusive discounts'
             ],
             content: [
                 { block: 'mailchimp-subscribe' }

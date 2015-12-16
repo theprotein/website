@@ -1,7 +1,6 @@
 block('social')(
     tag()('nav'),
     content()(function() {
-        var theme = this.mods.theme;
         return [
             {
                 block: 'link',

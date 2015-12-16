@@ -43,13 +43,9 @@ block('header')(
                                 url: '#pricing',
                                 text: 'Pricing'
                             },
-                            //{
-                            //    url: '#team',
-                            //    text: 'Team'
-                            //},
                             {
                                 mods: { 'sign-up': true },
-                                url: '#signup',
+                                url: '#beta',
                                 text: [{
                                     block: 'mark',
                                     mods: { theme: 'o' },

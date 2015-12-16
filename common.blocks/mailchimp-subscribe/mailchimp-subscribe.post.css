@@ -1,3 +1,8 @@
 .mailchimp-subscribe {
     text-align: center;
 }
+
+.mailchimp-subscribe__input {
+    width: 400px;
+    margin-right: 20px;
+}
