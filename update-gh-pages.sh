@@ -29,3 +29,5 @@ cd ..
 rm -rf gh-pages
 
 echo "gh-pages has been updated successfully"
+
+curl -X POST --data-urlencode 'payload={"text": "Landing deployed to GitHub Pages", "channel": "#devops", "username": "landing", "icon_emoji": ":gift:"}' https://hooks.slack.com/services/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
