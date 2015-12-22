@@ -122,10 +122,10 @@ module.exports = {
                                     path: 'team'
                                 },
                                 title: 'Collaborate',
-                                 desc: [
+                                desc: [
                                      'Share any design changes',
                                      'with team immediately'
-                                 ]
+                                ]
                             }
                         }
                     ]
