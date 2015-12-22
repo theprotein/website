@@ -79,4 +79,12 @@
     .section_view_subscribe {
         padding-bottom: 300px;
     }
+
+    .section_view_workflow {
+        padding-bottom: 300px;
+    }
+
+    .section_view_team {
+        padding-top: 300px;
+    }
 }

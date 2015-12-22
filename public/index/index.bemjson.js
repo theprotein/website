@@ -87,7 +87,7 @@ module.exports = {
                                 title: 'Convert',
                                  desc: [
                                      'Convert any UI design into',
-                                     'source code by hot keys'
+                                     'source and vice versa'
                                  ]
                             }
                         },
@@ -106,8 +106,8 @@ module.exports = {
                                 },
                                 title: 'Sync',
                                  desc: [
-                                     'Sync it with any famous tech, ',
-                                     'framework, and platform'
+                                     'Sync it with any techs, ',
+                                     'frameworks, and platforms'
                                  ]
                             }
                         },
@@ -123,8 +123,8 @@ module.exports = {
                                 },
                                 title: 'Collaborate',
                                  desc: [
-                                     'Share your design changes',
-                                     'with team in seconds'
+                                     'Share any design changes',
+                                     'with team immediately'
                                  ]
                             }
                         }
@@ -137,7 +137,7 @@ module.exports = {
             attrs: { id: 'features' },
             title: 'Features',
             desc: [
-                'We&nbsp;will launch Protein as&nbsp;a&nbsp;Starter&nbsp;Kit as scalable syncing platform'
+                'We&nbsp;will launch Protein as&nbsp;a&nbsp;Starter&nbsp;Kit – scalable syncing platform'
             ],
             content: [
                 {
@@ -376,6 +376,7 @@ module.exports = {
         },
         {
             block: 'section',
+            mods: { view: 'workflow' },
             attrs: { id: 'workflow' },
             title: 'How it works',
             desc: [
@@ -388,89 +389,15 @@ module.exports = {
                 }
             ]
         },
-        {
-            block: 'section',
-            attrs: { id: 'pricing' },
-            title: 'Pricing',
-            desc: [
-                'Protein will be&nbsp;launched in&nbsp;Spring 2016&nbsp; and all ',
-                'released integrations and features will be&nbsp;shipped as&nbsp;updates'
-            ],
-            //content: [
-            //    {
-            //        block: 'row',
-            //        mix: { block: 'pricing', elem: 'list' },
-            //        content: [
-            //            {
-            //                elem: 'col',
-            //                mods: {
-            //                    sw: 0,
-            //                    mw: 1,
-            //                    lw: 2
-            //                }
-            //            },
-            //            {
-            //                elem: 'col',
-            //                mods: {
-            //                    sw: 6,
-            //                    m: true,
-            //                    lw: 4
-            //                },
-            //                content: {
-            //                    block: 'price',
-            //                    mods: { theme: 'early' },
-            //                    title: 'Early bird price',
-            //                    val: '99'
-            //                }
-            //            },
-            //            {
-            //                elem: 'col',
-            //                mods: {
-            //                    sw: 6,
-            //                    m: true,
-            //                    lw: 4
-            //                },
-            //                content: {
-            //                    block: 'price',
-            //                    title: 'After release price',
-            //                    val: '199'
-            //                }
-            //            },
-            //            {
-            //                elem: 'col',
-            //                mods: {
-            //                    sw: 0,
-            //                    mw: 1,
-            //                    lw: 2
-            //                }
-            //            }
-            //        ]
-            //    },
-            //    {
-            //        block: 'hint',
-            //        mix: { block: 'pricing', elem: 'hint' },
-            //        content: [
-            //            'If&nbsp;you are interested in&nbsp;custom settings or&nbsp;an&nbsp;enterprise version of&nbsp;the product, ',
-            //            { block: 'br' },
-            //            'please, drop&nbsp;us a&nbsp;line&nbsp;at ',
-            //            {
-            //                block: 'link',
-            //                mods: { theme: 'on-white' },
-            //                url: 'mailto: ask@theprotein.io',
-            //                content: 'ask@theprotein.io'
-            //            }
-            //        ]
-            //    }
-            //]
-        },
+        ///
         {
             block: 'section',
             mods: { view: 'beta' },
             attrs: { id: 'beta' },
             title: 'Beta',
             desc: [
-                'Sign up to Protein Beta with your team and be first who can sync UI. ',
-                'Revolution is here and starts from you.'
+                'Sign up to the Protein Beta with your team and be first who can sync user interface. ',
+                'Revolution is here and starts for you immediately!'
             ],
             content: [
                 {
@@ -484,6 +411,7 @@ module.exports = {
         },
         {
             block: 'section',
+            mods: { view: 'team' },
             attrs: { id: 'team' },
             title: 'Team',
             desc: [

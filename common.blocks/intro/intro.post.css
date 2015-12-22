@@ -4,7 +4,10 @@
 }
 
 .intro__video {
-    margin: 0 auto 60px;
+    margin: 0 auto 20px;
+    max-width: 958px;
+    max-height: 388px;
+    overflow: hidden;
 }
 
 .intro__title {
@@ -25,7 +28,7 @@
 }
 
 .intro__content {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 @media (--large) {
