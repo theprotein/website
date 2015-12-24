@@ -1,19 +1,15 @@
 .people {
-    max-width: 220px;
-    margin: auto;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    text-align: center;
     display: block;
+    max-width: 220px;
+    margin: 0 auto;
+    text-align: center;
     text-decoration: none;
-    outline: none;
     color: rgba(0, 0, 0, .9);
 }
 
 .people__image {
     margin: 0 auto 30px;
     height: 110px;
-    display: block;
 }
 
 .people__name {
@@ -26,13 +22,11 @@
 }
 
 .people__nickname {
-    display: inline-block;
     font-size: 15px;
     font-weight: bold;
     text-decoration: none;
     color: #008CDC;
     line-height: 1;
-    display: block;
     transition: color 200ms;
 }
 
@@ -44,9 +38,7 @@
 }
 
 .people_hovered {
-    .people__image {
-        filter: grayscale(0)
-    }
+
     .people__nickname {
         color: rgba(100, 200, 0, 1);
     }

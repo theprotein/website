@@ -6,10 +6,11 @@
     }
 
     .icon {
-        circle {
-            stroke: #fff;
-            transition: 200ms;
+        svg {
+            height: 46px;
+            width: 46px;
         }
+
         path {
             fill: #fff;
             transition: 200ms;
@@ -18,9 +19,6 @@
 
     .link_hovered {
         .icon {
-            circle {
-                stroke: #BCFF77
-            }
             path {
                 fill: #BCFF77;
             }

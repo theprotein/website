@@ -2,56 +2,72 @@ block('header')(
     js()(true),
     tag()('header'),
     content()(function() {
+        var self = this;
+
         return {
             elem: 'content',
             content: [
                 {
-                    elem: 'logo',
-                    content: {
-                        block: 'logo'
-                    }
-                },
-                {
                     block: 'menu',
                     mix: { block: this.block, elem: 'menu' },
                     content: [
-                        [{
-                            url: '#starter-kit',
-                            text: 'Starter kit'
-                        },
                         {
-                            url: '#features',
-                            text: 'Features'
+                            block: 'menu-item',
+                            mods: { type: 'link', 'scroll-to': true },
+                            mix: {
+                                block: this.block,
+                                elem: 'logo'
+                            },
+                            content: {
+                                block: 'link',
+                                url: '#protein',
+                                content: {
+                                    block: 'logo'
+                                }
+                            }
                         },
-                        {
-                            url: '#dates',
-                            text: 'Delivery dates'
-                        },
-                        {
-                            url: '#pricing',
-                            text: 'Pricing'
-                        }].map(function(item) {
+                        [
+                            {
+                                url: '#features',
+                                text: 'Features'
+                            },
+                            {
+                                url: '#integrations',
+                                text: 'Integrations'
+                            },
+                            {
+                                url: '#workflow',
+                                text: 'How it works'
+                            },
+                            {
+                                url: '#pricing',
+                                text: 'Pricing'
+                            }
+                        ].map(function(item) {
                             return {
                                 block: 'menu-item',
-                                mods: { type: 'link', 'scroll-to': true },
+                                mods:  { type: 'link', 'scroll-to': true },
                                 content: {
                                     block: 'link',
-                                    mods: { pseudo: true, theme: 'on-color' },
+                                    mods: self.extend(item.mods || {}, { pseudo: true, theme: 'on-color' }),
                                     url: item.url,
                                     content: item.text
                                 }
                             };
-                        }),
-                        {
+                        }).concat({
                             block: 'menu-item',
-                            mods: { type: 'button' },
+                            mods:  { type: 'link' },
                             content: {
-                                block: 'button',
-                                mods: { type: 'link', size: 'm' },
-                                url: 'http://eepurl.com/boJcIH',
-                                text: 'Subscribe'
+                                block: 'link',
+                                mods: { 'sign-up': true, theme: 'on-color' },
+                                url: '//eepurl.com/bJQ12H',
+                                content: [{
+                                    block: 'mark',
+                                    mods: { theme: 'o' },
+                                    content: 'Sign Up'
+                                }]
                             }
-                        }
+                        })
                     ]
                 }
             ]

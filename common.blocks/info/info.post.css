@@ -2,6 +2,7 @@
     position: relative;
     padding: 0 20px 50px;
     box-sizing: border-box;
+    margin-left: 60px;
 }
 
 .info__icon {

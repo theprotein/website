@@ -1,9 +1,4 @@
 var path = require('path'),
-    PROJECT_LEVELS = {
-        common: ['common.blocks'],
-        desktop: ['common.blocks', 'desktop.blocks'],
-        mobile: ['common.blocks', 'mobile.blocks']
-    },
     SPEC_LEVEL = {
         path: path.join('libs', 'bem-pr', 'spec.blocks'),
         check: false
@@ -29,7 +24,7 @@ module.exports = function(platform, opts) {
         { path: 'common.blocks', check: true }
     ];
 
-    if (opts.specs) {
+    if(opts.specs) {
         return [].concat(
             SPEC_LEVEL,
             levels

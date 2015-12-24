@@ -1,6 +1,7 @@
 .mark {
     font-weight: bold;
     background-color: transparent;
+    transition: color 200ms;
 }
 .mark_theme_o { color: #FFD95C; }
 .mark_theme_g { color: #BCFF77; }

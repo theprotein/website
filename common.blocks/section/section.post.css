@@ -1,5 +1,5 @@
 .section {
-    padding: 150px 0 130px;
+    padding: 100px 0 0;
     background-color: rgba(255, 255, 255, 1);
 }
 
@@ -19,7 +19,7 @@
     line-height: 1.4;
     color: #3B4572;
     text-align: center;
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
 }
 
 .section__desc {
@@ -32,16 +32,33 @@
 }
 
 .section_view_header {
-    background: #262D4C;
+    background: #2d3253;
+    padding-bottom: 30px;
 }
 
-.section_view_diet {
+.section_view_subscribe {
 
+    .section__desc {
+        padding-bottom: 30px;
+    }
 }
 
-.section_view_helps {
+.section_view_beta {
+    background-color: #008CDC;
+    padding-bottom: 110px;
+
     .section__title {
-        padding-bottom: 80px;
+        font-size: 52px;
+        color: #fff;
+    }
+
+    .section__desc {
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .section__content {
+        text-align: center;
     }
 }
 
@@ -54,5 +71,21 @@
 @media (--xlarge) {
     .section {
         padding: 200px 0 160px;
+    }
+
+    .section_view_protein {
+        padding-top: 300px;
+    }
+
+    .section_view_subscribe {
+        padding-bottom: 300px;
+    }
+
+    .section_view_workflow {
+        padding-bottom: 300px;
+    }
+
+    .section_view_team {
+        padding-top: 300px;
     }
 }

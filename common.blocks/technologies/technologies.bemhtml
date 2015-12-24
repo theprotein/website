@@ -1,8 +1,0 @@
-block('technologies')(
-    mix()({ block: 'clearfix' }),
-    content()(function() {
-        return [
-            applyNext()
-        ];
-    })
-);

@@ -1,23 +1,23 @@
 block('intro').content()(function() {
+    var ctx = this.ctx;
+
     return [
         {
             elem: 'content',
-            content: applyNext()
+            content: [
+                {
+                    elem: 'title',
+                    content: ctx.title
+                },
+                {
+                    elem: 'desc',
+                    content: ctx.desc
+                }
+            ]
         },
         {
-            elem: 'scheme',
-            content: {
-                block: 'icon',
-                mods: { inline: true },
-                path: 'scheme'
-            }
-        },
-        {
-            block: 'button',
-            mix: { block: this.block, elem: 'button' },
-            mods: { type: 'link', size: 'l' },
-            url: 'http://eepurl.com/boJcIH',
-            text: 'Subscribe'
+            elem: 'video',
+            content: ctx.video
         }
     ];
 });

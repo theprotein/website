@@ -115,7 +115,7 @@ module.exports = function(node, opts) {
 
     node.mode('development', function() {
         node.addTechs([
-            [techs.files.copy, { source: '.tmp.css', target: '?.min.css' }],
+            [techs.borschik, { source: '.tmp.css', target: '?.min.css', freeze: true, minify: false }],
             [techs.files.copy, { source: '.tmp.js', target: '?.min.js' }]
         ]);
     });

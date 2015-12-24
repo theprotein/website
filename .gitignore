@@ -36,5 +36,6 @@ public/index/*.*
 .enb/tmp/
 
 ### PROJECT ###
+public/index/freeze
 logs/*
 gh-pages
