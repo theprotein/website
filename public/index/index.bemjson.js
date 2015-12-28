@@ -87,7 +87,7 @@ module.exports = {
                                 title: 'Convert',
                                  desc: [
                                      'Convert any UI design into',
-                                     'source and vice versa'
+                                     'source code and vice versa'
                                  ]
                             }
                         },
@@ -106,7 +106,7 @@ module.exports = {
                                 },
                                 title: 'Sync',
                                  desc: [
-                                     'Sync it with any techs, ',
+                                     'Sync disign with any techs, ',
                                      'frameworks, and platforms'
                                  ]
                             }
@@ -137,7 +137,7 @@ module.exports = {
             attrs: { id: 'features' },
             title: 'Features',
             desc: [
-                'We&nbsp;will launch Protein as&nbsp;a&nbsp;Starter&nbsp;Kit – scalable syncing platform'
+                'We&nbsp;will launch Protein as&nbsp;a scalable syncing platform'
             ],
             content: [
                 {
@@ -396,7 +396,7 @@ module.exports = {
             attrs: { id: 'beta' },
             title: 'Beta',
             desc: [
-                'Sign up to the Protein Beta with your team and be first who can sync user interface. ',
+                'Sign up to the Protein Beta with your team and be first who can sync user interface in the world. ',
                 'Revolution is here and starts for you immediately!'
             ],
             content: [
@@ -415,7 +415,7 @@ module.exports = {
             attrs: { id: 'team' },
             title: 'Team',
             desc: [
-                'A team of few professionals with hands-on experience in web design, development, ',
+                'A team of few professionals with hands-on experience in design, development, ',
                 'and large scale IT projects management and years of working background'
             ],
             content: [
@@ -447,7 +447,7 @@ module.exports = {
                                 image: '../i/people/yaroshevich.png',
                                 name: 'Alexey Yaroshevich',
                                 nickname: 'yaroshevich',
-                                post: 'VP Engineering'
+                                post: 'Software Engineer'
                             }
                         },
                         {
@@ -496,7 +496,7 @@ module.exports = {
                                 image: '../i/people/squorax.png',
                                 name: 'Vladimir Stegantsov',
                                 nickname: 'squorax',
-                                post: 'Lead Designer'
+                                post: 'Creative Director'
                             }
                         },
                         {
