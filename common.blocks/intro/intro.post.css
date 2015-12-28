@@ -7,7 +7,19 @@
     margin: 0 auto 20px;
     max-width: 958px;
     max-height: 388px;
+    position: relative;
     overflow: hidden;
+
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 958px;
+        height: 388px;
+        background: radial-gradient(ellipse at center, transparent 0%, transparent 40%, #2d3253 75%, #2d3253 100%);
+    }
 }
 
 .intro__title {
