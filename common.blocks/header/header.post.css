@@ -67,7 +67,7 @@
     .header__menu .header__logo {
         margin: auto;
         position: static;
-        display: inline-block;
+        display: block;
     }
 
 }

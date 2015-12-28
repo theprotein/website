@@ -461,7 +461,7 @@ module.exports = {
                                 image: '../i/people/voischev.png',
                                 name: 'Ivan Voischev',
                                 nickname: 'voischev',
-                                post: 'VP Frontend Development'
+                                post: 'Software Engineer'
                             }
                         },
                         {

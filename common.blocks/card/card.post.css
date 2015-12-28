@@ -20,6 +20,11 @@
 .card__image {
     width: 200px;
 }
+@media (--small) {
+    .card {
+        padding-bottom: 80px;
+    }
+}
 
 @media (--large) {
     .card {

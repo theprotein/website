@@ -45,6 +45,10 @@
 }
 
 @media (--small-only) {
+    .people {
+        padding-bottom: 60px;
+    }
+
     .people__name {
         width: 100px;
         margin: auto;

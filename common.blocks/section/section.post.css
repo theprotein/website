@@ -68,24 +68,26 @@
     }
 }
 
-@media (--xlarge) {
-    .section {
-        padding: 200px 0 160px;
-    }
-
-    .section_view_protein {
-        padding-top: 300px;
-    }
-
-    .section_view_subscribe {
-        padding-bottom: 300px;
-    }
-
-    .section_view_workflow {
-        padding-bottom: 300px;
-    }
-
-    .section_view_team {
-        padding-top: 300px;
-    }
-}
+/*
+ * @media (--xlarge) {
+ *     .section {
+ *         padding: 200px 0 160px;
+ *     }
+ * 
+ *     .section_view_protein {
+ *         padding-top: 300px;
+ *     }
+ * 
+ *     .section_view_subscribe {
+ *         padding-bottom: 300px;
+ *     }
+ * 
+ *     .section_view_workflow {
+ *         padding-bottom: 300px;
+ *     }
+ * 
+ *     .section_view_team {
+ *         padding-top: 300px;
+ *     }
+ * }
+ */

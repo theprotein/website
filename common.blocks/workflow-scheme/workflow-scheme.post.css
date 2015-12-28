@@ -8,3 +8,8 @@
     }
 }
 
+@media (--small-only) {
+    .workflow-scheme {
+        padding-bottom: 80px;
+    }
+}
