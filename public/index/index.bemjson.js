@@ -1,7 +1,7 @@
 module.exports = {
     block: 'page',
     title: 'UI syncing service',
-    favicon: '../favicon@2x.png',
+    favicon: 'favicon@2x.png',
     doctype: [
         '<!DOCTYPE html>',
         '<!-- © The Protein Corp. All rights reserved. | http://theprotein.io -->'
