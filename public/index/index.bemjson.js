@@ -38,25 +38,37 @@ module.exports = {
         {
             block: 'section',
             mods: { view: 'header' },
-            content: {
-                block: 'intro',
-                title: 'Imagine the revolution in the product creation',
-                desc: [
-                    'Synchronize ',
-                    { block: 'mark', mods: { theme: 'g' }, content: 'UI design' },
-                    ' and its ',
-                    { block: 'mark', mods: { theme: 'o' }, content: 'source code' },
-                    ' in the background'
-                ],
-                video: {
-                    block: 'video',
-                    poster: '../i/poster.png',
-                    preload: 'auto',
-                    autoplay: 'autoplay',
-                    loop: 'loop',
-                    source: [{ url: '../intro__video.mp4' }]
+            content: [
+                {
+                    cls: 'fix-background',
+                    content: {
+                        block: 'video',
+                        preload: 'auto',
+                        autoplay: 'autoplay',
+                        loop: 'loop',
+                        source: [{ url: '../background_1_1.mp4' }]
+                    }
+                },
+                {
+                    block: 'intro',
+                    title: 'Imagine the revolution in the product creation',
+                    desc: [
+                        'Synchronize ',
+                        { block: 'mark', mods: { theme: 'g' }, content: 'UI design' },
+                        ' and its ',
+                        { block: 'mark', mods: { theme: 'o' }, content: 'source code' },
+                        ' in the background'
+                    ],
+                    video: {
+                        block: 'video',
+                        poster: '../i/poster.png',
+                        preload: 'auto',
+                        autoplay: 'autoplay',
+                        loop: 'loop',
+                        source: [{ url: '../intro__video.mp4' }]
+                    }
                 }
-            }
+            ]
         },
         {
             block: 'section',

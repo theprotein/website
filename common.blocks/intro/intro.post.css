@@ -1,6 +1,8 @@
 .intro {
+    position: relative;
     padding-top: 35px;
     text-align: center;
+    z-index: 1;
 }
 
 .intro__video {
@@ -19,7 +21,7 @@
         left: 0;
         width: 958px;
         height: 388px;
-        background-image: url('gradient_frame.png');
+        /* background-image: url('gradient_frame.png'); */
         /*
          * background: radial-gradient(ellipse at center,
          *                             rgba(45,50,83,0) 0%,

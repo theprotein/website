@@ -32,6 +32,7 @@
 }
 
 .section_view_header {
+    position: relative;
     background: #2d3253;
     padding-bottom: 30px;
 }
