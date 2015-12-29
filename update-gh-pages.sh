@@ -22,6 +22,8 @@ cp ../public/favicon@2x.png ./favicon@2x.png
 cp ../public/p_share_square.png ./p_share_square.png
 cp ../public/p_share_twitter.png ./p_share_twitter.png
 cp ../public/intro__video.mp4 ./intro__video.mp4
+cp ../public/background_1_1.mp4 ./background_1_1.mp4
+cp ../public/background_1_1.png ./background_1_1.png
 
 git add -A
 git commit -m "Update gh-pages"

@@ -43,6 +43,7 @@ module.exports = {
                     cls: 'fix-background',
                     content: {
                         block: 'video',
+                        poster: '../background_1_1.png',
                         preload: 'auto',
                         autoplay: 'autoplay',
                         loop: 'loop',
