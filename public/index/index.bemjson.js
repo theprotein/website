@@ -39,17 +39,17 @@ module.exports = {
             block: 'section',
             mods: { view: 'header' },
             content: [
-                {
-                    cls: 'fix-background',
-                    content: {
-                        block: 'video',
-                        poster: '../background_1_1.png',
-                        preload: 'auto',
-                        autoplay: 'autoplay',
-                        loop: 'loop',
-                        source: [{ url: '../background_1_1.mp4' }]
-                    }
-                },
+                // {
+                //     cls: 'fix-background',
+                //     content: {
+                //         block: 'video',
+                //         poster: '../background_1_1.png',
+                //         preload: 'auto',
+                //         autoplay: 'autoplay',
+                //         loop: 'loop',
+                //         source: [{ url: '../background_1_1.mp4' }]
+                //     }
+                // },
                 {
                     block: 'intro',
                     title: 'Imagine the revolution in the product creation',
