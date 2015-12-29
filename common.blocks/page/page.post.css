@@ -11,6 +11,7 @@
     right: 0px;
     bottom: 0px;
     overflow: hidden;
+    display: none;
 
     .video {
         position: absolute;
@@ -20,4 +21,8 @@
         bottom: -10px;
         width: 200%;
     }
+}
+
+@media (--large) {
+    .fix-background { display: block; }
 }
