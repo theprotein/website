@@ -108,7 +108,7 @@ module.exports = {
                                 },
                                 title: 'Sync',
                                  desc: [
-                                     'Sync disign with any techs, ',
+                                     'Sync design with any techs, ',
                                      'frameworks, and platforms'
                                  ]
                             }
