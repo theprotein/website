@@ -40,17 +40,6 @@ module.exports = {
             mods: { view: 'header' },
             content: [
                 {
-                    cls: 'fix-background',
-                    content: {
-                        block: 'video',
-                        poster: '../background_1_1.png',
-                        preload: 'auto',
-                        autoplay: 'autoplay',
-                        loop: 'loop',
-                        source: [{ url: '../intro__video.mp4' }]
-                    }
-                },
-                {
                     block: 'intro',
                     title: 'Imagine the revolution in the product creation',
                     desc: [
