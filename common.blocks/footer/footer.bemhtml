@@ -8,13 +8,13 @@ block('footer')(
                     block: 'social',
                     mix: { block: this.block, elem: 'social' }
                 },
-                {
-                    elem: 'logo',
-                    content: {
-                        block: 'logo',
-                        mods: { view: 'square' }
-                    }
-                },
+                // {
+                //     elem: 'logo',
+                //     content: {
+                //         block: 'logo',
+                //         mods: { view: 'square' }
+                //     }
+                // },
                 {
                     elem: 'text',
                     content: [

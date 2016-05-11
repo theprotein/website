@@ -253,6 +253,23 @@ module.exports = {
                         {
                             block: 'row',
                             content: [
+                                // {
+                                //     elem: 'col',
+                                //     elemMods: {
+                                //         sw: 4,
+                                //         m: true
+                                //     },
+                                //     content: {
+                                //         block: 'technologies',
+                                //         elem: 'item',
+                                //         content: {
+                                //             block: 'technology',
+                                //             url: 'https://www.parse.com',
+                                //             icon: { block: 'icon', mods: { technology: 'parse' }},
+                                //             text: 'Parse'
+                                //         }
+                                //     }
+                                // },
                                 {
                                     elem: 'col',
                                     elemMods: {
@@ -264,9 +281,26 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
-                                            url: 'https://www.parse.com',
-                                            icon: { block: 'icon', mods: { technology: 'parse' }},
-                                            text: 'Parse'
+                                            url: 'http://sketchapp.com',
+                                            icon: { block: 'icon', mods: { technology: 'sketch' }},
+                                            text: 'Sketch'
+                                        }
+                                    }
+                                },
+                                {
+                                    elem: 'col',
+                                    elemMods: {
+                                        sw: 4,
+                                        m: true
+                                    },
+                                    content: {
+                                        block: 'technologies',
+                                        elem: 'item',
+                                        content: {
+                                            block: 'technology',
+                                            url: 'http://adobe.com/products/illustrator.html',
+                                            icon: { block: 'icon', mods: { technology: 'illustrator' }},
+                                            text: 'Adobe Illustrator'
                                         }
                                     }
                                 },
@@ -315,9 +349,9 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
-                                            url: 'http://www.relativewave.com/form/',
-                                            icon: { block: 'icon', mods: { technology: 'google-form' }},
-                                            text: 'Google Form'
+                                            url: 'http://fusetools.com',
+                                            icon: { block: 'icon', mods: { technology: 'fuse' }},
+                                            text: 'Fuse'
                                         }
                                     }
                                 },
@@ -332,29 +366,63 @@ module.exports = {
                                         elem: 'item',
                                         content: {
                                             block: 'technology',
-                                            url: 'http://www.pixate.com',
-                                            icon: { block: 'icon', mods: { technology: 'pixate' }},
-                                            text: 'Pixate'
+                                            url: 'http://github.com',
+                                            icon: { block: 'icon', mods: { technology: 'github' }},
+                                            text: 'GitHub'
                                         }
                                     }
                                 },
-                                {
-                                    elem: 'col',
-                                    elemMods: {
-                                        sw: 4,
-                                        m: true
-                                    },
-                                    content: {
-                                        block: 'technologies',
-                                        elem: 'item',
-                                        content: {
-                                            block: 'technology',
-                                            url: 'https://marvelapp.com',
-                                            icon: { block: 'icon', mods: { technology: 'marvel' }},
-                                            text: 'Marvel'
-                                        }
-                                    }
-                                }
+                                // {
+                                //     elem: 'col',
+                                //     elemMods: {
+                                //         sw: 4,
+                                //         m: true
+                                //     },
+                                //     content: {
+                                //         block: 'technologies',
+                                //         elem: 'item',
+                                //         content: {
+                                //             block: 'technology',
+                                //             url: 'http://www.relativewave.com/form/',
+                                //             icon: { block: 'icon', mods: { technology: 'google-form' }},
+                                //             text: 'Google Form'
+                                //         }
+                                //     }
+                                // },
+                                // {
+                                //     elem: 'col',
+                                //     elemMods: {
+                                //         sw: 4,
+                                //         m: true
+                                //     },
+                                //     content: {
+                                //         block: 'technologies',
+                                //         elem: 'item',
+                                //         content: {
+                                //             block: 'technology',
+                                //             url: 'http://www.pixate.com',
+                                //             icon: { block: 'icon', mods: { technology: 'pixate' }},
+                                //             text: 'Pixate'
+                                //         }
+                                //     }
+                                // },
+                                // {
+                                //     elem: 'col',
+                                //     elemMods: {
+                                //         sw: 4,
+                                //         m: true
+                                //     },
+                                //     content: {
+                                //         block: 'technologies',
+                                //         elem: 'item',
+                                //         content: {
+                                //             block: 'technology',
+                                //             url: 'https://marvelapp.com',
+                                //             icon: { block: 'icon', mods: { technology: 'marvel' }},
+                                //             text: 'Marvel'
+                                //         }
+                                //     }
+                                // }
                             ]
                         }
                     ]
@@ -411,134 +479,134 @@ module.exports = {
                 }
             ]
         },
-        {
-            block: 'section',
-            mods: { view: 'team' },
-            attrs: { id: 'team' },
-            title: 'Team',
-            desc: [
-                'A team of few professionals with hands-on experience in design, development, ',
-                'and large scale IT projects management and years of working background'
-            ],
-            content: [
-                {
-                    block: 'row',
-                    content: [
-                        {
-                            elem: 'col',
-                            mods: {
-                                sw: 6,
-                                mw: 4
-                            },
-                            content: {
-                                block: 'people',
-                                image: '../i/people/awinogradov.png',
-                                name: 'Anton Winogradov',
-                                nickname: 'awinogradov',
-                                post: 'CEO'
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            mods: {
-                                sw: 6,
-                                mw: 4
-                            },
-                            content: {
-                                block: 'people',
-                                image: '../i/people/yaroshevich.png',
-                                name: 'Alexey Yaroshevich',
-                                nickname: 'yaroshevich',
-                                post: 'Software Engineer'
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            mods: {
-                                sw: 6,
-                                mw: 4
-                            },
-                            content: {
-                                block: 'people',
-                                image: '../i/people/voischev.png',
-                                name: 'Ivan Voischev',
-                                nickname: 'voischev',
-                                post: 'Software Engineer'
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            mods: {
-                                sw: '0',
-                                mw: '2'
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            mods: {
-                                sw: 6,
-                                m: true
-                            },
-                            content: {
-                                block: 'people',
-                                image: '../i/people/yetior.png',
-                                name: 'Vasiliy Loginevskiy',
-                                nickname: 'yeti_or',
-                                post: 'Software Engineer'
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            mods: {
-                                sw: 6,
-                                m: true
-                            },
-                            content: {
-                                block: 'people',
-                                image: '../i/people/squorax.png',
-                                name: 'Vladimir Stegantsov',
-                                nickname: 'squorax',
-                                post: 'Creative Director'
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            mods: {
-                                sw: '0',
-                                mw: '2'
-                            }
-                        },
-                        {
-                            elem: 'col',
-                            mods: {
-                                sw: 6,
-                                mw: 12
-                            },
-                            content: {
-                                block: 'people',
-                                mods: { theme:'jobs' },
-                                image: '../i/people/people.png',
-                                title: [
-                                    'We&nbsp;are looking ',
-                                    { block: 'br' },
-                                    'for new team members!'
-                                ]
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            block: 'section',
-            mods: { view: 'subscribe' },
-            desc: [
-                'Subscribe to our newsletter to get news and exclusive discounts'
-            ],
-            content: [
-                { block: 'mailchimp-subscribe' }
-            ]
-        },
+        // {
+        //     block: 'section',
+        //     mods: { view: 'team' },
+        //     attrs: { id: 'team' },
+        //     title: 'Team',
+        //     desc: [
+        //         'A team of few professionals with hands-on experience in design, development, ',
+        //         'and large scale IT projects management and years of working background'
+        //     ],
+        //     content: [
+        //         {
+        //             block: 'row',
+        //             content: [
+        //                 {
+        //                     elem: 'col',
+        //                     mods: {
+        //                         sw: 6,
+        //                         mw: 4
+        //                     },
+        //                     content: {
+        //                         block: 'people',
+        //                         image: '../i/people/awinogradov.png',
+        //                         name: 'Anton Winogradov',
+        //                         nickname: 'awinogradov',
+        //                         post: 'CEO'
+        //                     }
+        //                 },
+        //                 {
+        //                     elem: 'col',
+        //                     mods: {
+        //                         sw: 6,
+        //                         mw: 4
+        //                     },
+        //                     content: {
+        //                         block: 'people',
+        //                         image: '../i/people/yaroshevich.png',
+        //                         name: 'Alexey Yaroshevich',
+        //                         nickname: 'yaroshevich',
+        //                         post: 'Software Engineer'
+        //                     }
+        //                 },
+        //                 {
+        //                     elem: 'col',
+        //                     mods: {
+        //                         sw: 6,
+        //                         mw: 4
+        //                     },
+        //                     content: {
+        //                         block: 'people',
+        //                         image: '../i/people/voischev.png',
+        //                         name: 'Ivan Voischev',
+        //                         nickname: 'voischev',
+        //                         post: 'Software Engineer'
+        //                     }
+        //                 },
+        //                 {
+        //                     elem: 'col',
+        //                     mods: {
+        //                         sw: '0',
+        //                         mw: '2'
+        //                     }
+        //                 },
+        //                 {
+        //                     elem: 'col',
+        //                     mods: {
+        //                         sw: 6,
+        //                         m: true
+        //                     },
+        //                     content: {
+        //                         block: 'people',
+        //                         image: '../i/people/yetior.png',
+        //                         name: 'Vasiliy Loginevskiy',
+        //                         nickname: 'yeti_or',
+        //                         post: 'Software Engineer'
+        //                     }
+        //                 },
+        //                 {
+        //                     elem: 'col',
+        //                     mods: {
+        //                         sw: 6,
+        //                         m: true
+        //                     },
+        //                     content: {
+        //                         block: 'people',
+        //                         image: '../i/people/squorax.png',
+        //                         name: 'Vladimir Stegantsov',
+        //                         nickname: 'squorax',
+        //                         post: 'Creative Director'
+        //                     }
+        //                 },
+        //                 {
+        //                     elem: 'col',
+        //                     mods: {
+        //                         sw: '0',
+        //                         mw: '2'
+        //                     }
+        //                 },
+        //                 {
+        //                     elem: 'col',
+        //                     mods: {
+        //                         sw: 6,
+        //                         mw: 12
+        //                     },
+        //                     content: {
+        //                         block: 'people',
+        //                         mods: { theme:'jobs' },
+        //                         image: '../i/people/people.png',
+        //                         title: [
+        //                             'We&nbsp;are looking ',
+        //                             { block: 'br' },
+        //                             'for new team members!'
+        //                         ]
+        //                     }
+        //                 }
+        //             ]
+        //         }
+        //     ]
+        // },
+        // {
+        //     block: 'section',
+        //     mods: { view: 'subscribe' },
+        //     desc: [
+        //         'Subscribe to our newsletter to get news and exclusive discounts'
+        //     ],
+        //     content: [
+        //         { block: 'mailchimp-subscribe' }
+        //     ]
+        // },
         {
             block: 'footer'
         },

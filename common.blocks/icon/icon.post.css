@@ -18,6 +18,8 @@
 .icon_technology_pixate,
 .icon_technology_react,
 .icon_technology_other,
+.icon_technology_fuse,
+.icon_technology_github,
 .icon_technology_sketch {
     height: 80px;
     background-repeat: no-repeat;
@@ -40,3 +42,5 @@
 .icon_technology_react { width: 72px; background-image: url('_technology/icon_technology_react.png'); }
 .icon_technology_other { width: 47px; background-image: url('_technology/icon_technology_other.png'); }
 .icon_technology_sketch { width: 74px; background-image: url('_technology/icon_technology_sketch.png'); }
+.icon_technology_fuse { width: 84px; background-image: url('_technology/icon_technology_fuse.png'); }
+.icon_technology_github { width: 80px; background-image: url('_technology/icon_technology_github.png'); }

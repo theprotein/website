@@ -20,7 +20,12 @@
 }
 
 .header__logo {
-    width: 173px;
+    width: 124px;
+    overflow: hidden;
+
+    .logo {
+        margin-left: -49px;
+    }
 }
 
 .header__menu {
