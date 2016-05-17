@@ -20,3 +20,5 @@ public/index/*.*
 public/index/freeze
 logs/*
 gh-pages
+deploy_key
+!deploy_key.enc
