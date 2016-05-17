@@ -1,11 +1,10 @@
 {
-  "private": true,
   "author": "The Protein Corp",
-  "name": "protein-landing",
+  "name": "protein-landing-source",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git@git.theprotein.io:protein/landing.git"
+    "url": "git@github.com:theprotein/protein-landing-source.git"
   },
   "engines": {
     "node": "0.12"
