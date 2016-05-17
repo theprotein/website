@@ -2,8 +2,6 @@
 
 echo "compile sources"
 
-rm -rf ./out
-
 npm run build
 
 mkdir ./out
