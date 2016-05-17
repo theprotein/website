@@ -4,8 +4,6 @@ echo "compile sources"
 
 npm run build
 
-mkdir ./out
-
 cp ./public/index/index.html ./out/index.html
 cp ./public/index/index.min.js ./out/index.min.js
 cp ./public/index/index.min.css ./out/index.min.css
