@@ -1,33 +1,15 @@
-### OSX ###
 .DS_Store
-.AppleDouble
-.LSOverride
 
-# Thumbnails
 ._*
-
-### Node ###
 node_modules
-
-### NPM ###
 npm-debug.log
 
-### SublimeText ###
-# workspace files are user-specific
 *.sublime-workspace
 *.sublime-project
+.idea
 
-### PhpStorm ###
-### RubyMine ###
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+bower_components/*
 
-## Directory-based project format
-.idea/
-.project
-.svn
-
-### BEM ###
-libs/*
 public/index/*.*
 !public/index/*.bemjson.js
 !public/index/*.html
@@ -35,7 +17,6 @@ public/index/*.*
 !public/index/*.min.js
 .enb/tmp/
 
-### PROJECT ###
 public/index/freeze
 logs/*
 gh-pages
