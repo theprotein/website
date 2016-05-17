@@ -41,12 +41,17 @@ module.exports = function(project) {
                 target: '.tmp.css',
                 sourcemap: true,
                 plugins: [
-                    require('bem-grid').postcss({
-                        maxWidth: '1000px',
-                        gutter: '0px',
-                        flex: 'flex'
-                    }),
                     require('postcss-import'),
+                    require('postcss-mixins'),
+                    require('postcss-for'),
+                    require('postcss-simple-vars')({
+                        variables: {
+                            gridMaxWidth: '1000px',
+                            gridGutter: '0px',
+                            gridFlex: 'flex'
+                        }
+                    }),
+                    require('lost'),
                     require('postcss-cssnext'),
                     require('postcss-custom-properties'),
                     require('postcss-nested'),

@@ -1,36 +1,30 @@
-#!/usr/bin/env bash
-echo "gh-pages is updating..."
+#!/bin/bash
 
-YENV=production enb make --no-cache
+echo "compile sources"
 
-git clone -b gh-pages git@github.com:theprotein/protein-landing.git gh-pages
-cd gh-pages
+rm -rf ./out
 
-mkdir ./index
+npm run build
 
-cp ../public/index/index.html ./index.html
-cp ../public/index/index.min.js ./index.min.js
-cp ../public/index/index.min.css ./index.min.css
+mkdir ./out
 
-cp -r ../public/index/freeze ./
-cp -r ../public/i ./
+cp ./public/index/index.html ./out/index.html
+cp ./public/index/index.min.js ./out/index.min.js
+cp ./public/index/index.min.css ./out/index.min.css
 
-cp ../public/CNAME CNAME
-cp ../public/robots.txt ./robots.txt
-cp ../public/favicon.ico ./favicon.ico
-cp ../public/favicon@2x.png ./favicon@2x.png
-cp ../public/p_share_square.png ./p_share_square.png
-cp ../public/p_share_twitter.png ./p_share_twitter.png
-cp ../public/intro__video.mp4 ./intro__video.mp4
-cp ../public/background_1_1.mp4 ./background_1_1.mp4
-cp ../public/background_1_1.png ./background_1_1.png
+cp -r ./public/index/freeze ./out/
+cp -r ./public/i ./out/
 
-git add -A
-git commit -m "Update gh-pages"
-git push origin gh-pages
-cd ..
-rm -rf gh-pages
+cp ./public/CNAME ./out/CNAME
+cp ./public/robots.txt ./out/robots.txt
+cp ./public/favicon.ico ./out/favicon.ico
+cp ./public/favicon@2x.png ./out/favicon@2x.png
+cp ./public/p_share_square.png ./out/p_share_square.png
+cp ./public/p_share_twitter.png ./out/p_share_twitter.png
+cp ./public/intro__video.mp4 ./out/intro__video.mp4
+cp ./public/background_1_1.mp4 ./out/background_1_1.mp4
+cp ./public/background_1_1.png ./out/background_1_1.png
 
-echo "gh-pages has been updated successfully"
+echo "compiled successfully"
 
-curl -X POST --data-urlencode 'payload={"text": "Landing deployed to GitHub Pages", "channel": "#devops", "username": "landing", "icon_emoji": ":gift:"}' https://hooks.slack.com/services/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
+ls -1A ./out

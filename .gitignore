@@ -12,13 +12,10 @@ bower_components/*
 
 public/index/*.*
 !public/index/*.bemjson.js
-!public/index/*.html
-!public/index/*.min.css
-!public/index/*.min.js
 .enb/tmp/
 
 public/index/freeze
-logs/*
-gh-pages
+logs
+out
 deploy_key
 !deploy_key.enc
