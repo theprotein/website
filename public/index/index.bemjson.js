@@ -146,7 +146,7 @@ module.exports = {
                                 block: 'info',
                                 icon: { block: 'image', url: '../i/helps/1.svg'},
                                 text: [
-                                    'Edit live UI in Sketch  App ',
+                                    'Edit live UI in Sketch ',
                                     'or Adobe Illustrator'
                                 ]
                             }
