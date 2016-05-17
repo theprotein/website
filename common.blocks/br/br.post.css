@@ -1,6 +1,0 @@
-.br { display: none; }
-
-@media (--large) {
-    .br { display: inline; }
-}
-
