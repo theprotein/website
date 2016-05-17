@@ -38,11 +38,7 @@ block('header')(
                             {
                                 url: '#workflow',
                                 text: 'How it works'
-                            },
-                            // {
-                            //     url: '#pricing',
-                            //     text: 'Pricing'
-                            // }
+                            }
                         ].map(function(item) {
                             return {
                                 block: 'menu-item',
