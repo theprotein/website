@@ -4,7 +4,7 @@
   font-family: 'Helvetica Neue';
   font-size: 14px;
   font-weight: 300;
-  color: #1F1F1F;
+  color: rgba(102, 102, 153, .9);
   letter-spacing: 1px;
   line-height: 1.4;
 }
