@@ -1,0 +1,14 @@
+.heading {
+  font-family: 'Helvetica Neue';
+  font-weight: 100;
+  letter-spacing: 3px;
+  max-width: 580px;
+
+  &_lvl_1 {
+    font-size: 3.5rem;
+  }
+
+  &_lvl_2 {
+    font-size: 2.7rem;
+  }
+}

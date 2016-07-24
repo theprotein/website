@@ -1,0 +1,23 @@
+.menu-item {
+  position: relative;
+}
+
+.menu-item_disabled {
+  cursor: default;
+}
+
+.menu-item_checked {
+  cursor: default;
+}
+
+.menu-item_hidden {
+  display: none;
+}
+
+.menu-item_type_link {
+  cursor: pointer;
+
+  .menu-item__link {
+    outline: none;
+  }
+}

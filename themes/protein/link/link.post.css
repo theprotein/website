@@ -1,0 +1,11 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: all 200ms ease-out;
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,6 @@
+static
+build
+dmg
+bundles
+!bundles/*.bemjson.js
+dist

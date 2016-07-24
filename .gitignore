@@ -1,21 +1,12 @@
-.DS_Store
-
-._*
 node_modules
 npm-debug.log
 
-*.sublime-workspace
-*.sublime-project
-.idea
-
-bower_components/*
-
 public/index/*.*
 !public/index/*.bemjson.js
-.enb/tmp/
 
 public/index/freeze
 logs
 out
 deploy_key
 !deploy_key.enc
+dist
