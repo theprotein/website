@@ -1,9 +1,18 @@
 .section {
 
-  &__content {
+  &__wrapper {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 40px 0 160px;
+    padding: 30px 0 160px;
+  }
+
+  &_view_dynamics,
+  &_view_transporter {
+    padding-top: 80px;
+
+    .section__content {
+      padding-top: 60px;
+    }
   }
 
   &_view_main {
@@ -14,6 +23,11 @@
   &_view_dynamics {
     color: rgba(255, 255, 255, .9);
     background: #1F1F1F;
+  }
+
+  &_view_transporter {
+    color: rgba(51, 51, 102, .9);
+    background: rgba(255, 255, 255, .9);
   }
 
   &__actions {

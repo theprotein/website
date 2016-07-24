@@ -2,9 +2,14 @@ block('section')(
   content()(function () {
     return [
       {
-        elem: 'content',
+        elem: 'wrapper',
         content: [
-          applyNext()
+          {
+            elem: 'content',
+            content: [
+              applyNext()
+            ]
+          }
         ]
       }
     ];
