@@ -11,6 +11,11 @@
     background: rgba(132, 132, 155, .08);
   }
 
+  &_view_dynamics {
+    color: rgba(255, 255, 255, .9);
+    background: #1F1F1F;
+  }
+
   &__actions {
     padding-top: 60px;
   }

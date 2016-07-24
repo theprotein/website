@@ -1,6 +1,7 @@
 ({
   shouldDeps: [
     { block: 'heading' },
-    { block: 'paragraph' }
+    { block: 'paragraph' },
+    { block: 'section', mods: { view: ['main', 'dynamics', 'transporter'] } }
   ]
 });
