@@ -50,19 +50,6 @@ block('header')(
                                     content: item.text
                                 }
                             };
-                        }).concat({
-                            block: 'menu-item',
-                            mods:  { type: 'link' },
-                            content: {
-                                block: 'link',
-                                mods: { 'sign-up': true, theme: 'on-color' },
-                                url: '//eepurl.com/bJQ12H',
-                                content: [{
-                                    block: 'mark',
-                                    mods: { theme: 'o' },
-                                    content: 'Sign Up'
-                                }]
-                            }
                         })
                     ]
                 }

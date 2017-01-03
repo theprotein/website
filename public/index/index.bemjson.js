@@ -368,25 +368,6 @@ module.exports = {
             ]
         },
         {
-            block: 'section',
-            mods: { view: 'beta' },
-            attrs: { id: 'beta' },
-            title: 'Beta',
-            desc: [
-                'Sign up to the Protein Beta with your team and be first who can sync user interface in the world. ',
-                'Revolution is here and starts for you immediately!'
-            ],
-            content: [
-                {
-                    block: 'button',
-                    mods: { type: 'link', size: 'l', theme: 'p' },
-                    attrs: { target: '_blank' },
-                    url: '//eepurl.com/bJQ12H',
-                    text: 'Sign up'
-                }
-            ]
-        },
-        {
             block: 'footer'
         },
         {
