@@ -20,6 +20,8 @@ fi
 REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
+ENCRYPTION_LABEL="0e82123d2908"
+COMMIT_AUTHOR_EMAIL="winogradovaa@gmail.com"
 
 # Clone the existing gh-pages for this repo into out/
 # Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
